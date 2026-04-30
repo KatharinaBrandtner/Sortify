@@ -16,7 +16,7 @@ def read_root():
 def classify(task: Task):
     text = task.text.lower()
 
-    # erstmal dummy (später ML)
+    # dummy (später ML)
     if "lernen" in text or "uni" in text:
         return {"category": "Uni"}
     elif "wäsche" in text or "putzen" in text:
