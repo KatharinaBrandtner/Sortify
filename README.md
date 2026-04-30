@@ -12,7 +12,6 @@ The current prototype uses the following predefined categories:
 - 🎓 University
 - 💼 Work
 - 🏠 Household
-- 🛒 Shopping
 - 🎉 Leisure / Private
 - 🩺 Health
 - 📑 Organizational
