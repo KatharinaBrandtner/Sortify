@@ -32,6 +32,34 @@ These categories were chosen to cover common everyday and study-related tasks wh
 4. The user can confirm the suggestion or select a different category.
 5. The task is then stored in the chosen category.
 
+## Backend Setup
+
+1. Create the Conda environment:
+```bash
+conda create -n sortify python=3.11
+```
+2. Activate the environment:
+```bash
+conda activate sortify
+```
+3. Install dependencies from the project root:
+```bash
+pip install -r requirements.txt
+```
+4. Start the FastAPI backend:
+```bash
+cd backend
+python -m uvicorn main:app --reload
+```
+5. Open Api in the browser:
+```bash
+http://127.0.0.1:8000
+```
+6. Open the interactive API documentation:
+```bash
+http://127.0.0.1:8000/docs
+```
+
 ## 💛 Project Focus
 This project combines machine learning with user-centered interaction design. The aim is not fully automatic task management, but supportive automation that reduces effort while preserving user control.
 
