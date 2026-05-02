@@ -34,7 +34,8 @@ X_train, X_test, y_train, y_test = train_test_split(
 model = Pipeline([
     ("tfidf", TfidfVectorizer(
         lowercase=True,
-        ngram_range=(1, 2)
+        analyzer="char_wb",
+        ngram_range=(3, 5)
     )),
     ("classifier", LogisticRegression(
         max_iter=1000
