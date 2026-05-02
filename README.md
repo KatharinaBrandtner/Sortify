@@ -46,16 +46,22 @@ conda activate sortify
 ```bash
 pip install -r requirements.txt
 ```
-4. Start the FastAPI backend:
+
+4. Train the classification model: 
 ```bash
 cd backend
+python train_model.py
+```
+ 
+5. Start the FastAPI backend:
+```bash
 python -m uvicorn main:app --reload
 ```
-5. Open Api in the browser:
+6. Open Api in the browser:
 ```bash
 http://127.0.0.1:8000
 ```
-6. Open the interactive API documentation:
+7. Open the interactive API documentation:
 ```bash
 http://127.0.0.1:8000/docs
 ```
