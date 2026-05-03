@@ -1,901 +1,3714 @@
 [
-{"text":"arzt termin ausmachen","label":"Gesundheit"},
-{"text":"meeting vorbereiten morgen","label":"Arbeit"},
-{"text":"milch und brot holen","label":"Haushalt"},
-{"text":"vorlesung nacharbeiten","label":"Uni"},
-{"text":"miete überweisen","label":"Organisatorisches"},
-{"text":"neue jeans kaufen","label":"Freizeit"},
-{"text":"wäsche waschen","label":"Haushalt"},
-{"text":"projektpräsentation bauen","label":"Uni"},
-{"text":"chef anrufen wegen schicht","label":"Arbeit"},
-{"text":"mit lisa essen gehen","label":"Freizeit"},
-{"text":"rezept einlösen apotheke","label":"Gesundheit"},
-{"text":"stromrechnung checken","label":"Organisatorisches"},
-{"text":"bad putzen","label":"Haushalt"},
-{"text":"lernplan machen","label":"Uni"},
-{"text":"kundenmail beantworten","label":"Arbeit"},
-{"text":"kino abends","label":"Freizeit"},
-{"text":"tabletten kaufen","label":"Gesundheit"},
-{"text":"versicherung kündigen","label":"Organisatorisches"},
-{"text":"einkaufen gemüse obst","label":"Haushalt"},
-{"text":"skript lesen","label":"Uni"},
-{"text":"call mit team 14uhr","label":"Arbeit"},
-{"text":"geburtstagsgeschenk shoppen","label":"Freizeit"},
-{"text":"zahnarzt termin","label":"Gesundheit"},
-{"text":"amt termin vereinbaren","label":"Organisatorisches"},
-{"text":"küche aufräumen","label":"Haushalt"},
-{"text":"hausarbeit schreiben","label":"Uni"},
-{"text":"präsentation üben","label":"Arbeit"},
-{"text":"freund treffen","label":"Freizeit"},
-{"text":"impfung checken","label":"Gesundheit"},
-{"text":"kontoauszug prüfen","label":"Organisatorisches"},
-{"text":"spülmaschine ausräumen","label":"Haushalt"},
-{"text":"uni zeug sortieren","label":"Uni"},
-{"text":"bericht fertig machen","label":"Arbeit"},
-{"text":"shopping mall","label":"Freizeit"},
-{"text":"arztbericht abholen","label":"Gesundheit"},
-{"text":"vertrag unterschreiben","label":"Organisatorisches"},
-{"text":"müll runterbringen","label":"Haushalt"},
-{"text":"übungsblatt rechnen","label":"Uni"},
-{"text":"meeting verschieben","label":"Arbeit"},
-{"text":"spaziergang park","label":"Freizeit"},
-{"text":"medikamente nehmen","label":"Gesundheit"},
-{"text":"post erledigen","label":"Organisatorisches"},
-{"text":"putzmittel kaufen","label":"Haushalt"},
-{"text":"prüfung anmelden","label":"Uni"},
-{"text":"excel liste machen","label":"Arbeit"},
-{"text":"party planen","label":"Freizeit"},
-{"text":"physio termin","label":"Gesundheit"},
-{"text":"rechnung bezahlen","label":"Organisatorisches"},
-{"text":"ofen sauber machen","label":"Haushalt"},
-{"text":"gruppe treffen uni","label":"Uni"},
-{"text":"deadline checken","label":"Arbeit"},
-{"text":"neue schuhe kaufen","label":"Freizeit"},
-{"text":"bluttest machen","label":"Gesundheit"},
-{"text":"steuerkram sortieren","label":"Organisatorisches"},
-{"text":"eier kaufen","label":"Haushalt"},
-{"text":"literatur suchen","label":"Uni"},
-{"text":"kollegen schreiben","label":"Arbeit"},
-{"text":"zocken abends","label":"Freizeit"},
-{"text":"apotheke vorbei","label":"Gesundheit"},
-{"text":"abo kündigen","label":"Organisatorisches"},
-{"text":"wohnzimmer saugen","label":"Haushalt"},
-{"text":"vorlesung besuchen","label":"Uni"},
-{"text":"taskliste update","label":"Arbeit"},
-{"text":"date night planen","label":"Freizeit"},
-{"text":"arzttermin verschieben","label":"Gesundheit"},
-{"text":"unterlagen einreichen","label":"Organisatorisches"},
-{"text":"kühlschrank aufräumen","label":"Haushalt"},
-{"text":"referat vorbereiten","label":"Uni"},
-{"text":"angebot prüfen","label":"Arbeit"},
-{"text":"yoga kurs","label":"Freizeit"},
-{"text":"krankschreibung holen","label":"Gesundheit"},
-{"text":"frist beachten","label":"Organisatorisches"},
-{"text":"brot backen","label":"Haushalt"},
-{"text":"seminar anmelden","label":"Uni"},
-{"text":"teammeeting","label":"Arbeit"},
-{"text":"klamotten shoppen","label":"Freizeit"},
-{"text":"salbe holen","label":"Gesundheit"},
-{"text":"termin kalender eintragen","label":"Organisatorisches"},
-{"text":"boden wischen","label":"Haushalt"},
-{"text":"skript drucken","label":"Uni"},
-{"text":"telefonkonferenz","label":"Arbeit"},
-{"text":"freunde anrufen","label":"Freizeit"},
-{"text":"arzt wechseln","label":"Gesundheit"},
-{"text":"bank anrufen","label":"Organisatorisches"},
-{"text":"nudeln kaufen","label":"Haushalt"},
-{"text":"lern gruppe treffen","label":"Uni"},
-{"text":"mail an chef","label":"Arbeit"},
-{"text":"museum gehen","label":"Freizeit"},
-{"text":"check up termin","label":"Gesundheit"},
-{"text":"dokumente scannen","label":"Organisatorisches"},
-{"text":"wäsche aufhängen","label":"Haushalt"},
-{"text":"projekt abgeben","label":"Uni"},
-{"text":"bericht lesen","label":"Arbeit"},
-{"text":"bar abends","label":"Freizeit"},
-{"text":"vitamine kaufen","label":"Gesundheit"},
-{"text":"antrag stellen","label":"Organisatorisches"},
-{"text":"geschirr spülen","label":"Haushalt"},
-{"text":"vorlesung mitschreiben","label":"Uni"},
-{"text":"kunden treffen","label":"Arbeit"},
-{"text":"sport machen","label":"Freizeit"},
-{"text":"arzt anrufen","label":"Gesundheit"},
-{"text":"vertrag prüfen","label":"Organisatorisches"},
-{"text":"tee kaufen","label":"Haushalt"},
-{"text":"übungen wiederholen","label":"Uni"},
-{"text":"report senden","label":"Arbeit"},
-{"text":"café date","label":"Freizeit"},
-{"text":"rezept verlängern","label":"Gesundheit"},
-{"text":"frist verlängern beantragen","label":"Organisatorisches"},
-{"text":"putzen allgemein","label":"Haushalt"},
-{"text":"prüfung lernen","label":"Uni"},
-{"text":"projekt planen","label":"Arbeit"},
-{"text":"wandern gehen","label":"Freizeit"},
-{"text":"arzttermin wahrnehmen","label":"Gesundheit"},
-{"text":"versicherung vergleichen","label":"Organisatorisches"},
-{"text":"müll trennen","label":"Haushalt"},
-{"text":"hausarbeit abgeben","label":"Uni"},
-{"text":"meeting protokollieren","label":"Arbeit"},
-{"text":"kino abend mit freunden","label":"Freizeit"},
-{"text":"impftermin buchen","label":"Gesundheit"},
-{"text":"steuererklärung machen","label":"Organisatorisches"},
-{"text":"garten gießen","label":"Haushalt"},
-{"text":"seminar vorbereiten","label":"Uni"},
-{"text":"präsentation halten","label":"Arbeit"},
-{"text":"konzert besuchen","label":"Freizeit"},
-{"text":"arzttermin absagen","label":"Gesundheit"},
-{"text":"behörde anrufen","label":"Organisatorisches"},
-{"text":"kühlschrank putzen","label":"Haushalt"},
-{"text":"vorlesung nachholen","label":"Uni"},
-{"text":"projekt besprechen","label":"Arbeit"},
-{"text":"freizeitpark besuchen","label":"Freizeit"},
-{"text":"medikamentenplan aktualisieren","label":"Gesundheit"},
-{"text":"arzt termin","label":"Gesundheit"},
-{"text":"brot kaufen","label":"Haushalt"},
-{"text":"uni zeug","label":"Uni"},
-{"text":"meeting","label":"Arbeit"},
-{"text":"rechnung","label":"Organisatorisches"},
-{"text":"kino","label":"Freizeit"},
-{"text":"wäsche","label":"Haushalt"},
-{"text":"lern","label":"Uni"},
-{"text":"chef mail","label":"Arbeit"},
-{"text":"freundin treffn","label":"Freizeit"},
-{"text":"apotheke","label":"Gesundheit"},
-{"text":"vertrag","label":"Organisatorisches"},
-{"text":"müll","label":"Haushalt"},
-{"text":"skript","label":"Uni"},
-{"text":"call","label":"Arbeit"},
-{"text":"shoppen","label":"Freizeit"},
-{"text":"tabletten","label":"Gesundheit"},
-{"text":"bank","label":"Organisatorisches"},
-{"text":"milch","label":"Haushalt"},
-{"text":"vorlesung","label":"Uni"},
-{"text":"task","label":"Arbeit"},
-{"text":"party","label":"Freizeit"},
-{"text":"arzt anrufn","label":"Gesundheit"},
-{"text":"amt","label":"Organisatorisches"},
-{"text":"putzen","label":"Haushalt"},
-{"text":"hausarbeit","label":"Uni"},
-{"text":"meeting prep","label":"Arbeit"},
-{"text":"spaziergang","label":"Freizeit"},
-{"text":"impfung","label":"Gesundheit"},
-{"text":"rechnung zahln","label":"Organisatorisches"},
-{"text":"einkauf","label":"Haushalt"},
-{"text":"übungsblatt","label":"Uni"},
-{"text":"deadline","label":"Arbeit"},
-{"text":"zocken","label":"Freizeit"},
-{"text":"arztbericht","label":"Gesundheit"},
-{"text":"kündigung","label":"Organisatorisches"},
-{"text":"küche","label":"Haushalt"},
-{"text":"seminar","label":"Uni"},
-{"text":"kollegen","label":"Arbeit"},
-{"text":"bar","label":"Freizeit"},
-{"text":"check up","label":"Gesundheit"},
-{"text":"unterlagen","label":"Organisatorisches"},
-{"text":"spülmaschine","label":"Haushalt"},
-{"text":"referat","label":"Uni"},
-{"text":"bericht","label":"Arbeit"},
-{"text":"date","label":"Freizeit"},
-{"text":"salbe","label":"Gesundheit"},
-{"text":"termin","label":"Organisatorisches"},
-{"text":"saugen","label":"Haushalt"},
-{"text":"prüfung","label":"Uni"},
-{"text":"excel","label":"Arbeit"},
-{"text":"café","label":"Freizeit"},
-{"text":"arzttermin","label":"Gesundheit"},
-{"text":"antrag","label":"Organisatorisches"},
-{"text":"geschirr","label":"Haushalt"},
-{"text":"lernen","label":"Uni"},
-{"text":"mail","label":"Arbeit"},
-{"text":"freunde","label":"Freizeit"},
-{"text":"rezept","label":"Gesundheit"},
-{"text":"frist","label":"Organisatorisches"},
-{"text":"ofen","label":"Haushalt"},
-{"text":"vorlesung lern","label":"Uni"},
-{"text":"meeting kurz","label":"Arbeit"},
-{"text":"wandern","label":"Freizeit"},
-{"text":"arzt kurz","label":"Gesundheit"},
-{"text":"vertrag check","label":"Organisatorisches"},
-{"text":"boden","label":"Haushalt"},
-{"text":"uni lern","label":"Uni"},
-{"text":"call kurz","label":"Arbeit"},
-{"text":"kino abnd","label":"Freizeit"},
-{"text":"medis","label":"Gesundheit"},
-{"text":"konto","label":"Organisatorisches"},
-{"text":"eier","label":"Haushalt"},
-{"text":"skript lesn","label":"Uni"},
-{"text":"task fix","label":"Arbeit"},
-{"text":"party plan","label":"Freizeit"},
-{"text":"arzt fix","label":"Gesundheit"},
-{"text":"post","label":"Organisatorisches"},
-{"text":"wäsche aufh","label":"Haushalt"},
-{"text":"gruppe","label":"Uni"},
-{"text":"report","label":"Arbeit"},
-{"text":"shopping","label":"Freizeit"},
-{"text":"vitamine","label":"Gesundheit"},
-{"text":"steuer","label":"Organisatorisches"},
-{"text":"kühlschrank","label":"Haushalt"},
-{"text":"übungen","label":"Uni"},
-{"text":"meeting versch","label":"Arbeit"},
-{"text":"yoga","label":"Freizeit"},
-{"text":"arzt check","label":"Gesundheit"},
-{"text":"abo","label":"Organisatorisches"},
-{"text":"putz","label":"Haushalt"},
-{"text":"lernen kurz","label":"Uni"},
-{"text":"kunden","label":"Arbeit"},
-{"text":"sport","label":"Freizeit"},
-{"text":"arzt gehn","label":"Gesundheit"},
-{"text":"bank anrufn","label":"Organisatorisches"},
-{"text":"nudeln","label":"Haushalt"},
-{"text":"prüfung lern","label":"Uni"},
-{"text":"mail chef","label":"Arbeit"},
-{"text":"date abnd","label":"Freizeit"},
-{"text":"rezept holn","label":"Gesundheit"},
-{"text":"dokumente","label":"Organisatorisches"},
-{"text":"arzt termin ausmachen wegen rückenschmerzen seit letzter woche","label":"Gesundheit"},
-{"text":"großen lebensmitteleinkauf machen für die ganze woche inkl gemüse und snacks","label":"Haushalt"},
-{"text":"vorlesung von gestern nochmal komplett durcharbeiten und notizen sauber machen","label":"Uni"},
-{"text":"meeting für morgen vorbereiten und wichtige punkte zusammenschreiben","label":"Arbeit"},
-{"text":"stromrechnung prüfen und schauen warum sie diesen monat höher ist","label":"Organisatorisches"},
-{"text":"mit freunden essen gehen und tisch reservieren nicht vergessen","label":"Freizeit"},
-{"text":"wohnung gründlich putzen inklusive bad und küche","label":"Haushalt"},
-{"text":"hausarbeit weiterschreiben und literatur nochmal checken","label":"Uni"},
-{"text":"kundenmail beantworten und angebot nochmal überarbeiten","label":"Arbeit"},
-{"text":"neue sommerklamotten online bestellen und größen vergleichen","label":"Freizeit"},
-{"text":"rezept vom arzt in der apotheke einlösen und medikamente holen","label":"Gesundheit"},
-{"text":"vertrag durchlesen und kündigungsfrist checken","label":"Organisatorisches"},
-{"text":"wäsche waschen und danach alles zusammenlegen","label":"Haushalt"},
-{"text":"lernplan für die nächsten zwei wochen erstellen und einhalten","label":"Uni"},
-{"text":"präsentation für arbeit fertig machen und slides designen","label":"Arbeit"},
-{"text":"kinoabend mit freunden planen und tickets buchen","label":"Freizeit"},
-{"text":"zahnarzt termin ausmachen zur kontrolle","label":"Gesundheit"},
-{"text":"miete überweisen und konto checken ob alles passt","label":"Organisatorisches"},
-{"text":"einkaufen gehen für abendessen und frühstück","label":"Haushalt"},
-{"text":"übungsblatt lösen und lösungen vergleichen","label":"Uni"},
-{"text":"teammeeting organisieren und agenda vorbereiten","label":"Arbeit"},
-{"text":"geburtstagsgeschenk für mama besorgen und verpacken","label":"Freizeit"},
-{"text":"bluttest termin vereinbaren beim hausarzt","label":"Gesundheit"},
-{"text":"unterlagen für amt zusammensuchen und abschicken","label":"Organisatorisches"},
-{"text":"küche aufräumen und geschirr spülen","label":"Haushalt"},
-{"text":"vorlesung besuchen und wichtige dinge mitschreiben","label":"Uni"},
-{"text":"bericht lesen und feedback an kollegen geben","label":"Arbeit"},
-{"text":"wochenendtrip planen und unterkunft buchen","label":"Freizeit"},
-{"text":"medikamente regelmäßig nehmen und erinnerung stellen","label":"Gesundheit"},
-{"text":"rechnung bezahlen und bestätigung speichern","label":"Organisatorisches"},
-{"text":"kühlschrank aufräumen und abgelaufene sachen wegwerfen","label":"Haushalt"},
-{"text":"referat vorbereiten und quellen sauber zitieren","label":"Uni"},
-{"text":"excel liste aktualisieren und daten einpflegen","label":"Arbeit"},
-{"text":"mit freunden in eine bar gehen am freitag","label":"Freizeit"},
-{"text":"arzttermin verschieben weil ich keine zeit habe","label":"Gesundheit"},
-{"text":"versicherung vergleichen und eventuell wechseln","label":"Organisatorisches"},
-{"text":"boden wischen und staubsaugen im wohnzimmer","label":"Haushalt"},
-{"text":"prüfung anmelden bevor die frist abläuft","label":"Uni"},
-{"text":"angebot prüfen und rückmeldung an kunden schicken","label":"Arbeit"},
-{"text":"yoga kurs buchen für nächsten monat","label":"Freizeit"},
-{"text":"krankschreibung beim arzt holen","label":"Gesundheit"},
-{"text":"frist im kalender eintragen und reminder setzen","label":"Organisatorisches"},
-{"text":"brot backen und zutaten einkaufen","label":"Haushalt"},
-{"text":"seminararbeit strukturieren und gliederung schreiben","label":"Uni"},
-{"text":"telefonkonferenz vorbereiten und unterlagen bereitlegen","label":"Arbeit"},
-{"text":"shopping gehen in der stadt nach neuen schuhen","label":"Freizeit"},
-{"text":"apotheke besuchen wegen salbe gegen hautproblem","label":"Gesundheit"},
-{"text":"bank anrufen wegen unklarer abbuchung","label":"Organisatorisches"},
-{"text":"müll rausbringen und mülltrennung checken","label":"Haushalt"},
-{"text":"lerngruppe organisieren für nächste woche","label":"Uni"},
-{"text":"report fertigstellen und an chef senden","label":"Arbeit"},
-{"text":"date planen und restaurant aussuchen","label":"Freizeit"},
-{"text":"check up termin beim arzt machen","label":"Gesundheit"},
-{"text":"dokumente scannen und digital abspeichern","label":"Organisatorisches"},
-{"text":"spülmaschine ausräumen und neu einräumen","label":"Haushalt"},
-{"text":"skript lesen und wichtige stellen markieren","label":"Uni"},
-{"text":"kunden treffen vorbereiten und fragen notieren","label":"Arbeit"},
-{"text":"sport machen im fitnessstudio heute abend","label":"Freizeit"},
-{"text":"arzt anrufen und nach ergebnissen fragen","label":"Gesundheit"},
-{"text":"vertrag unterschreiben und zurückschicken","label":"Organisatorisches"},
-{"text":"einkaufsliste schreiben für den supermarkt","label":"Haushalt"},
-{"text":"übungen wiederholen für die klausur","label":"Uni"},
-{"text":"projekt planen und nächste schritte definieren","label":"Arbeit"},
-{"text":"café date mit freundin organisieren","label":"Freizeit"},
-{"text":"rezept verlängern lassen beim arzt","label":"Gesundheit"},
-{"text":"antrag stellen für förderung oder stipendium","label":"Organisatorisches"},
-{"text":"ofen sauber machen weil alles eingebrannt ist","label":"Haushalt"},
-{"text":"vorlesung nacharbeiten und offene fragen klären","label":"Uni"},
-{"text":"meeting verschieben und neuen termin finden","label":"Arbeit"},
-{"text":"wandern gehen am wochenende planen","label":"Freizeit"},
-{"text":"arzttermin wahrnehmen und fragen vorbereiten","label":"Gesundheit"},
-{"text":"steuerkram sortieren und unterlagen ordnen","label":"Organisatorisches"},
-{"text":"wäsche aufhängen und trocknen lassen","label":"Haushalt"},
-{"text":"projekt abgeben vor der deadline","label":"Uni"},
-{"text":"bericht schreiben und formatieren","label":"Arbeit"},
-{"text":"party organisieren für nächsten monat","label":"Freizeit"},
-{"text":"vitamine kaufen und regelmäßig nehmen","label":"Gesundheit"},
-{"text":"abo kündigen und bestätigung prüfen","label":"Organisatorisches"},
-{"text":"geschirr spülen und küche sauber machen","label":"Haushalt"},
-{"text":"prüfung lernen und zusammenfassung schreiben","label":"Uni"},
-{"text":"mail an chef schreiben wegen urlaub","label":"Arbeit"},
-{"text":"museum besuchen am sonntag","label":"Freizeit"},
-{"text":"arzt wechseln und neuen termin ausmachen","label":"Gesundheit"},
-{"text":"kontoauszug prüfen und ausgaben analysieren","label":"Organisatorisches"},
-{"text":"tee und kaffee nachkaufen für zuhause","label":"Haushalt"},
-{"text":"literatur suchen für seminararbeit","label":"Uni"},
-{"text":"taskliste aktualisieren und prioritäten setzen","label":"Arbeit"},
-{"text":"spaziergang im park machen zum entspannen","label":"Freizeit"},
-{"text":"blutwerte checken lassen beim arzt","label":"Gesundheit"},
-{"text":"frist verlängern beantragen beim amt","label":"Organisatorisches"},
-{"text":"putzen allgemein alles einmal durchgehen","label":"Haushalt"},
-{"text":"gruppe treffen für projektarbeit","label":"Uni"},
-{"text":"telefonat mit kunden führen und notizen machen","label":"Arbeit"},
-{"text":"kino tickets buchen für freitag abend","label":"Freizeit"},
-{"text":"arztbericht abholen und durchlesen","label":"Gesundheit"},
-{"text":"post erledigen und wichtige briefe beantworten","label":"Organisatorisches"},
-{"text":"arzttermin vereinbaren weil die knieschmerzen nicht besser werden seit tagen","label":"Gesundheit"},
-{"text":"großen wocheneinkauf erledigen und auch gleich snacks für die nächsten tage holen","label":"Haushalt"},
-{"text":"alle vorlesungsfolien durcharbeiten und wichtige stellen farbig markieren","label":"Uni"},
-{"text":"wichtige präsentation für kunden fertig bauen und nochmal durchsprechen","label":"Arbeit"},
-{"text":"alle offenen rechnungen durchgehen und schauen ob irgendwas vergessen wurde","label":"Organisatorisches"},
-{"text":"wochenendtrip mit freunden genauer planen und unterkunft vergleichen","label":"Freizeit"},
-{"text":"bad komplett putzen inklusive spiegel und dusche entkalken","label":"Haushalt"},
-{"text":"seminararbeit anfangen und erstmal grobe struktur überlegen","label":"Uni"},
-{"text":"meeting vorbereiten und alle notwendigen unterlagen zusammensuchen","label":"Arbeit"},
-{"text":"neue jacke online bestellen und verschiedene shops vergleichen","label":"Freizeit"},
-{"text":"medikamente in der apotheke holen und einnahme planen","label":"Gesundheit"},
-{"text":"versicherungspapiere sortieren und wichtige dokumente abheften","label":"Organisatorisches"},
-{"text":"wäsche waschen und danach direkt alles bügeln","label":"Haushalt"},
-{"text":"lernzettel für die klausur erstellen und alles zusammenfassen","label":"Uni"},
-{"text":"kundenanfrage beantworten und angebot individuell anpassen","label":"Arbeit"},
-{"text":"restaurant für abend reservieren und freunde informieren","label":"Freizeit"},
-{"text":"zahnarzttermin machen für kontrolle und reinigung","label":"Gesundheit"},
-{"text":"mietvertrag nochmal lesen und kündigungsfrist checken","label":"Organisatorisches"},
-{"text":"lebensmittel einkaufen für die ganze woche inkl frühstück","label":"Haushalt"},
-{"text":"übungsaufgaben durchgehen und schwierige aufgaben nochmal rechnen","label":"Uni"},
-{"text":"teammeeting organisieren und zeit für alle abstimmen","label":"Arbeit"},
-{"text":"geburtstagsgeschenk bestellen und rechtzeitig liefern lassen","label":"Freizeit"},
-{"text":"arzt anrufen und nach laborergebnissen fragen","label":"Gesundheit"},
-{"text":"unterlagen für behörde ausfüllen und abschicken","label":"Organisatorisches"},
-{"text":"küche gründlich aufräumen und arbeitsfläche reinigen","label":"Haushalt"},
-{"text":"vorlesung nacharbeiten und offene fragen klären","label":"Uni"},
-{"text":"bericht fertig schreiben und an vorgesetzten schicken","label":"Arbeit"},
-{"text":"kurztrip planen und zugtickets buchen","label":"Freizeit"},
-{"text":"regelmäßig tabletten nehmen und erinnerung einstellen","label":"Gesundheit"},
-{"text":"rechnung bezahlen und in ordner ablegen","label":"Organisatorisches"},
-{"text":"kühlschrank sauber machen und alte sachen entsorgen","label":"Haushalt"},
-{"text":"referat vorbereiten und präsentation dazu erstellen","label":"Uni"},
-{"text":"excel dokument aktualisieren und neue daten eintragen","label":"Arbeit"},
-{"text":"abends in eine bar gehen mit freunden","label":"Freizeit"},
-{"text":"arzttermin verschieben weil termin sich überschneidet","label":"Gesundheit"},
-{"text":"verschiedene versicherungen vergleichen und angebote prüfen","label":"Organisatorisches"},
-{"text":"boden wischen und danach nochmal saugen","label":"Haushalt"},
-{"text":"prüfung rechtzeitig anmelden über das portal","label":"Uni"},
-{"text":"angebot prüfen und feedback an kunden formulieren","label":"Arbeit"},
-{"text":"fitnesskurs buchen und trainingszeiten festlegen","label":"Freizeit"},
-{"text":"krankschreibung beim arzt abholen und einreichen","label":"Gesundheit"},
-{"text":"wichtige fristen im kalender eintragen und reminder setzen","label":"Organisatorisches"},
-{"text":"brot selber backen und zutaten einkaufen gehen","label":"Haushalt"},
-{"text":"seminararbeit gliederung schreiben und quellen suchen","label":"Uni"},
-{"text":"telefonkonferenz vorbereiten und agenda festlegen","label":"Arbeit"},
-{"text":"shopping gehen und nach neuen schuhen schauen","label":"Freizeit"},
-{"text":"apotheke besuchen wegen erkältung und passende medis holen","label":"Gesundheit"},
-{"text":"bank kontaktieren wegen falscher abbuchung klären","label":"Organisatorisches"},
-{"text":"müll runterbringen und mülltrennung beachten","label":"Haushalt"},
-{"text":"lerngruppe organisieren und termin finden","label":"Uni"},
-{"text":"report finalisieren und fristgerecht abschicken","label":"Arbeit"},
-{"text":"date planen und passenden ort auswählen","label":"Freizeit"},
-{"text":"check up beim arzt machen lassen","label":"Gesundheit"},
-{"text":"dokumente einscannen und ordentlich abspeichern","label":"Organisatorisches"},
-{"text":"spülmaschine ausräumen und direkt wieder einräumen","label":"Haushalt"},
-{"text":"skript komplett lesen und wichtige dinge notieren","label":"Uni"},
-{"text":"kundentermin vorbereiten und fragenliste erstellen","label":"Arbeit"},
-{"text":"sport im gym machen und trainingsplan durchziehen","label":"Freizeit"},
-{"text":"arzt anrufen und neuen termin vereinbaren","label":"Gesundheit"},
-{"text":"vertrag unterschreiben und per post zurück senden","label":"Organisatorisches"},
-{"text":"einkaufsliste erstellen und supermarkt planen","label":"Haushalt"},
-{"text":"übungen wiederholen und unsicherheiten klären","label":"Uni"},
-{"text":"projekt planen und aufgaben verteilen im team","label":"Arbeit"},
-{"text":"café treffen mit freundin organisieren","label":"Freizeit"},
-{"text":"rezept verlängern lassen beim hausarzt","label":"Gesundheit"},
-{"text":"antrag ausfüllen und alle nötigen dokumente anhängen","label":"Organisatorisches"},
-{"text":"ofen gründlich reinigen weil sehr schmutzig","label":"Haushalt"},
-{"text":"vorlesung nochmal anschauen und zusammenfassung schreiben","label":"Uni"},
-{"text":"meeting verschieben und neuen termin abstimmen","label":"Arbeit"},
-{"text":"wanderausflug planen und route festlegen","label":"Freizeit"},
-{"text":"arzttermin wahrnehmen und fragen vorbereiten","label":"Gesundheit"},
-{"text":"steuerunterlagen sortieren und alles abheften","label":"Organisatorisches"},
-{"text":"wäsche aufhängen und danach zusammenlegen","label":"Haushalt"},
-{"text":"projekt rechtzeitig abgeben und alles prüfen","label":"Uni"},
-{"text":"bericht schreiben und korrekt formatieren","label":"Arbeit"},
-{"text":"party organisieren und gästeliste erstellen","label":"Freizeit"},
-{"text":"vitamine kaufen und regelmäßig einnehmen","label":"Gesundheit"},
-{"text":"abo kündigen und bestätigung überprüfen","label":"Organisatorisches"},
-{"text":"geschirr spülen und küche aufräumen","label":"Haushalt"},
-{"text":"für klausur lernen und notizen zusammenstellen","label":"Uni"},
-{"text":"mail an chef schreiben wegen projektstatus","label":"Arbeit"},
-{"text":"museum besuchen und tickets vorher buchen","label":"Freizeit"},
-{"text":"arzt wechseln und neuen arzt suchen","label":"Gesundheit"},
-{"text":"kontoauszüge prüfen und ausgaben kontrollieren","label":"Organisatorisches"},
-{"text":"kaffee und tee nachkaufen für zuhause","label":"Haushalt"},
-{"text":"literatur recherchieren für seminararbeit","label":"Uni"},
-{"text":"taskliste überarbeiten und prioritäten setzen","label":"Arbeit"},
-{"text":"spaziergang machen um bisschen runterzukommen","label":"Freizeit"},
-{"text":"blutwerte beim arzt checken lassen","label":"Gesundheit"},
-{"text":"frist verlängern beantragen bei zuständiger stelle","label":"Organisatorisches"},
-{"text":"komplette wohnung einmal gründlich durchputzen","label":"Haushalt"},
-{"text":"gruppe treffen und projekt besprechen","label":"Uni"},
-{"text":"telefonat mit kunden führen und notizen festhalten","label":"Arbeit"},
-{"text":"kinoabend planen und tickets reservieren","label":"Freizeit"},
-{"text":"arztbericht abholen und alles durchlesen","label":"Gesundheit"},
-{"text":"post sortieren und wichtige briefe beantworten","label":"Organisatorisches"},
-{"text":"arzt termin ausmachen wegen kopfschmerzen","label":"Gesundheit"},
-{"text":"großen einkauf machen für die woche","label":"Haushalt"},
-{"text":"vorlesung nacharbeien und notizen ordnen","label":"Uni"},
-{"text":"meeting vorbereiten und punkte sammeln","label":"Arbeit"},
-{"text":"rechnung überweisen und konto checkn","label":"Organisatorisches"},
-{"text":"mit freunden essen gehn heute abend","label":"Freizeit"},
-{"text":"bad putzen und spiegel sauber machn","label":"Haushalt"},
-{"text":"hausarbeit weiter schreiben bisschen","label":"Uni"},
-{"text":"kunden mail beantorten und anpassen","label":"Arbeit"},
-{"text":"neue klamotten online anschaun und bestelln","label":"Freizeit"},
-{"text":"rezept einlösen in apotheke","label":"Gesundheit"},
-{"text":"vertrag nochmal durchlesen und prüfen","label":"Organisatorisches"},
-{"text":"wäsche waschn und aufhängn danach","label":"Haushalt"},
-{"text":"lernplan für nächste woche machn","label":"Uni"},
-{"text":"präsentation fertig machen für arbeit","label":"Arbeit"},
-{"text":"kino abend planen mit freunden","label":"Freizeit"},
-{"text":"zahnarzt termin ausmachn zur kontrolle","label":"Gesundheit"},
-{"text":"miete überweisen und prüfen ob alles passt","label":"Organisatorisches"},
-{"text":"lebensmittel einkaufen gemüse und obst","label":"Haushalt"},
-{"text":"übungsblatt rechnen und lösung checken","label":"Uni"},
-{"text":"team meeting organisiern und zeit finden","label":"Arbeit"},
-{"text":"geburtstagsgeschenk kaufn und einpackn","label":"Freizeit"},
-{"text":"bluttest termin vereinbarn beim arzt","label":"Gesundheit"},
-{"text":"unterlagen fürs amt zusammensuchn","label":"Organisatorisches"},
-{"text":"küche aufräum und geschirr spüln","label":"Haushalt"},
-{"text":"vorlesung besuchn und mitschreibn","label":"Uni"},
-{"text":"bericht lesen und feedback gebn","label":"Arbeit"},
-{"text":"wochenend trip plan und hotel suchn","label":"Freizeit"},
-{"text":"medikamente regelmäßig nehmn nicht vergessn","label":"Gesundheit"},
-{"text":"rechnung bezahln und abspeichern","label":"Organisatorisches"},
-{"text":"kühlschrank aufräumen alte sachen weg","label":"Haushalt"},
-{"text":"referat vorbereitn und folien machn","label":"Uni"},
-{"text":"excel liste updaten und daten einpflegn","label":"Arbeit"},
-{"text":"bar abend mit freunden organisiern","label":"Freizeit"},
-{"text":"arzttermin verschiebn wegen zeit","label":"Gesundheit"},
-{"text":"versicherung vergleichn und angebote anschaun","label":"Organisatorisches"},
-{"text":"boden wischn und staubsaugn danach","label":"Haushalt"},
-{"text":"prüfung anmeldn bevor frist vorbei","label":"Uni"},
-{"text":"angebot prüfn und kunden antwortn","label":"Arbeit"},
-{"text":"yoga kurs buchn für nächsten monat","label":"Freizeit"},
-{"text":"krankschreibung holn beim arzt","label":"Gesundheit"},
-{"text":"frist im kalender eintragn und remindr","label":"Organisatorisches"},
-{"text":"brot backn und zutaten kaufn","label":"Haushalt"},
-{"text":"seminararbeit strukturiern und plan machn","label":"Uni"},
-{"text":"telefonkonferenz vorbereitn und notizen","label":"Arbeit"},
-{"text":"shoppen gehn nach neuen schuhn","label":"Freizeit"},
-{"text":"apotheke gehn wegen erkältung medis","label":"Gesundheit"},
-{"text":"bank anrufn wegen abbuchung klärn","label":"Organisatorisches"},
-{"text":"müll rausbringn und trennung checkn","label":"Haushalt"},
-{"text":"lerngruppe organisiern und termin findn","label":"Uni"},
-{"text":"report fertig machn und abschickn","label":"Arbeit"},
-{"text":"date plan und ort aussuchn","label":"Freizeit"},
-{"text":"check up termin beim arzt machn","label":"Gesundheit"},
-{"text":"dokumente scannn und speichrn","label":"Organisatorisches"},
-{"text":"spülmaschine ausräum und neu einräum","label":"Haushalt"},
-{"text":"skript lesn und markieren wichtige sachen","label":"Uni"},
-{"text":"kundentermin vorbereitn und fragen notiern","label":"Arbeit"},
-{"text":"sport machn im gym heute","label":"Freizeit"},
-{"text":"arzt anrufn und termin ausmachn","label":"Gesundheit"},
-{"text":"vertrag unterschreibn und zurück schickn","label":"Organisatorisches"},
-{"text":"einkaufsliste schreibn für supermarkt","label":"Haushalt"},
-{"text":"übungen wiederholn für klausur","label":"Uni"},
-{"text":"projekt plan und aufgaben verteilen","label":"Arbeit"},
-{"text":"café treffn mit freundin organisiern","label":"Freizeit"},
-{"text":"rezept verlängern lassn beim arzt","label":"Gesundheit"},
-{"text":"antrag stelln und unterlagen anhängn","label":"Organisatorisches"},
-{"text":"ofen sauber machn weil dreckig","label":"Haushalt"},
-{"text":"vorlesung nochmal anschau und zusammenfassn","label":"Uni"},
-{"text":"meeting verschiebn und neuen termin","label":"Arbeit"},
-{"text":"wandern gehn am wochenend plan","label":"Freizeit"},
-{"text":"arzttermin wahrnehm und fragen vorbereitn","label":"Gesundheit"},
-{"text":"steuerkram sortiern und abheftn","label":"Organisatorisches"},
-{"text":"wäsche aufhängn und trockn lassn","label":"Haushalt"},
-{"text":"projekt abgebn vor deadline","label":"Uni"},
-{"text":"bericht schreibn und formatiern","label":"Arbeit"},
-{"text":"party organisiern und gäste listn","label":"Freizeit"},
-{"text":"vitamine kaufn und regelmäsig nehmn","label":"Gesundheit"},
-{"text":"abo kündign und bestätign prüfn","label":"Organisatorisches"},
-{"text":"geschirr spüln und küche sauber machn","label":"Haushalt"},
-{"text":"prüfung lern und notizen machn","label":"Uni"},
-{"text":"mail an chef schreibn wegen urlaub","label":"Arbeit"},
-{"text":"museum besuchn am sonntag","label":"Freizeit"},
-{"text":"arzt wechsel und neuen suchn","label":"Gesundheit"},
-{"text":"kontoauszug prüfn und ausgabn checkn","label":"Organisatorisches"},
-{"text":"tee und kaffee nachkaufn","label":"Haushalt"},
-{"text":"literatur suchn für seminararbeit","label":"Uni"},
-{"text":"taskliste updaten und priorität setzn","label":"Arbeit"},
-{"text":"spaziergang machn im park","label":"Freizeit"},
-{"text":"blutwerte checkn lassn beim arzt","label":"Gesundheit"},
-{"text":"frist verlängern beantragn","label":"Organisatorisches"},
-{"text":"wohnung komplett durchputzn","label":"Haushalt"},
-{"text":"gruppe treffn und projekt besprechn","label":"Uni"},
-{"text":"telefonat mit kunden führn und notiern","label":"Arbeit"},
-{"text":"kino tickets buchn für freitag","label":"Freizeit"},
-{"text":"arztbericht abholn und lesn","label":"Gesundheit"},
-{"text":"post erledign und briefe beantortn","label":"Organisatorisches"},
-{"text":"arzt ding ausmachen wegen kopf aua","label":"Gesundheit"},
-{"text":"kurz einkaufen gehn brot milch und so","label":"Haushalt"},
-{"text":"uni zeug bissl nachholen heute","label":"Uni"},
-{"text":"kurz meeting prep machen für morgen","label":"Arbeit"},
-{"text":"rechnung fix überweisen sonst stress","label":"Organisatorisches"},
-{"text":"heute abend mit leuten chilln gehen","label":"Freizeit"},
-{"text":"küche is chaos muss ich mal machen","label":"Haushalt"},
-{"text":"lern noch bisschen für klausur","label":"Uni"},
-{"text":"dem chef kurz schreiben wegen schicht","label":"Arbeit"},
-{"text":"bissl shoppen gehn neue fits checken","label":"Freizeit"},
-{"text":"medis holn apotheke nicht vergessn","label":"Gesundheit"},
-{"text":"vertrag checkn kp ob das passt","label":"Organisatorisches"},
-{"text":"wäsche machen ist echt überfällig","label":"Haushalt"},
-{"text":"vorlesung eig nochmal anschaun","label":"Uni"},
-{"text":"call gleich nicht vergessn","label":"Arbeit"},
-{"text":"kino oder so heute mal schaun","label":"Freizeit"},
-{"text":"arzt kurz anrufn wegen termin","label":"Gesundheit"},
-{"text":"bank ding klärn wegen abbuchung","label":"Organisatorisches"},
-{"text":"müll runter bringen nervt aber muss","label":"Haushalt"},
-{"text":"uni stuff sortiern chaos grad","label":"Uni"},
-{"text":"task noch fertig machen heute","label":"Arbeit"},
-{"text":"abends bar gehen mit leuten","label":"Freizeit"},
-{"text":"check up machen lassen irgendwann mal","label":"Gesundheit"},
-{"text":"post zeug erledign voll viel liegen","label":"Organisatorisches"},
-{"text":"spülmaschine ist voll ausräum halt","label":"Haushalt"},
-{"text":"hausarbeit eig anfangen lol","label":"Uni"},
-{"text":"meeting war verschiebn oder so","label":"Arbeit"},
-{"text":"date plan kp wohin","label":"Freizeit"},
-{"text":"arzttermin verschiebn passt grad nicht","label":"Gesundheit"},
-{"text":"versicherung zeug mal durchgehen","label":"Organisatorisches"},
-{"text":"boden saugen wär mal nötig","label":"Haushalt"},
-{"text":"übungen noch machen sonst verkack ich","label":"Uni"},
-{"text":"mail noch rausschickn schnell","label":"Arbeit"},
-{"text":"mit freunden chilln bisschen","label":"Freizeit"},
-{"text":"tabletten nehmn nicht wieder vergessn","label":"Gesundheit"},
-{"text":"rechnung zahlen bevor mahnung kommt","label":"Organisatorisches"},
-{"text":"kühlschrank ist echt leer einkaufen","label":"Haushalt"},
-{"text":"lern gruppe treffen wär eig gut","label":"Uni"},
-{"text":"bericht noch fix fertig machen","label":"Arbeit"},
-{"text":"shopping mall gehn bisschen bummeln","label":"Freizeit"},
-{"text":"arzt wechseln der nervt irgendwie","label":"Gesundheit"},
-{"text":"antrag stellen aber kein bock","label":"Organisatorisches"},
-{"text":"geschirr stapelt sich muss weg","label":"Haushalt"},
-{"text":"vorlesung skip oder hingehen mal schaun","label":"Uni"},
-{"text":"kunden call gleich vorbereitn","label":"Arbeit"},
-{"text":"sport machen wär eig schlau","label":"Freizeit"},
-{"text":"rezept holn sonst keine medis","label":"Gesundheit"},
-{"text":"frist safe im kalender eintragen","label":"Organisatorisches"},
-{"text":"wäsche aufhängn sonst müffelt alles","label":"Haushalt"},
-{"text":"prüfung anmelden nicht verpeiln","label":"Uni"},
-{"text":"taskliste mal ordnen alles durcheinander","label":"Arbeit"},
-{"text":"kino tickets buchn sonst ausverkauft","label":"Freizeit"},
-{"text":"arztbericht abholn irgendwann","label":"Gesundheit"},
-{"text":"vertrag unterschreibn und abschickn","label":"Organisatorisches"},
-{"text":"nudeln kaufen hab nix mehr da","label":"Haushalt"},
-{"text":"skript lesn aber so null bock","label":"Uni"},
-{"text":"meeting gleich los nicht verpenn","label":"Arbeit"},
-{"text":"party planen wird wild","label":"Freizeit"},
-{"text":"blutwerte checkn lassen vllt","label":"Gesundheit"},
-{"text":"konto checkn wo geld hin ist","label":"Organisatorisches"},
-{"text":"ofen sauber machen richtig dreckig","label":"Haushalt"},
-{"text":"referat vorbereitn noch schnell","label":"Uni"},
-{"text":"report abschickn bevor chef fragt","label":"Arbeit"},
-{"text":"café chilln mit freundin","label":"Freizeit"},
-{"text":"arzt anrufn results fragen","label":"Gesundheit"},
-{"text":"steuer zeug sortiern kein plan","label":"Organisatorisches"},
-{"text":"putzen allgemein alles bisschen","label":"Haushalt"},
-{"text":"lernen heute echt durchziehenn","label":"Uni"},
-{"text":"kollegen schreiben wegen schicht","label":"Arbeit"},
-{"text":"wandern gehen wär nice","label":"Freizeit"},
-{"text":"krankschreibung holn falls nötig","label":"Gesundheit"},
-{"text":"abo kündign sonst zahl ich weiter","label":"Organisatorisches"},
-{"text":"einkaufsliste machen sonst vergess ich alles","label":"Haushalt"},
-{"text":"projekt abgebn nicht verkacken","label":"Uni"},
-{"text":"angebot checkn und antworten","label":"Arbeit"},
-{"text":"bar abend planen bisschen","label":"Freizeit"},
-{"text":"arzttermin wahrnehm nicht skippen","label":"Gesundheit"},
-{"text":"unterlagen abschickn endlich mal","label":"Organisatorisches"},
-{"text":"azrt termin ausmacehn wegen kopf","label":"Gesundheit"},
-{"text":"einkafuen gehen milch brot holen","label":"Haushalt"},
-{"text":"vrolseung nacharbieten und notzien","label":"Uni"},
-{"text":"meteing vorberieten für morgen","label":"Arbeit"},
-{"text":"rechnugn überweisen und kont chekcn","label":"Organisatorisches"},
-{"text":"mit freunden cihllen heute abend","label":"Freizeit"},
-{"text":"küche aufräumen ist völilg chaos","label":"Haushalt"},
-{"text":"lenern für klausru noch","label":"Uni"},
-{"text":"chfe anschirebn wegen schciht","label":"Arbeit"},
-{"text":"shoppen gehen neue klamotetn","label":"Freizeit"},
-{"text":"medikamente holne in apothkee","label":"Gesundheit"},
-{"text":"vertarg durchlseen und prfüen","label":"Organisatorisches"},
-{"text":"wäcshe waschen und aufhägnen","label":"Haushalt"},
-{"text":"vroleusng nochmal anschaun","label":"Uni"},
-{"text":"clal gleich nicht vergssen","label":"Arbeit"},
-{"text":"kino abend vlllt heute","label":"Freizeit"},
-{"text":"arzt anrufne wegen tremin","label":"Gesundheit"},
-{"text":"bank anrufne wegen abbucuhng","label":"Organisatorisches"},
-{"text":"müll runter brignen nervt","label":"Haushalt"},
-{"text":"uni stff sorteirn ist chaos","label":"Uni"},
-{"text":"tasl noch fertig mahcen","label":"Arbeit"},
-{"text":"bar abend mit freunden gehne","label":"Freizeit"},
-{"text":"check up beim azrt irgnedwann","label":"Gesundheit"},
-{"text":"post erledigne viel liegn","label":"Organisatorisches"},
-{"text":"spülmsachine ausräuemn","label":"Haushalt"},
-{"text":"hausabrbeit anfangen irgnedwie","label":"Uni"},
-{"text":"meteing vershcieben oder so","label":"Arbeit"},
-{"text":"dtae plan kp wohin","label":"Freizeit"},
-{"text":"arzttermni vershcieben passt nicht","label":"Gesundheit"},
-{"text":"versciherung zeug durhcgheen","label":"Organisatorisches"},
-{"text":"boden saugenn wäre mal nötig","label":"Haushalt"},
-{"text":"übungen mahcen sonst verkacik","label":"Uni"},
-{"text":"mail rauscshciken shcnell","label":"Arbeit"},
-{"text":"mit freunden chllien bisschen","label":"Freizeit"},
-{"text":"tablletten nehmen nicht vergesen","label":"Gesundheit"},
-{"text":"rechnugn zahlen vor mahnung","label":"Organisatorisches"},
-{"text":"kühlscahrnk leer einkaufen","label":"Haushalt"},
-{"text":"lren gruppe trefefn wär gut","label":"Uni"},
-{"text":"bericht fix fertig amchen","label":"Arbeit"},
-{"text":"shopping mall gehn bummeln","label":"Freizeit"},
-{"text":"arzt wechslen der nervt","label":"Gesundheit"},
-{"text":"anrtag stellen kein bock","label":"Organisatorisches"},
-{"text":"geschrir spülen stapelt sich","label":"Haushalt"},
-{"text":"vroleusng skip oder gehn","label":"Uni"},
-{"text":"kunden clal vorbereiten","label":"Arbeit"},
-{"text":"sport mahcen wär shclau","label":"Freizeit"},
-{"text":"rezept holne sonst keine medis","label":"Gesundheit"},
-{"text":"frist eintrgaen kalnder","label":"Organisatorisches"},
-{"text":"wäsche aufhägnen sonst müffelt","label":"Haushalt"},
-{"text":"prüufng anmelden nicht verpeiln","label":"Uni"},
-{"text":"tasklsite ordnen alles durcheinander","label":"Arbeit"},
-{"text":"kino ticetks buchen sonst weg","label":"Freizeit"},
-{"text":"arztberciht abholne irgnedwann","label":"Gesundheit"},
-{"text":"vertarg unterscihrebn abschciken","label":"Organisatorisches"},
-{"text":"nudlen kaufen nix mehr da","label":"Haushalt"},
-{"text":"skrpit lesen null bock","label":"Uni"},
-{"text":"meteing gleich los nicht verpenn","label":"Arbeit"},
-{"text":"patry planen wird wild","label":"Freizeit"},
-{"text":"blutewrte checken lassn","label":"Gesundheit"},
-{"text":"konto chekcne wo geld hin","label":"Organisatorisches"},
-{"text":"ofen sauber mahcen dreckig","label":"Haushalt"},
-{"text":"referat vorberieten shcnell","label":"Uni"},
-{"text":"report abscihcken bevor chef fragt","label":"Arbeit"},
-{"text":"café chllen mit freundin","label":"Freizeit"},
-{"text":"arzt anrufne results frgaen","label":"Gesundheit"},
-{"text":"steeuer zeug sorteirn kp","label":"Organisatorisches"},
-{"text":"putzen algemein alles bisscehn","label":"Haushalt"},
-{"text":"lneren heute durhciehn","label":"Uni"},
-{"text":"kollegen schirebn wegen schciht","label":"Arbeit"},
-{"text":"wandern gehn wär ncie","label":"Freizeit"},
-{"text":"krankschriebugn holne falls nötig","label":"Gesundheit"},
-{"text":"abo kündign sonst zahl ich","label":"Organisatorisches"},
-{"text":"einkaufslist machen sonst vergesse","label":"Haushalt"},
-{"text":"projekt abgeben nicht verkcakn","label":"Uni"},
-{"text":"angebot checkne und antowrten","label":"Arbeit"},
-{"text":"bar abned planen bisscehn","label":"Freizeit"},
-{"text":"arzttermni wahrnehemen nicht skippen","label":"Gesundheit"},
-{"text":"unteralgen abschciken endlcih","label":"Organisatorisches"},
-{"text":"azrt","label":"Gesundheit"},
-{"text":"einkafuen","label":"Haushalt"},
-{"text":"vrolseung","label":"Uni"},
-{"text":"meteing","label":"Arbeit"},
-{"text":"rechnugn","label":"Organisatorisches"},
-{"text":"chillen","label":"Freizeit"},
-{"text":"küche","label":"Haushalt"},
-{"text":"lneren","label":"Uni"},
-{"text":"clal","label":"Arbeit"},
-{"text":"shoppen","label":"Freizeit"},
-{"text":"apothkee","label":"Gesundheit"},
-{"text":"vertarg","label":"Organisatorisches"},
-{"text":"wäcshe","label":"Haushalt"},
-{"text":"skrpit","label":"Uni"},
-{"text":"mailn","label":"Arbeit"},
-{"text":"kino","label":"Freizeit"},
-{"text":"arzt","label":"Gesundheit"},
-{"text":"bank","label":"Organisatorisches"},
-{"text":"müll","label":"Haushalt"},
-{"text":"uni","label":"Uni"},
-{"text":"tasl","label":"Arbeit"},
-{"text":"bar","label":"Freizeit"},
-{"text":"checkup","label":"Gesundheit"},
-{"text":"post","label":"Organisatorisches"},
-{"text":"spülmsachine","label":"Haushalt"},
-{"text":"hausabrbeit","label":"Uni"},
-{"text":"report","label":"Arbeit"},
-{"text":"dtae","label":"Freizeit"},
-{"text":"medis","label":"Gesundheit"},
-{"text":"anrtag","label":"Organisatorisches"},
-{"text":"boden","label":"Haushalt"},
-{"text":"prüufng","label":"Uni"},
-{"text":"tasklsite","label":"Arbeit"},
-{"text":"party","label":"Freizeit"},
-{"text":"blutewrte","label":"Gesundheit"},
-{"text":"konto","label":"Organisatorisches"},
-{"text":"ofen","label":"Haushalt"},
-{"text":"referat","label":"Uni"},
-{"text":"kundne","label":"Arbeit"},
-{"text":"sport","label":"Freizeit"},
-{"text":"rezept","label":"Gesundheit"},
-{"text":"frist","label":"Organisatorisches"},
-{"text":"kühlscahrnk","label":"Haushalt"},
-{"text":"gruppe","label":"Uni"},
-{"text":"angebot","label":"Arbeit"},
-{"text":"wandern","label":"Freizeit"},
-{"text":"arzttermni","label":"Gesundheit"},
-{"text":"steeuer","label":"Organisatorisches"},
-{"text":"putzen","label":"Haushalt"},
-{"text":"lren","label":"Uni"},
-{"text":"clinet","label":"Arbeit"},
-{"text":"café","label":"Freizeit"},
-{"text":"krankschriebugn","label":"Gesundheit"},
-{"text":"abo","label":"Organisatorisches"},
-{"text":"arzt termin machen wegen rückenschmerzen","label":"Gesundheit"},
-{"text":"einkaufen gehen für die nächsten tage","label":"Haushalt"},
-{"text":"vorlesung nacharbeiten und notizen ergänzen","label":"Uni"},
-{"text":"meeting vorbereiten und agenda schreiben","label":"Arbeit"},
-{"text":"rechnung bezahlen und im ordner ablegen","label":"Organisatorisches"},
-{"text":"mit freunden essen gehen heute abend","label":"Freizeit"},
-{"text":"bad putzen und handtücher wechseln","label":"Haushalt"},
-{"text":"hausarbeit weiterschreiben und struktur prüfen","label":"Uni"},
-{"text":"kundenmail beantworten und dokument anhängen","label":"Arbeit"},
-{"text":"neue klamotten online bestellen für sommer","label":"Freizeit"},
-{"text":"rezept einlösen und medikamente abholen","label":"Gesundheit"},
-{"text":"vertrag durchlesen und wichtige punkte markieren","label":"Organisatorisches"},
-{"text":"wäsche waschen und danach zusammenlegen","label":"Haushalt"},
-{"text":"lernplan erstellen für die kommende woche","label":"Uni"},
-{"text":"präsentation fertig machen und folien prüfen","label":"Arbeit"},
-{"text":"kinoabend planen und tickets buchen","label":"Freizeit"},
-{"text":"zahnarzt termin vereinbaren zur kontrolle","label":"Gesundheit"},
-{"text":"miete überweisen und konto überprüfen","label":"Organisatorisches"},
-{"text":"lebensmittel einkaufen für frühstück und abendessen","label":"Haushalt"},
-{"text":"übungsblatt bearbeiten und lösungen vergleichen","label":"Uni"},
-{"text":"teammeeting organisieren und termine abstimmen","label":"Arbeit"},
-{"text":"geburtstagsgeschenk besorgen und verpacken","label":"Freizeit"},
-{"text":"bluttest termin vereinbaren beim arzt","label":"Gesundheit"},
-{"text":"unterlagen sortieren und an behörde schicken","label":"Organisatorisches"},
-{"text":"küche aufräumen und geschirr spülen","label":"Haushalt"},
-{"text":"vorlesung besuchen und wichtige punkte notieren","label":"Uni"},
-{"text":"bericht lesen und feedback geben","label":"Arbeit"},
-{"text":"wochenendtrip planen und unterkunft buchen","label":"Freizeit"},
-{"text":"medikamente regelmäßig nehmen und erinnern","label":"Gesundheit"},
-{"text":"rechnung prüfen und überweisen","label":"Organisatorisches"},
-{"text":"kühlschrank aufräumen und alte sachen entsorgen","label":"Haushalt"},
-{"text":"referat vorbereiten und quellen sammeln","label":"Uni"},
-{"text":"excel liste aktualisieren und daten eintragen","label":"Arbeit"},
-{"text":"abends in eine bar gehen","label":"Freizeit"},
-{"text":"arzttermin verschieben und neuen termin finden","label":"Gesundheit"},
-{"text":"versicherung vergleichen und angebote prüfen","label":"Organisatorisches"},
-{"text":"boden wischen und staubsaugen","label":"Haushalt"},
-{"text":"prüfung anmelden vor ablauf der frist","label":"Uni"},
-{"text":"angebot prüfen und antwort an kunden schreiben","label":"Arbeit"},
-{"text":"yoga kurs buchen für nächsten monat","label":"Freizeit"},
-{"text":"krankschreibung beim arzt abholen","label":"Gesundheit"},
-{"text":"frist im kalender eintragen und erinnern setzen","label":"Organisatorisches"},
-{"text":"brot backen und zutaten besorgen","label":"Haushalt"},
-{"text":"seminararbeit strukturieren und gliederung schreiben","label":"Uni"},
-{"text":"telefonkonferenz vorbereiten und unterlagen sammeln","label":"Arbeit"},
-{"text":"shopping gehen und neue schuhe suchen","label":"Freizeit"},
-{"text":"apotheke besuchen und salbe kaufen","label":"Gesundheit"},
-{"text":"bank anrufen und abbuchung klären","label":"Organisatorisches"},
-{"text":"müll rausbringen und trennung beachten","label":"Haushalt"},
-{"text":"lerngruppe organisieren und termin finden","label":"Uni"},
-{"text":"report fertigstellen und abschicken","label":"Arbeit"},
-{"text":"date planen und ort auswählen","label":"Freizeit"},
-{"text":"check up beim arzt vereinbaren","label":"Gesundheit"},
-{"text":"dokumente scannen und speichern","label":"Organisatorisches"},
-{"text":"spülmaschine ausräumen und einräumen","label":"Haushalt"},
-{"text":"skript lesen und wichtige stellen markieren","label":"Uni"},
-{"text":"kundentermin vorbereiten und fragen notieren","label":"Arbeit"},
-{"text":"sport machen im fitnessstudio","label":"Freizeit"},
-{"text":"arzt anrufen und ergebnisse erfragen","label":"Gesundheit"},
-{"text":"vertrag unterschreiben und abschicken","label":"Organisatorisches"},
-{"text":"einkaufsliste schreiben für supermarkt","label":"Haushalt"},
-{"text":"übungen wiederholen für die klausur","label":"Uni"},
-{"text":"projekt planen und aufgaben verteilen","label":"Arbeit"},
-{"text":"café treffen mit freundin organisieren","label":"Freizeit"},
-{"text":"rezept verlängern lassen beim arzt","label":"Gesundheit"},
-{"text":"antrag stellen und dokumente anhängen","label":"Organisatorisches"},
-{"text":"ofen reinigen und sauber machen","label":"Haushalt"},
-{"text":"vorlesung nacharbeiten und zusammenfassung schreiben","label":"Uni"},
-{"text":"meeting verschieben und neuen termin abstimmen","label":"Arbeit"},
-{"text":"wandern gehen am wochenende planen","label":"Freizeit"},
-{"text":"arzttermin wahrnehmen und fragen vorbereiten","label":"Gesundheit"},
-{"text":"steuerunterlagen sortieren und ablegen","label":"Organisatorisches"},
-{"text":"wäsche aufhängen und trocknen lassen","label":"Haushalt"},
-{"text":"projekt abgeben vor der deadline","label":"Uni"},
-{"text":"bericht schreiben und formatieren","label":"Arbeit"},
-{"text":"party organisieren und gäste einladen","label":"Freizeit"},
-{"text":"vitamine kaufen und regelmäßig nehmen","label":"Gesundheit"},
-{"text":"abo kündigen und bestätigung prüfen","label":"Organisatorisches"},
-{"text":"geschirr spülen und küche aufräumen","label":"Haushalt"},
-{"text":"prüfung lernen und notizen machen","label":"Uni"},
-{"text":"mail an chef schreiben wegen urlaub","label":"Arbeit"},
-{"text":"museum besuchen am sonntag","label":"Freizeit"},
-{"text":"arzt wechseln und neuen termin machen","label":"Gesundheit"},
-{"text":"kontoauszug prüfen und ausgaben kontrollieren","label":"Organisatorisches"},
-{"text":"tee und kaffee nachkaufen","label":"Haushalt"},
-{"text":"literatur suchen für seminararbeit","label":"Uni"},
-{"text":"taskliste aktualisieren und prioritäten setzen","label":"Arbeit"},
-{"text":"spaziergang im park machen","label":"Freizeit"},
-{"text":"blutwerte beim arzt prüfen lassen","label":"Gesundheit"},
-{"text":"frist verlängern beantragen","label":"Organisatorisches"},
-{"text":"arzt termin machen wegen rücken","label":"Gesundheit"},
-{"text":"einkaufen gehen für die woche","label":"Haushalt"},
-{"text":"vorlesung nacharbeiten und notizen machen","label":"Uni"},
-{"text":"meeting vorbereiten und agenda schreiben","label":"Arbeit"},
-{"text":"rechnung bezahlen und ablegen","label":"Organisatorisches"},
-{"text":"mit freunden essen gehen","label":"Freizeit"},
-{"text":"bad putzen und sauber machen","label":"Haushalt"},
-{"text":"hausarbeit weiterschreiben und prüfen","label":"Uni"},
-{"text":"kundenmail beantworten und schicken","label":"Arbeit"},
-{"text":"neue klamotten bestellen online","label":"Freizeit"},
-{"text":"rezept einlösen und medis holen","label":"Gesundheit"},
-{"text":"vertrag durchlesen und prüfen","label":"Organisatorisches"},
-{"text":"wäsche waschen und aufhängen","label":"Haushalt"},
-{"text":"lernplan machen für nächste woche","label":"Uni"},
-{"text":"präsentation fertig machen","label":"Arbeit"},
-{"text":"kinoabend planen und tickets holen","label":"Freizeit"},
-{"text":"zahnarzt termin vereinbaren","label":"Gesundheit"},
-{"text":"miete überweisen und checken","label":"Organisatorisches"},
-{"text":"lebensmittel einkaufen für zuhause","label":"Haushalt"},
-{"text":"übungsblatt machen und vergleichen","label":"Uni"},
-{"text":"teammeeting organisieren und planen","label":"Arbeit"},
-{"text":"geschenk besorgen und verpacken","label":"Freizeit"},
-{"text":"bluttest termin beim arzt machen","label":"Gesundheit"},
-{"text":"unterlagen sortieren und schicken","label":"Organisatorisches"},
-{"text":"küche aufräumen und spülen","label":"Haushalt"},
-{"text":"vorlesung besuchen und notieren","label":"Uni"},
-{"text":"bericht lesen und feedback geben","label":"Arbeit"},
-{"text":"trip planen und hotel buchen","label":"Freizeit"},
-{"text":"medikamente nehmen und erinnern","label":"Gesundheit"},
-{"text":"rechnung prüfen und zahlen","label":"Organisatorisches"},
-{"text":"kühlschrank aufräumen und sauber machen","label":"Haushalt"},
-{"text":"referat vorbereiten und quellen suchen","label":"Uni"},
-{"text":"excel liste updaten","label":"Arbeit"},
-{"text":"abends in bar gehen","label":"Freizeit"},
-{"text":"arzttermin verschieben und neu machen","label":"Gesundheit"},
-{"text":"versicherung vergleichen und prüfen","label":"Organisatorisches"},
-{"text":"boden wischen und saugen","label":"Haushalt"},
-{"text":"prüfung anmelden vor frist","label":"Uni"},
-{"text":"angebot prüfen und antworten","label":"Arbeit"},
-{"text":"yoga kurs buchen","label":"Freizeit"},
-{"text":"krankschreibung beim arzt holen","label":"Gesundheit"},
-{"text":"frist eintragen und erinnern","label":"Organisatorisches"},
-{"text":"brot backen und zutaten holen","label":"Haushalt"},
-{"text":"seminararbeit strukturieren","label":"Uni"},
-{"text":"telefonkonferenz vorbereiten","label":"Arbeit"},
-{"text":"shoppen gehen und schuhe suchen","label":"Freizeit"},
-{"text":"apotheke gehen und salbe holen","label":"Gesundheit"},
-{"text":"bank anrufen und klären","label":"Organisatorisches"},
-{"text":"müll rausbringen und trennen","label":"Haushalt"},
-{"text":"lerngruppe organisieren","label":"Uni"},
-{"text":"report fertig machen","label":"Arbeit"},
-{"text":"date planen und ort wählen","label":"Freizeit"},
-{"text":"check up beim arzt machen","label":"Gesundheit"},
-{"text":"dokumente scannen und speichern","label":"Organisatorisches"},
-{"text":"spülmaschine ausräumen","label":"Haushalt"},
-{"text":"skript lesen und markieren","label":"Uni"},
-{"text":"kundentermin vorbereiten","label":"Arbeit"},
-{"text":"sport machen im gym","label":"Freizeit"},
-{"text":"arzt anrufen und fragen","label":"Gesundheit"},
-{"text":"vertrag unterschreiben","label":"Organisatorisches"},
-{"text":"einkaufsliste schreiben","label":"Haushalt"},
-{"text":"übungen wiederholen","label":"Uni"},
-{"text":"projekt planen und verteilen","label":"Arbeit"},
-{"text":"café treffen organisieren","label":"Freizeit"},
-{"text":"rezept verlängern lassen","label":"Gesundheit"},
-{"text":"antrag stellen und anhängen","label":"Organisatorisches"},
-{"text":"ofen reinigen","label":"Haushalt"},
-{"text":"vorlesung nacharbeiten","label":"Uni"},
-{"text":"meeting verschieben","label":"Arbeit"},
-{"text":"wandern gehen planen","label":"Freizeit"},
-{"text":"arzttermin wahrnehmen","label":"Gesundheit"},
-{"text":"steuerunterlagen sortieren","label":"Organisatorisches"},
-{"text":"wäsche aufhängen","label":"Haushalt"},
-{"text":"projekt abgeben","label":"Uni"},
-{"text":"bericht schreiben","label":"Arbeit"},
-{"text":"party organisieren","label":"Freizeit"},
-{"text":"vitamine kaufen und nehmen","label":"Gesundheit"},
-{"text":"abo kündigen","label":"Organisatorisches"}
+  {
+    "text": "bank anrufn",
+    "label": "Organisatorisches"
+  },
+  {
+    "text": "vertrag unterschreiben und per post zurück senden",
+    "label": "Organisatorisches"
+  },
+  {
+    "text": "wäsche aufhängen und danach zusammenlegen",
+    "label": "Haushalt"
+  },
+  {
+    "text": "allergietabletten kaufen",
+    "label": "Gesundheit"
+  },
+  {
+    "text": "excel liste machen",
+    "label": "Arbeit"
+  },
+  {
+    "text": "angebot prüfen",
+    "label": "Arbeit"
+  },
+  {
+    "text": "café treffn mit freundin organisiern",
+    "label": "Freizeit"
+  },
+  {
+    "text": "vorlesung nacharbeien und notizen ordnen",
+    "label": "Uni"
+  },
+  {
+    "text": "medikamente für erkältung holen",
+    "label": "Gesundheit"
+  },
+  {
+    "text": "krankschreibung holn falls nötig",
+    "label": "Gesundheit"
+  },
+  {
+    "text": "versicherung vergleichen und prüfen",
+    "label": "Organisatorisches"
+  },
+  {
+    "text": "vertrag check",
+    "label": "Organisatorisches"
+  },
+  {
+    "text": "bar abend mit freunden organisiern",
+    "label": "Freizeit"
+  },
+  {
+    "text": "vorlesung eig nochmal anschaun",
+    "label": "Uni"
+  },
+  {
+    "text": "hausarbeit abgeben",
+    "label": "Uni"
+  },
+  {
+    "text": "vrolseung nacharbieten und notzien",
+    "label": "Uni"
+  },
+  {
+    "text": "bank anrufn wegen abbuchung klärn",
+    "label": "Organisatorisches"
+  },
+  {
+    "text": "spaziergang im park machen zum entspannen",
+    "label": "Freizeit"
+  },
+  {
+    "text": "physio termin",
+    "label": "Gesundheit"
+  },
+  {
+    "text": "literatur recherchieren für seminararbeit",
+    "label": "Uni"
+  },
+  {
+    "text": "nudeln",
+    "label": "Haushalt"
+  },
+  {
+    "text": "handyvertrag abschließen",
+    "label": "Organisatorisches"
+  },
+  {
+    "text": "amt termin vereinbaren",
+    "label": "Organisatorisches"
+  },
+  {
+    "text": "vroleusng skip oder gehn",
+    "label": "Uni"
+  },
+  {
+    "text": "skript",
+    "label": "Uni"
+  },
+  {
+    "text": "rezept verlängern lassen beim hausarzt",
+    "label": "Gesundheit"
+  },
+  {
+    "text": "stromrechnung checken",
+    "label": "Organisatorisches"
+  },
+  {
+    "text": "telefonkonferenz vorbereiten und unterlagen sammeln",
+    "label": "Arbeit"
+  },
+  {
+    "text": "lren gruppe trefefn wär gut",
+    "label": "Uni"
+  },
+  {
+    "text": "nasenspray aus apotheke kaufen",
+    "label": "Gesundheit"
+  },
+  {
+    "text": "bar abend planen bisschen",
+    "label": "Freizeit"
+  },
+  {
+    "text": "geschrir spülen stapelt sich",
+    "label": "Haushalt"
+  },
+  {
+    "text": "projekt rechtzeitig abgeben und alles prüfen",
+    "label": "Uni"
+  },
+  {
+    "text": "taskliste mal ordnen alles durcheinander",
+    "label": "Arbeit"
+  },
+  {
+    "text": "tee kaufen",
+    "label": "Haushalt"
+  },
+  {
+    "text": "kurz einkaufen gehn brot milch und so",
+    "label": "Haushalt"
+  },
+  {
+    "text": "tasl noch fertig mahcen",
+    "label": "Arbeit"
+  },
+  {
+    "text": "müll runter brignen nervt",
+    "label": "Haushalt"
+  },
+  {
+    "text": "telefonkonferenz vorbereiten und unterlagen bereitlegen",
+    "label": "Arbeit"
+  },
+  {
+    "text": "lernen kurz",
+    "label": "Uni"
+  },
+  {
+    "text": "prüfung lern",
+    "label": "Uni"
+  },
+  {
+    "text": "versicherungspapiere sortieren und wichtige dokumente abheften",
+    "label": "Organisatorisches"
+  },
+  {
+    "text": "boden wischen und saugen",
+    "label": "Haushalt"
+  },
+  {
+    "text": "dokumente einscannen und ordentlich abspeichern",
+    "label": "Organisatorisches"
+  },
+  {
+    "text": "drucker fürs büro kaufn",
+    "label": "Organisatorisches"
+  },
+  {
+    "text": "zahnarzt termin ausmachen zur kontrolle",
+    "label": "Gesundheit"
+  },
+  {
+    "text": "arztbericht abholen und alles durchlesen",
+    "label": "Gesundheit"
+  },
+  {
+    "text": "steuer zeug sortiern kein plan",
+    "label": "Organisatorisches"
+  },
+  {
+    "text": "prüfung",
+    "label": "Uni"
+  },
+  {
+    "text": "meeting prep",
+    "label": "Arbeit"
+  },
+  {
+    "text": "arzttermin vereinbaren weil die knieschmerzen nicht besser werden seit tagen",
+    "label": "Gesundheit"
+  },
+  {
+    "text": "clal",
+    "label": "Arbeit"
+  },
+  {
+    "text": "krankschriebugn holne falls nötig",
+    "label": "Gesundheit"
+  },
+  {
+    "text": "laptop kaufen für arbeit",
+    "label": "Organisatorisches"
+  },
+  {
+    "text": "prüfung anmelden",
+    "label": "Uni"
+  },
+  {
+    "text": "telefonkonferenz vorbereitn und notizen",
+    "label": "Arbeit"
+  },
+  {
+    "text": "müll trennen",
+    "label": "Haushalt"
+  },
+  {
+    "text": "antrag",
+    "label": "Organisatorisches"
+  },
+  {
+    "text": "frist verlängern beantragen beim amt",
+    "label": "Organisatorisches"
+  },
+  {
+    "text": "arzttermin wahrnehm und fragen vorbereitn",
+    "label": "Gesundheit"
+  },
+  {
+    "text": "meteing",
+    "label": "Arbeit"
+  },
+  {
+    "text": "magnesium kaufen",
+    "label": "Gesundheit"
+  },
+  {
+    "text": "steuerunterlagen sortieren und ablegen",
+    "label": "Organisatorisches"
+  },
+  {
+    "text": "lneren",
+    "label": "Uni"
+  },
+  {
+    "text": "check up beim azrt irgnedwann",
+    "label": "Gesundheit"
+  },
+  {
+    "text": "report abscihcken bevor chef fragt",
+    "label": "Arbeit"
+  },
+  {
+    "text": "wäsche waschen",
+    "label": "Haushalt"
+  },
+  {
+    "text": "shoppen gehen neue klamotetn",
+    "label": "Freizeit"
+  },
+  {
+    "text": "shopping gehen und neue schuhe suchen",
+    "label": "Freizeit"
+  },
+  {
+    "text": "rezept holn sonst keine medis",
+    "label": "Gesundheit"
+  },
+  {
+    "text": "steuer",
+    "label": "Organisatorisches"
+  },
+  {
+    "text": "rezept verlängern lassen",
+    "label": "Gesundheit"
+  },
+  {
+    "text": "küche gründlich aufräumen und arbeitsfläche reinigen",
+    "label": "Haushalt"
+  },
+  {
+    "text": "projekt plan und aufgaben verteilen",
+    "label": "Arbeit"
+  },
+  {
+    "text": "unterlagen abschickn endlich mal",
+    "label": "Organisatorisches"
+  },
+  {
+    "text": "steuerkram sortiern und abheftn",
+    "label": "Organisatorisches"
+  },
+  {
+    "text": "skrpit",
+    "label": "Uni"
+  },
+  {
+    "text": "museum besuchen am samstag",
+    "label": "Freizeit"
+  },
+  {
+    "text": "vorlesung besuchn und mitschreibn",
+    "label": "Uni"
+  },
+  {
+    "text": "rechnung überweisen und konto checkn",
+    "label": "Organisatorisches"
+  },
+  {
+    "text": "skript lesn",
+    "label": "Uni"
+  },
+  {
+    "text": "mail an kollegen schreiben wegen urlaub",
+    "label": "Arbeit"
+  },
+  {
+    "text": "vitamine kaufn und regelmäsig nehmn",
+    "label": "Gesundheit"
+  },
+  {
+    "text": "telefonat mit kunden führen und notizen machen",
+    "label": "Arbeit"
+  },
+  {
+    "text": "frist im kalender eintragen und reminder setzen",
+    "label": "Organisatorisches"
+  },
+  {
+    "text": "brot selber backen und zutaten einkaufen gehen",
+    "label": "Haushalt"
+  },
+  {
+    "text": "wäsche aufhängn und trockn lassn",
+    "label": "Haushalt"
+  },
+  {
+    "text": "versicherung kündigen",
+    "label": "Organisatorisches"
+  },
+  {
+    "text": "sport treiben im fitnessstudio",
+    "label": "Freizeit"
+  },
+  {
+    "text": "brot kaufen",
+    "label": "Haushalt"
+  },
+  {
+    "text": "übungsblatt rechnen und lösung checken",
+    "label": "Uni"
+  },
+  {
+    "text": "milch",
+    "label": "Haushalt"
+  },
+  {
+    "text": "lernplan machen",
+    "label": "Uni"
+  },
+  {
+    "text": "prüfung rechtzeitig anmelden über das portal",
+    "label": "Uni"
+  },
+  {
+    "text": "post erledign und briefe beantortn",
+    "label": "Organisatorisches"
+  },
+  {
+    "text": "kollegen schreiben wegen schicht",
+    "label": "Arbeit"
+  },
+  {
+    "text": "vorlesung besuchen",
+    "label": "Uni"
+  },
+  {
+    "text": "vertarg unterscihrebn abschciken",
+    "label": "Organisatorisches"
+  },
+  {
+    "text": "kontoauszug prüfen und ausgaben kontrollieren",
+    "label": "Organisatorisches"
+  },
+  {
+    "text": "gruppe treffen uni",
+    "label": "Uni"
+  },
+  {
+    "text": "komplette wohnung einmal gründlich durchputzen",
+    "label": "Haushalt"
+  },
+  {
+    "text": "azrt",
+    "label": "Gesundheit"
+  },
+  {
+    "text": "neue sneaker kaufen",
+    "label": "Freizeit"
+  },
+  {
+    "text": "rechnugn",
+    "label": "Organisatorisches"
+  },
+  {
+    "text": "projekt besprechen",
+    "label": "Arbeit"
+  },
+  {
+    "text": "neues tablet kaufen",
+    "label": "Organisatorisches"
+  },
+  {
+    "text": "vertrag unterschreiben und abschicken",
+    "label": "Organisatorisches"
+  },
+  {
+    "text": "deadline checken",
+    "label": "Arbeit"
+  },
+  {
+    "text": "monitor kaufn neu",
+    "label": "Organisatorisches"
+  },
+  {
+    "text": "medis",
+    "label": "Gesundheit"
+  },
+  {
+    "text": "vorlesung nacharbeiten und zusammenfassung schreiben",
+    "label": "Uni"
+  },
+  {
+    "text": "putzmittel kaufen",
+    "label": "Haushalt"
+  },
+  {
+    "text": "miete überweisen",
+    "label": "Organisatorisches"
+  },
+  {
+    "text": "vertrag unterschreibn und abschickn",
+    "label": "Organisatorisches"
+  },
+  {
+    "text": "abo kündigen und bestätigung überprüfen",
+    "label": "Organisatorisches"
+  },
+  {
+    "text": "rezept verlängern",
+    "label": "Gesundheit"
+  },
+  {
+    "text": "arzt ding ausmachen wegen kopf aua",
+    "label": "Gesundheit"
+  },
+  {
+    "text": "arzttermin absagen",
+    "label": "Gesundheit"
+  },
+  {
+    "text": "literatur suchn für seminararbeit",
+    "label": "Uni"
+  },
+  {
+    "text": "report abschickn bevor chef fragt",
+    "label": "Arbeit"
+  },
+  {
+    "text": "zahnarzt termin vereinbaren zur kontrolle",
+    "label": "Gesundheit"
+  },
+  {
+    "text": "post",
+    "label": "Organisatorisches"
+  },
+  {
+    "text": "geburtstagsgeschenk bestellen und rechtzeitig liefern lassen",
+    "label": "Freizeit"
+  },
+  {
+    "text": "boden wischn und staubsaugn danach",
+    "label": "Haushalt"
+  },
+  {
+    "text": "ofen sauber machen",
+    "label": "Haushalt"
+  },
+  {
+    "text": "einkaufen gehen für die nächsten tage",
+    "label": "Haushalt"
+  },
+  {
+    "text": "abends bar gehen mit leuten",
+    "label": "Freizeit"
+  },
+  {
+    "text": "bericht schreiben",
+    "label": "Arbeit"
+  },
+  {
+    "text": "unterlagen für amt zusammensuchen und abschicken",
+    "label": "Organisatorisches"
+  },
+  {
+    "text": "antrag stellen aber kein bock",
+    "label": "Organisatorisches"
+  },
+  {
+    "text": "rezept einlösen in apotheke",
+    "label": "Gesundheit"
+  },
+  {
+    "text": "angebot prüfen und antwort an kunden schreiben",
+    "label": "Arbeit"
+  },
+  {
+    "text": "skrpit lesen null bock",
+    "label": "Uni"
+  },
+  {
+    "text": "shopping gehen in der stadt nach neuen schuhen",
+    "label": "Freizeit"
+  },
+  {
+    "text": "bürostuhl kaufen",
+    "label": "Organisatorisches"
+  },
+  {
+    "text": "arzt wechseln und neuen termin machen",
+    "label": "Gesundheit"
+  },
+  {
+    "text": "arzt anrufen und ergebnisse erfragen",
+    "label": "Gesundheit"
+  },
+  {
+    "text": "putzen allgemein alles bisschen",
+    "label": "Haushalt"
+  },
+  {
+    "text": "wochenendtrip mit freunden genauer planen und unterkunft vergleichen",
+    "label": "Freizeit"
+  },
+  {
+    "text": "ibuprofenn kaufen",
+    "label": "Gesundheit"
+  },
+  {
+    "text": "telefonkonferenz vorbereiten",
+    "label": "Arbeit"
+  },
+  {
+    "text": "meeting war verschiebn oder so",
+    "label": "Arbeit"
+  },
+  {
+    "text": "vorlesung nacharbeiten und notizen ergänzen",
+    "label": "Uni"
+  },
+  {
+    "text": "seminar",
+    "label": "Uni"
+  },
+  {
+    "text": "klamotten kaufen",
+    "label": "Freizeit"
+  },
+  {
+    "text": "sport machen im gym",
+    "label": "Freizeit"
+  },
+  {
+    "text": "blutewrte checken lassn",
+    "label": "Gesundheit"
+  },
+  {
+    "text": "geschirr stapelt sich muss weg",
+    "label": "Haushalt"
+  },
+  {
+    "text": "vertrag durchlesen und wichtige punkte markieren",
+    "label": "Organisatorisches"
+  },
+  {
+    "text": "hausarbeit weiterschreiben und struktur prüfen",
+    "label": "Uni"
+  },
+  {
+    "text": "steeuer zeug sorteirn kp",
+    "label": "Organisatorisches"
+  },
+  {
+    "text": "uni zeug bissl nachholen heute",
+    "label": "Uni"
+  },
+  {
+    "text": "arzt anrufn results fragen",
+    "label": "Gesundheit"
+  },
+  {
+    "text": "party organisieren",
+    "label": "Freizeit"
+  },
+  {
+    "text": "hausarbeit eig anfangen lol",
+    "label": "Uni"
+  },
+  {
+    "text": "prüufng",
+    "label": "Uni"
+  },
+  {
+    "text": "tabletten nehmn nicht wieder vergessn",
+    "label": "Gesundheit"
+  },
+  {
+    "text": "prüfung anmeldn bevor frist vorbei",
+    "label": "Uni"
+  },
+  {
+    "text": "kino oder so heute mal schaun",
+    "label": "Freizeit"
+  },
+  {
+    "text": "wäsche waschen und danach alles zusammenlegen",
+    "label": "Haushalt"
+  },
+  {
+    "text": "einkafuen",
+    "label": "Haushalt"
+  },
+  {
+    "text": "prüfung anmelden vor frist",
+    "label": "Uni"
+  },
+  {
+    "text": "vertrag unterschreiben und zurückschicken",
+    "label": "Organisatorisches"
+  },
+  {
+    "text": "taskliste updaten und priorität setzn",
+    "label": "Arbeit"
+  },
+  {
+    "text": "cloud abo abschließen",
+    "label": "Organisatorisches"
+  },
+  {
+    "text": "übungen mahcen sonst verkacik",
+    "label": "Uni"
+  },
+  {
+    "text": "krankschreibung holn beim arzt",
+    "label": "Gesundheit"
+  },
+  {
+    "text": "neue tasche kaufen",
+    "label": "Freizeit"
+  },
+  {
+    "text": "rezept einlösen und medikamente abholen",
+    "label": "Gesundheit"
+  },
+  {
+    "text": "projekt planen und aufgaben verteilen",
+    "label": "Arbeit"
+  },
+  {
+    "text": "kaffee und tee nachkaufen für zuhause",
+    "label": "Haushalt"
+  },
+  {
+    "text": "arztbericht abholen und durchlesen",
+    "label": "Gesundheit"
+  },
+  {
+    "text": "kundne",
+    "label": "Arbeit"
+  },
+  {
+    "text": "gruppe treffen und projekt besprechen",
+    "label": "Uni"
+  },
+  {
+    "text": "mail noch rausschickn schnell",
+    "label": "Arbeit"
+  },
+  {
+    "text": "taskliste überarbeiten und prioritäten setzen",
+    "label": "Arbeit"
+  },
+  {
+    "text": "bericht noch fix fertig machen",
+    "label": "Arbeit"
+  },
+  {
+    "text": "spaziergang",
+    "label": "Freizeit"
+  },
+  {
+    "text": "vorlesung lern",
+    "label": "Uni"
+  },
+  {
+    "text": "neues abo abschließen",
+    "label": "Organisatorisches"
+  },
+  {
+    "text": "hoodie bestellen",
+    "label": "Freizeit"
+  },
+  {
+    "text": "arzttermin verschieben weil ich keine zeit habe",
+    "label": "Gesundheit"
+  },
+  {
+    "text": "arzttermin donnerstag",
+    "label": "Gesundheit"
+  },
+  {
+    "text": "internetvertrag abschliesn",
+    "label": "Organisatorisches"
+  },
+  {
+    "text": "brot backn und zutaten kaufn",
+    "label": "Haushalt"
+  },
+  {
+    "text": "literatur suchen für Uni",
+    "label": "Uni"
+  },
+  {
+    "text": "geburtstagsgeschenk shoppen",
+    "label": "Freizeit"
+  },
+  {
+    "text": "präsentation üben",
+    "label": "Arbeit"
+  },
+  {
+    "text": "party planen wird wild",
+    "label": "Freizeit"
+  },
+  {
+    "text": "kurztrip planen und zugtickets buchen",
+    "label": "Freizeit"
+  },
+  {
+    "text": "antrag stellen",
+    "label": "Organisatorisches"
+  },
+  {
+    "text": "Folien nacharbeiten und offene fragen klären",
+    "label": "Uni"
+  },
+  {
+    "text": "dtae plan kp wohin",
+    "label": "Freizeit"
+  },
+  {
+    "text": "freundin treffn",
+    "label": "Freizeit"
+  },
+  {
+    "text": "eier kaufen",
+    "label": "Haushalt"
+  },
+  {
+    "text": "post erledigen und wichtige briefe beantworten",
+    "label": "Organisatorisches"
+  },
+  {
+    "text": "café date mit freundin organisieren",
+    "label": "Freizeit"
+  },
+  {
+    "text": "rechnung prüfen und überweisen",
+    "label": "Organisatorisches"
+  },
+  {
+    "text": "arzt",
+    "label": "Gesundheit"
+  },
+  {
+    "text": "einkaufsliste schreiben für supermarkt",
+    "label": "Haushalt"
+  },
+  {
+    "text": "ofen sauber machen weil alles eingebrannt ist",
+    "label": "Haushalt"
+  },
+  {
+    "text": "hoodi online bestelln",
+    "label": "Freizeit"
+  },
+  {
+    "text": "arzt termin",
+    "label": "Gesundheit"
+  },
+  {
+    "text": "referat vorbereitn und folien machn",
+    "label": "Uni"
+  },
+  {
+    "text": "check up",
+    "label": "Gesundheit"
+  },
+  {
+    "text": "wichtige fristen im kalender eintragen und reminder setzen",
+    "label": "Organisatorisches"
+  },
+  {
+    "text": "skript lesen und markieren",
+    "label": "Uni"
+  },
+  {
+    "text": "küche aufräumen ist völilg chaos",
+    "label": "Haushalt"
+  },
+  {
+    "text": "brot backen und zutaten besorgen",
+    "label": "Haushalt"
+  },
+  {
+    "text": "spülmaschine",
+    "label": "Haushalt"
+  },
+  {
+    "text": "date planen und passenden ort auswählen",
+    "label": "Freizeit"
+  },
+  {
+    "text": "meeting kurz",
+    "label": "Arbeit"
+  },
+  {
+    "text": "tablletten nehmen nicht vergesen",
+    "label": "Gesundheit"
+  },
+  {
+    "text": "kühlschrank sauber machen und alte sachen entsorgen",
+    "label": "Haushalt"
+  },
+  {
+    "text": "drucker kaufen",
+    "label": "Organisatorisches"
+  },
+  {
+    "text": "pflaster und verband holen",
+    "label": "Gesundheit"
+  },
+  {
+    "text": "kundentermin vorbereiten",
+    "label": "Arbeit"
+  },
+  {
+    "text": "zahnarzt termin",
+    "label": "Gesundheit"
+  },
+  {
+    "text": "sport machen im fitnessstudio heute abend",
+    "label": "Freizeit"
+  },
+  {
+    "text": "abo kündign und bestätign prüfn",
+    "label": "Organisatorisches"
+  },
+  {
+    "text": "übungsaufgaben durchgehen und schwierige aufgaben nochmal rechnen",
+    "label": "Uni"
+  },
+  {
+    "text": "referat vorbereiten und quellen suchen",
+    "label": "Uni"
+  },
+  {
+    "text": "yoga",
+    "label": "Freizeit"
+  },
+  {
+    "text": "lernplan erstellen für die kommende woche",
+    "label": "Uni"
+  },
+  {
+    "text": "kündigung",
+    "label": "Organisatorisches"
+  },
+  {
+    "text": "arzt anrufn und termin ausmachn",
+    "label": "Gesundheit"
+  },
+  {
+    "text": "miete überweisen und prüfen ob alles passt",
+    "label": "Organisatorisches"
+  },
+  {
+    "text": "geschenk besorgen und verpacken",
+    "label": "Freizeit"
+  },
+  {
+    "text": "bank anrufen und klären",
+    "label": "Organisatorisches"
+  },
+  {
+    "text": "ibuprofen kaufen",
+    "label": "Gesundheit"
+  },
+  {
+    "text": "projekt abgeben nicht verkcakn",
+    "label": "Uni"
+  },
+  {
+    "text": "projekt planen",
+    "label": "Arbeit"
+  },
+  {
+    "text": "clinet",
+    "label": "Arbeit"
+  },
+  {
+    "text": "bank anrufen",
+    "label": "Organisatorisches"
+  },
+  {
+    "text": "tasche shoppen gehn",
+    "label": "Freizeit"
+  },
+  {
+    "text": "uni",
+    "label": "Uni"
+  },
+  {
+    "text": "hausarbeit schreiben",
+    "label": "Uni"
+  },
+  {
+    "text": "vertrag prüfen",
+    "label": "Organisatorisches"
+  },
+  {
+    "text": "mail an chef",
+    "label": "Arbeit"
+  },
+  {
+    "text": "kundentermin vorbereiten und fragenliste erstellen",
+    "label": "Arbeit"
+  },
+  {
+    "text": "medikamente nehmen und erinnern",
+    "label": "Gesundheit"
+  },
+  {
+    "text": "einkaufsliste erstellen und supermarkt planen",
+    "label": "Haushalt"
+  },
+  {
+    "text": "spaziergang park",
+    "label": "Freizeit"
+  },
+  {
+    "text": "tee und kaffee nachkaufen",
+    "label": "Haushalt"
+  },
+  {
+    "text": "excel liste aktualisieren und daten eintragen",
+    "label": "Arbeit"
+  },
+  {
+    "text": "angebot prüfen und rückmeldung an kunden schicken",
+    "label": "Arbeit"
+  },
+  {
+    "text": "team meeting organisiern und zeit finden",
+    "label": "Arbeit"
+  },
+  {
+    "text": "abo kündign sonst zahl ich weiter",
+    "label": "Organisatorisches"
+  },
+  {
+    "text": "klamotten online kaufen",
+    "label": "Freizeit"
+  },
+  {
+    "text": "lneren heute durhciehn",
+    "label": "Uni"
+  },
+  {
+    "text": "literatur suchen",
+    "label": "Uni"
+  },
+  {
+    "text": "meeting versch",
+    "label": "Arbeit"
+  },
+  {
+    "text": "spülmsachine",
+    "label": "Haushalt"
+  },
+  {
+    "text": "apothkee",
+    "label": "Gesundheit"
+  },
+  {
+    "text": "hausabrbeit anfangen irgnedwie",
+    "label": "Uni"
+  },
+  {
+    "text": "teammeeting",
+    "label": "Arbeit"
+  },
+  {
+    "text": "hausarbeit",
+    "label": "Uni"
+  },
+  {
+    "text": "meteing gleich los nicht verpenn",
+    "label": "Arbeit"
+  },
+  {
+    "text": "meeting vorbereiten und agenda schreiben",
+    "label": "Arbeit"
+  },
+  {
+    "text": "skript lesn aber so null bock",
+    "label": "Uni"
+  },
+  {
+    "text": "meeting neuer Termin ausmachen",
+    "label": "Arbeit"
+  },
+  {
+    "text": "rechnung zahlen bevor mahnung kommt",
+    "label": "Organisatorisches"
+  },
+  {
+    "text": "café date",
+    "label": "Freizeit"
+  },
+  {
+    "text": "lern noch bisschen für klausur",
+    "label": "Uni"
+  },
+  {
+    "text": "creme für hautprobleme kaufen",
+    "label": "Gesundheit"
+  },
+  {
+    "text": "spülmaschine ist voll ausräum halt",
+    "label": "Haushalt"
+  },
+  {
+    "text": "kontoauszug prüfen und ausgaben analysieren",
+    "label": "Organisatorisches"
+  },
+  {
+    "text": "geschirr spülen und küche sauber machen",
+    "label": "Haushalt"
+  },
+  {
+    "text": "Modul nacharbeiten",
+    "label": "Uni"
+  },
+  {
+    "text": "skript lesn und markieren wichtige sachen",
+    "label": "Uni"
+  },
+  {
+    "text": "mail an chef schreiben wegen urlaub",
+    "label": "Arbeit"
+  },
+  {
+    "text": "vorlesung nacharbeiten und offene fragen klären",
+    "label": "Uni"
+  },
+  {
+    "text": "yoga kurs buchen",
+    "label": "Freizeit"
+  },
+  {
+    "text": "neue sneekers bestelln",
+    "label": "Freizeit"
+  },
+  {
+    "text": "teammeeting organisieren und termine abstimmen",
+    "label": "Arbeit"
+  },
+  {
+    "text": "wäcshe",
+    "label": "Haushalt"
+  },
+  {
+    "text": "spaziergang im park machen",
+    "label": "Freizeit"
+  },
+  {
+    "text": "kollegen schreiben",
+    "label": "Arbeit"
+  },
+  {
+    "text": "freunde anrufen",
+    "label": "Freizeit"
+  },
+  {
+    "text": "arzt termin machen wegen rückenschmerzen",
+    "label": "Gesundheit"
+  },
+  {
+    "text": "seminar anmelden",
+    "label": "Uni"
+  },
+  {
+    "text": "brot backen und zutaten holen",
+    "label": "Haushalt"
+  },
+  {
+    "text": "einkaufen gehen für die woche",
+    "label": "Haushalt"
+  },
+  {
+    "text": "lerngruppe organisieren für nächste woche",
+    "label": "Uni"
+  },
+  {
+    "text": "uni stff sorteirn ist chaos",
+    "label": "Uni"
+  },
+  {
+    "text": "bank anrufen und abbuchung klären",
+    "label": "Organisatorisches"
+  },
+  {
+    "text": "einkaufsliste machen sonst vergess ich alles",
+    "label": "Haushalt"
+  },
+  {
+    "text": "versicherung vergleichen und eventuell wechseln",
+    "label": "Organisatorisches"
+  },
+  {
+    "text": "frist eintragen und erinnern",
+    "label": "Organisatorisches"
+  },
+  {
+    "text": "freunde",
+    "label": "Freizeit"
+  },
+  {
+    "text": "jacke bestellen für winter",
+    "label": "Freizeit"
+  },
+  {
+    "text": "milch und brot holen",
+    "label": "Haushalt"
+  },
+  {
+    "text": "date",
+    "label": "Freizeit"
+  },
+  {
+    "text": "rechnung bezahlen",
+    "label": "Organisatorisches"
+  },
+  {
+    "text": "report fertig machen",
+    "label": "Arbeit"
+  },
+  {
+    "text": "arzttermni wahrnehemen nicht skippen",
+    "label": "Gesundheit"
+  },
+  {
+    "text": "neue tasche shoppen",
+    "label": "Freizeit"
+  },
+  {
+    "text": "medikamente aus apotheke holen",
+    "label": "Gesundheit"
+  },
+  {
+    "text": "übungsblatt bearbeiten und lösungen vergleichen",
+    "label": "Uni"
+  },
+  {
+    "text": "putzen allgemein",
+    "label": "Haushalt"
+  },
+  {
+    "text": "excel liste updaten und daten einpflegn",
+    "label": "Arbeit"
+  },
+  {
+    "text": "vertarg durchlseen und prfüen",
+    "label": "Organisatorisches"
+  },
+  {
+    "text": "mit freunden in eine bar gehen am freitag",
+    "label": "Freizeit"
+  },
+  {
+    "text": "verschiedene versicherungen vergleichen und angebote prüfen",
+    "label": "Organisatorisches"
+  },
+  {
+    "text": "rechnung fix überweisen sonst stress",
+    "label": "Organisatorisches"
+  },
+  {
+    "text": "kunden treffen vorbereiten und fragen notieren",
+    "label": "Arbeit"
+  },
+  {
+    "text": "unterlagen sortieren und schicken",
+    "label": "Organisatorisches"
+  },
+  {
+    "text": "wandern gehen",
+    "label": "Freizeit"
+  },
+  {
+    "text": "spülmsachine ausräuemn",
+    "label": "Haushalt"
+  },
+  {
+    "text": "shoppen gehn nach neuen schuhn",
+    "label": "Freizeit"
+  },
+  {
+    "text": "dokumente",
+    "label": "Organisatorisches"
+  },
+  {
+    "text": "übungsblatt",
+    "label": "Uni"
+  },
+  {
+    "text": "party organisieren und gäste einladen",
+    "label": "Freizeit"
+  },
+  {
+    "text": "übungen",
+    "label": "Uni"
+  },
+  {
+    "text": "wäcshe waschen und aufhägnen",
+    "label": "Haushalt"
+  },
+  {
+    "text": "bericht lesen und feedback gebn",
+    "label": "Arbeit"
+  },
+  {
+    "text": "putz",
+    "label": "Haushalt"
+  },
+  {
+    "text": "azrt termin ausmacehn wegen kopf",
+    "label": "Gesundheit"
+  },
+  {
+    "text": "vertrag gegenlesen",
+    "label": "Organisatorisches"
+  },
+  {
+    "text": "bericht lesen",
+    "label": "Arbeit"
+  },
+  {
+    "text": "arzt anrufen und neuen termin vereinbaren",
+    "label": "Gesundheit"
+  },
+  {
+    "text": "wäsche waschen und aufhängen",
+    "label": "Haushalt"
+  },
+  {
+    "text": "zahnarzt termin vereinbaren",
+    "label": "Gesundheit"
+  },
+  {
+    "text": "dem chef kurz schreiben wegen schicht",
+    "label": "Arbeit"
+  },
+  {
+    "text": "spaziergang machn im park",
+    "label": "Freizeit"
+  },
+  {
+    "text": "kunden call gleich vorbereitn",
+    "label": "Arbeit"
+  },
+  {
+    "text": "einkaufsliste schreibn für supermarkt",
+    "label": "Haushalt"
+  },
+  {
+    "text": "bikini kaufen",
+    "label": "Freizeit"
+  },
+  {
+    "text": "ofen sauber machn weil dreckig",
+    "label": "Haushalt"
+  },
+  {
+    "text": "shopping mall gehn bummeln",
+    "label": "Freizeit"
+  },
+  {
+    "text": "geburtstagsgeschenk für mama besorgen und verpacken",
+    "label": "Freizeit"
+  },
+  {
+    "text": "medikamente in der apotheke holen und einnahme planen",
+    "label": "Gesundheit"
+  },
+  {
+    "text": "wandern gehen wär nice",
+    "label": "Freizeit"
+  },
+  {
+    "text": "ofen sauber machen richtig dreckig",
+    "label": "Haushalt"
+  },
+  {
+    "text": "arbeitsmaterial kaufen",
+    "label": "Organisatorisches"
+  },
+  {
+    "text": "alle vorlesungsfolien durcharbeiten und wichtige stellen farbig markieren",
+    "label": "Uni"
+  },
+  {
+    "text": "küche aufräumen und geschirr spülen",
+    "label": "Haushalt"
+  },
+  {
+    "text": "lerngruppe organisieren",
+    "label": "Uni"
+  },
+  {
+    "text": "rezept holne sonst keine medis",
+    "label": "Gesundheit"
+  },
+  {
+    "text": "skript drucken",
+    "label": "Uni"
+  },
+  {
+    "text": "frist verlängern beantragen bei zuständiger stelle",
+    "label": "Organisatorisches"
+  },
+  {
+    "text": "hustensaft kaufen",
+    "label": "Gesundheit"
+  },
+  {
+    "text": "call",
+    "label": "Arbeit"
+  },
+  {
+    "text": "krankschreibung abholen und krank melden",
+    "label": "Gesundheit"
+  },
+  {
+    "text": "kino tickets buchn sonst ausverkauft",
+    "label": "Freizeit"
+  },
+  {
+    "text": "neue klamotten online anschaun und bestelln",
+    "label": "Freizeit"
+  },
+  {
+    "text": "date abnd",
+    "label": "Freizeit"
+  },
+  {
+    "text": "check up beim arzt machen lassen",
+    "label": "Gesundheit"
+  },
+  {
+    "text": "frist",
+    "label": "Organisatorisches"
+  },
+  {
+    "text": "kinoabend planen und tickets reservieren",
+    "label": "Freizeit"
+  },
+  {
+    "text": "kunden mail beantorten und anpassen",
+    "label": "Arbeit"
+  },
+  {
+    "text": "kühlschrank aufräumen und sauber machen",
+    "label": "Haushalt"
+  },
+  {
+    "text": "rezept vom arzt in der apotheke einlösen und medikamente holen",
+    "label": "Gesundheit"
+  },
+  {
+    "text": "task fix",
+    "label": "Arbeit"
+  },
+  {
+    "text": "software kaufen für arbeit",
+    "label": "Organisatorisches"
+  },
+  {
+    "text": "nudeln kaufen",
+    "label": "Haushalt"
+  },
+  {
+    "text": "tasklsite ordnen alles durcheinander",
+    "label": "Arbeit"
+  },
+  {
+    "text": "lern gruppe treffen",
+    "label": "Uni"
+  },
+  {
+    "text": "tasl",
+    "label": "Arbeit"
+  },
+  {
+    "text": "hausabrbeit",
+    "label": "Uni"
+  },
+  {
+    "text": "deadline",
+    "label": "Arbeit"
+  },
+  {
+    "text": "projekt abgebn nicht verkacken",
+    "label": "Uni"
+  },
+  {
+    "text": "rezept einlösen apotheke",
+    "label": "Gesundheit"
+  },
+  {
+    "text": "kühlschrank aufräumen",
+    "label": "Haushalt"
+  },
+  {
+    "text": "müll rausbringen und trennung beachten",
+    "label": "Haushalt"
+  },
+  {
+    "text": "salbe",
+    "label": "Gesundheit"
+  },
+  {
+    "text": "unterlagen fürs amt zusammensuchn",
+    "label": "Organisatorisches"
+  },
+  {
+    "text": "trip planen und hotel buchen",
+    "label": "Freizeit"
+  },
+  {
+    "text": "dokumente scannen",
+    "label": "Organisatorisches"
+  },
+  {
+    "text": "spülmaschine ausräumen und neu einräumen",
+    "label": "Haushalt"
+  },
+  {
+    "text": "medikamente holne in apothkee",
+    "label": "Gesundheit"
+  },
+  {
+    "text": "einkauf",
+    "label": "Haushalt"
+  },
+  {
+    "text": "bar abned planen bisscehn",
+    "label": "Freizeit"
+  },
+  {
+    "text": "mit freunden chllien bisschen",
+    "label": "Freizeit"
+  },
+  {
+    "text": "steeuer",
+    "label": "Organisatorisches"
+  },
+  {
+    "text": "steuererklärung machen",
+    "label": "Organisatorisches"
+  },
+  {
+    "text": "sport machn im gym heute",
+    "label": "Freizeit"
+  },
+  {
+    "text": "boden wischen und staubsaugen im wohnzimmer",
+    "label": "Haushalt"
+  },
+  {
+    "text": "kino ticetks buchen sonst weg",
+    "label": "Freizeit"
+  },
+  {
+    "text": "vertarg",
+    "label": "Organisatorisches"
+  },
+  {
+    "text": "unteralgen abschciken endlcih",
+    "label": "Organisatorisches"
+  },
+  {
+    "text": "abo abschließen streaming",
+    "label": "Organisatorisches"
+  },
+  {
+    "text": "antrag ausfüllen und alle nötigen dokumente anhängen",
+    "label": "Organisatorisches"
+  },
+  {
+    "text": "vorlesung mitschreiben",
+    "label": "Uni"
+  },
+  {
+    "text": "bericht schreiben und korrekt formatieren",
+    "label": "Arbeit"
+  },
+  {
+    "text": "wandern gehen planen",
+    "label": "Freizeit"
+  },
+  {
+    "text": "neue sommerklamotten online bestellen und größen vergleichen",
+    "label": "Freizeit"
+  },
+  {
+    "text": "arzt wechseln und neuen termin ausmachen",
+    "label": "Gesundheit"
+  },
+  {
+    "text": "garten gießen",
+    "label": "Haushalt"
+  },
+  {
+    "text": "abo bis dienstag kündigen",
+    "label": "Organisatorisches"
+  },
+  {
+    "text": "impfung",
+    "label": "Gesundheit"
+  },
+  {
+    "text": "wochenend trip plan und hotel suchn",
+    "label": "Freizeit"
+  },
+  {
+    "text": "vorlesung nachholen",
+    "label": "Uni"
+  },
+  {
+    "text": "wandern",
+    "label": "Freizeit"
+  },
+  {
+    "text": "wanderausflug planen und route festlegen",
+    "label": "Freizeit"
+  },
+  {
+    "text": "regelmäßig tabletten nehmen und erinnerung einstellen",
+    "label": "Gesundheit"
+  },
+  {
+    "text": "report senden",
+    "label": "Arbeit"
+  },
+  {
+    "text": "einkaufsliste schreiben",
+    "label": "Haushalt"
+  },
+  {
+    "text": "arzt anrufen und nach ergebnissen fragen",
+    "label": "Gesundheit"
+  },
+  {
+    "text": "versicherung vergleichn und angebote anschaun",
+    "label": "Organisatorisches"
+  },
+  {
+    "text": "bürostuhl kaufn",
+    "label": "Organisatorisches"
+  },
+  {
+    "text": "vorlesung besuchen und wichtige punkte notieren",
+    "label": "Uni"
+  },
+  {
+    "text": "arzttermni vershcieben passt nicht",
+    "label": "Gesundheit"
+  },
+  {
+    "text": "medis holn apotheke nicht vergessn",
+    "label": "Gesundheit"
+  },
+  {
+    "text": "projekt abgebn vor deadline",
+    "label": "Uni"
+  },
+  {
+    "text": "müll",
+    "label": "Haushalt"
+  },
+  {
+    "text": "arzt check",
+    "label": "Gesundheit"
+  },
+  {
+    "text": "ofen reinigen und sauber machen",
+    "label": "Haushalt"
+  },
+  {
+    "text": "küche aufräumen",
+    "label": "Haushalt"
+  },
+  {
+    "text": "lernzettel für die klausur erstellen und alles zusammenfassen",
+    "label": "Uni"
+  },
+  {
+    "text": "konto",
+    "label": "Organisatorisches"
+  },
+  {
+    "text": "laptop kaufn für arbeit",
+    "label": "Organisatorisches"
+  },
+  {
+    "text": "arztbericht abholn und lesn",
+    "label": "Gesundheit"
+  },
+  {
+    "text": "vorlesung skip oder hingehen mal schaun",
+    "label": "Uni"
+  },
+  {
+    "text": "konzert besuchen",
+    "label": "Freizeit"
+  },
+  {
+    "text": "vitamin d kaufen",
+    "label": "Gesundheit"
+  },
+  {
+    "text": "vorlesung besuchen und notieren",
+    "label": "Uni"
+  },
+  {
+    "text": "task noch fertig machen heute",
+    "label": "Arbeit"
+  },
+  {
+    "text": "bank kontaktieren wegen falscher abbuchung klären",
+    "label": "Organisatorisches"
+  },
+  {
+    "text": "geschirr spüln und küche sauber machn",
+    "label": "Haushalt"
+  },
+  {
+    "text": "meeting verschieben",
+    "label": "Arbeit"
+  },
+  {
+    "text": "neues handy kaufen",
+    "label": "Organisatorisches"
+  },
+  {
+    "text": "versicherung vergleichen",
+    "label": "Organisatorisches"
+  },
+  {
+    "text": "müll runterbringen und mülltrennung beachten",
+    "label": "Haushalt"
+  },
+  {
+    "text": "müll rausbringen und mülltrennung checken",
+    "label": "Haushalt"
+  },
+  {
+    "text": "meeting vorbereiten und punkte sammeln",
+    "label": "Arbeit"
+  },
+  {
+    "text": "clal gleich nicht vergssen",
+    "label": "Arbeit"
+  },
+  {
+    "text": "nudlen kaufen nix mehr da",
+    "label": "Haushalt"
+  },
+  {
+    "text": "meeting gleich los nicht verpenn",
+    "label": "Arbeit"
+  },
+  {
+    "text": "wäsche machen ist echt überfällig",
+    "label": "Haushalt"
+  },
+  {
+    "text": "rezept",
+    "label": "Gesundheit"
+  },
+  {
+    "text": "prüufng anmelden nicht verpeiln",
+    "label": "Uni"
+  },
+  {
+    "text": "date night planen",
+    "label": "Freizeit"
+  },
+  {
+    "text": "check up beim arzt machen",
+    "label": "Gesundheit"
+  },
+  {
+    "text": "blutwerte checkn lassen vllt",
+    "label": "Gesundheit"
+  },
+  {
+    "text": "vitamine aus apotheke holen",
+    "label": "Gesundheit"
+  },
+  {
+    "text": "lernplan für nächste woche machn",
+    "label": "Uni"
+  },
+  {
+    "text": "prüfung lern und notizen machn",
+    "label": "Uni"
+  },
+  {
+    "text": "vorlesung",
+    "label": "Uni"
+  },
+  {
+    "text": "hausarbeit weiterschreiben und literatur nochmal checken",
+    "label": "Uni"
+  },
+  {
+    "text": "prüfung anmelden nicht verpeiln",
+    "label": "Uni"
+  },
+  {
+    "text": "seminararbeit strukturieren",
+    "label": "Uni"
+  },
+  {
+    "text": "check up beim arzt vereinbaren",
+    "label": "Gesundheit"
+  },
+  {
+    "text": "medikamente regelmäßig nehmen und erinnerung stellen",
+    "label": "Gesundheit"
+  },
+  {
+    "text": "jacke kaufen für winter",
+    "label": "Freizeit"
+  },
+  {
+    "text": "arzt wechseln der nervt irgendwie",
+    "label": "Gesundheit"
+  },
+  {
+    "text": "excel",
+    "label": "Arbeit"
+  },
+  {
+    "text": "behörde anrufen",
+    "label": "Organisatorisches"
+  },
+  {
+    "text": "dokumente scannen und digital abspeichern",
+    "label": "Organisatorisches"
+  },
+  {
+    "text": "referat vorbereiten und quellen sauber zitieren",
+    "label": "Uni"
+  },
+  {
+    "text": "referat vorbereiten und präsentation dazu erstellen",
+    "label": "Uni"
+  },
+  {
+    "text": "großen lebensmitteleinkauf machen für die ganze woche inkl gemüse und snacks",
+    "label": "Haushalt"
+  },
+  {
+    "text": "einkaufen gemüse obst",
+    "label": "Haushalt"
+  },
+  {
+    "text": "kühlschrank aufräumen und abgelaufene sachen wegwerfen",
+    "label": "Haushalt"
+  },
+  {
+    "text": "spülmaschine ausräumen und direkt wieder einräumen",
+    "label": "Haushalt"
+  },
+  {
+    "text": "kurz meeting prep machen für morgen",
+    "label": "Arbeit"
+  },
+  {
+    "text": "bluttest termin beim arzt machen",
+    "label": "Gesundheit"
+  },
+  {
+    "text": "shoppen gehen und schuhe suchen",
+    "label": "Freizeit"
+  },
+  {
+    "text": "miete überweisen und checken",
+    "label": "Organisatorisches"
+  },
+  {
+    "text": "bank ding klärn wegen abbuchung",
+    "label": "Organisatorisches"
+  },
+  {
+    "text": "termin kalender eintragen",
+    "label": "Organisatorisches"
+  },
+  {
+    "text": "rechnung bezahln und abspeichern",
+    "label": "Organisatorisches"
+  },
+  {
+    "text": "wäsche waschen und danach zusammenlegen",
+    "label": "Haushalt"
+  },
+  {
+    "text": "Hausarbeit schreiben und formatieren",
+    "label": "Arbeit"
+  },
+  {
+    "text": "arzt anrufen und nach laborergebnissen fragen",
+    "label": "Gesundheit"
+  },
+  {
+    "text": "check up termin beim arzt machen",
+    "label": "Gesundheit"
+  },
+  {
+    "text": "arzt wechslen der nervt",
+    "label": "Gesundheit"
+  },
+  {
+    "text": "kundenmail beantworten und dokument anhängen",
+    "label": "Arbeit"
+  },
+  {
+    "text": "arzt fix",
+    "label": "Gesundheit"
+  },
+  {
+    "text": "krankschreibung beim arzt abholen und einreichen",
+    "label": "Gesundheit"
+  },
+  {
+    "text": "zocken",
+    "label": "Freizeit"
+  },
+  {
+    "text": "mail",
+    "label": "Arbeit"
+  },
+  {
+    "text": "arzttermin verschiebn passt grad nicht",
+    "label": "Gesundheit"
+  },
+  {
+    "text": "date planen und ort wählen",
+    "label": "Freizeit"
+  },
+  {
+    "text": "unterlagen für behörde ausfüllen und abschicken",
+    "label": "Organisatorisches"
+  },
+  {
+    "text": "apotheke gehn wegen erkältung medis",
+    "label": "Gesundheit"
+  },
+  {
+    "text": "sport",
+    "label": "Freizeit"
+  },
+  {
+    "text": "vertrag durchlesen und kündigungsfrist checken",
+    "label": "Organisatorisches"
+  },
+  {
+    "text": "rechnung bezahlen und in ordner ablegen",
+    "label": "Organisatorisches"
+  },
+  {
+    "text": "einkaufen gehen für abendessen und frühstück",
+    "label": "Haushalt"
+  },
+  {
+    "text": "heute abend mit leuten chilln gehen",
+    "label": "Freizeit"
+  },
+  {
+    "text": "klamotten shoppen",
+    "label": "Freizeit"
+  },
+  {
+    "text": "nasenspray kaufen",
+    "label": "Gesundheit"
+  },
+  {
+    "text": "sportklamotten kaufen",
+    "label": "Freizeit"
+  },
+  {
+    "text": "shoppen",
+    "label": "Freizeit"
+  },
+  {
+    "text": "impfung checken",
+    "label": "Gesundheit"
+  },
+  {
+    "text": "seminararbeit strukturiern und plan machn",
+    "label": "Uni"
+  },
+  {
+    "text": "arzttermin wahrnehm nicht skippen",
+    "label": "Gesundheit"
+  },
+  {
+    "text": "arzttermin verschieben weil termin sich überschneidet",
+    "label": "Gesundheit"
+  },
+  {
+    "text": "Code lesen und feedback geben",
+    "label": "Uni"
+  },
+  {
+    "text": "call kurz",
+    "label": "Arbeit"
+  },
+  {
+    "text": "kundenanfrage beantworten und angebot individuell anpassen",
+    "label": "Arbeit"
+  },
+  {
+    "text": "dokumente scannn und speichrn",
+    "label": "Organisatorisches"
+  },
+  {
+    "text": "bad putzen und spiegel sauber machn",
+    "label": "Haushalt"
+  },
+  {
+    "text": "lernplan für die nächsten zwei wochen erstellen und einhalten",
+    "label": "Uni"
+  },
+  {
+    "text": "telefonat mit kunden führn und notiern",
+    "label": "Arbeit"
+  },
+  {
+    "text": "date plan und ort aussuchn",
+    "label": "Freizeit"
+  },
+  {
+    "text": "rezept holn",
+    "label": "Gesundheit"
+  },
+  {
+    "text": "report fertigstellen und an chef senden",
+    "label": "Arbeit"
+  },
+  {
+    "text": "arzt termin machen wegen rücken",
+    "label": "Gesundheit"
+  },
+  {
+    "text": "vitamine",
+    "label": "Gesundheit"
+  },
+  {
+    "text": "apotheke",
+    "label": "Gesundheit"
+  },
+  {
+    "text": "kunden",
+    "label": "Arbeit"
+  },
+  {
+    "text": "putzen",
+    "label": "Haushalt"
+  },
+  {
+    "text": "meeting verschieben und neuen termin finden",
+    "label": "Arbeit"
+  },
+  {
+    "text": "kundenmail beantworten und angebot nochmal überarbeiten",
+    "label": "Arbeit"
+  },
+  {
+    "text": "großen einkauf machen für die woche",
+    "label": "Haushalt"
+  },
+  {
+    "text": "apotheke besuchen und salbe kaufen",
+    "label": "Gesundheit"
+  },
+  {
+    "text": "frist eintrgaen kalnder",
+    "label": "Organisatorisches"
+  },
+  {
+    "text": "kontoauszug prüfen",
+    "label": "Organisatorisches"
+  },
+  {
+    "text": "müll runter bringen nervt aber muss",
+    "label": "Haushalt"
+  },
+  {
+    "text": "müll rausbringn und trennung checkn",
+    "label": "Haushalt"
+  },
+  {
+    "text": "check up termin beim arzt machn",
+    "label": "Gesundheit"
+  },
+  {
+    "text": "post erledigne viel liegn",
+    "label": "Organisatorisches"
+  },
+  {
+    "text": "wäsche aufhängn sonst müffelt alles",
+    "label": "Haushalt"
+  },
+  {
+    "text": "angebot prüfen und antworten",
+    "label": "Arbeit"
+  },
+  {
+    "text": "hausarbeit weiter schreiben bisschen",
+    "label": "Uni"
+  },
+  {
+    "text": "geschenk kaufen für freundin",
+    "label": "Freizeit"
+  },
+  {
+    "text": "wäsche waschen und danach direkt alles bügeln",
+    "label": "Haushalt"
+  },
+  {
+    "text": "excel liste aktualisieren und daten einpflegen",
+    "label": "Arbeit"
+  },
+  {
+    "text": "lernen heute echt durchziehenn",
+    "label": "Uni"
+  },
+  {
+    "text": "yoga kurs buchen für nächsten monat",
+    "label": "Freizeit"
+  },
+  {
+    "text": "kollegen schirebn wegen schciht",
+    "label": "Arbeit"
+  },
+  {
+    "text": "skript lesen und wichtige stellen markieren",
+    "label": "Uni"
+  },
+  {
+    "text": "neue schuhe kaufen",
+    "label": "Freizeit"
+  },
+  {
+    "text": "vorlesung nacharbeiten und notizen machen",
+    "label": "Uni"
+  },
+  {
+    "text": "fitnesskurs buchen und trainingszeiten festlegen",
+    "label": "Freizeit"
+  },
+  {
+    "text": "bluttest machen",
+    "label": "Gesundheit"
+  },
+  {
+    "text": "anrtag",
+    "label": "Organisatorisches"
+  },
+  {
+    "text": "vertrag checkn kp ob das passt",
+    "label": "Organisatorisches"
+  },
+  {
+    "text": "versicherung zeug mal durchgehen",
+    "label": "Organisatorisches"
+  },
+  {
+    "text": "mietvertrag nochmal lesen und kündigungsfrist checken",
+    "label": "Organisatorisches"
+  },
+  {
+    "text": "blutwerte checken",
+    "label": "Gesundheit"
+  },
+  {
+    "text": "kontoauszug prüfn und ausgabn checkn",
+    "label": "Organisatorisches"
+  },
+  {
+    "text": "date planen und ort auswählen",
+    "label": "Freizeit"
+  },
+  {
+    "text": "bank anrufen wegen unklarer abbuchung",
+    "label": "Organisatorisches"
+  },
+  {
+    "text": "schmerztabletten kaufen",
+    "label": "Gesundheit"
+  },
+  {
+    "text": "arzt gehn",
+    "label": "Gesundheit"
+  },
+  {
+    "text": "geschirr spülen",
+    "label": "Haushalt"
+  },
+  {
+    "text": "bericht schreiben und formatieren",
+    "label": "Arbeit"
+  },
+  {
+    "text": "meeting für morgen vorbereiten und wichtige punkte zusammenschreiben",
+    "label": "Arbeit"
+  },
+  {
+    "text": "party organisiern und gäste listn",
+    "label": "Freizeit"
+  },
+  {
+    "text": "arzttermni",
+    "label": "Gesundheit"
+  },
+  {
+    "text": "vrolseung",
+    "label": "Uni"
+  },
+  {
+    "text": "rechnung",
+    "label": "Organisatorisches"
+  },
+  {
+    "text": "chef antworten",
+    "label": "Arbeit"
+  },
+  {
+    "text": "spaziergang machen um bisschen runterzukommen",
+    "label": "Freizeit"
+  },
+  {
+    "text": "bar abends",
+    "label": "Freizeit"
+  },
+  {
+    "text": "krankschriebugn",
+    "label": "Gesundheit"
+  },
+  {
+    "text": "boden saugen wär mal nötig",
+    "label": "Haushalt"
+  },
+  {
+    "text": "apotheke gehen medikamente kaufen",
+    "label": "Gesundheit"
+  },
+  {
+    "text": "lernen",
+    "label": "Uni"
+  },
+  {
+    "text": "sport im gym machen und trainingsplan durchziehen",
+    "label": "Freizeit"
+  },
+  {
+    "text": "café chilln mit freundin",
+    "label": "Freizeit"
+  },
+  {
+    "text": "abo kündign sonst zahl ich",
+    "label": "Organisatorisches"
+  },
+  {
+    "text": "literatur suchen für seminararbeit",
+    "label": "Uni"
+  },
+  {
+    "text": "restaurant für abend reservieren und freunde informieren",
+    "label": "Freizeit"
+  },
+  {
+    "text": "shopping mall gehn bisschen bummeln",
+    "label": "Freizeit"
+  },
+  {
+    "text": "projekt planen und aufgaben verteilen im team",
+    "label": "Arbeit"
+  },
+  {
+    "text": "shopping gehen und nach neuen schuhen schauen",
+    "label": "Freizeit"
+  },
+  {
+    "text": "vertrag nochmal durchlesen und prüfen",
+    "label": "Organisatorisches"
+  },
+  {
+    "text": "krankschreibung beim arzt abholen",
+    "label": "Gesundheit"
+  },
+  {
+    "text": "präsentation fertig machen und folien prüfen",
+    "label": "Arbeit"
+  },
+  {
+    "text": "frist beachten",
+    "label": "Organisatorisches"
+  },
+  {
+    "text": "übungen wiederholen und unsicherheiten klären",
+    "label": "Uni"
+  },
+  {
+    "text": "unterlagen",
+    "label": "Organisatorisches"
+  },
+  {
+    "text": "kundenmail beantworten und schicken",
+    "label": "Arbeit"
+  },
+  {
+    "text": "lerngruppe organisieren und termin finden",
+    "label": "Uni"
+  },
+  {
+    "text": "wandern gehen am wochenende ausmachen",
+    "label": "Freizeit"
+  },
+  {
+    "text": "einkaufsliste schreiben für den supermarkt",
+    "label": "Haushalt"
+  },
+  {
+    "text": "café treffen mit freundin organisieren",
+    "label": "Freizeit"
+  },
+  {
+    "text": "bar abend mit freunden gehne",
+    "label": "Freizeit"
+  },
+  {
+    "text": "party organisieren und gästeliste erstellen",
+    "label": "Freizeit"
+  },
+  {
+    "text": "mit freunden essen gehen",
+    "label": "Freizeit"
+  },
+  {
+    "text": "sport mahcen wär shclau",
+    "label": "Freizeit"
+  },
+  {
+    "text": "präsentation fertig machen",
+    "label": "Arbeit"
+  },
+  {
+    "text": "kühlschrank ist echt leer einkaufen",
+    "label": "Haushalt"
+  },
+  {
+    "text": "übungsblatt machen und vergleichen",
+    "label": "Uni"
+  },
+  {
+    "text": "arztbericht",
+    "label": "Gesundheit"
+  },
+  {
+    "text": "vertrag unterschreiben",
+    "label": "Organisatorisches"
+  },
+  {
+    "text": "vitamine kaufen und regelmäßig einnehmen",
+    "label": "Gesundheit"
+  },
+  {
+    "text": "post erledigen",
+    "label": "Organisatorisches"
+  },
+  {
+    "text": "software kaufn für job",
+    "label": "Organisatorisches"
+  },
+  {
+    "text": "vertrag",
+    "label": "Organisatorisches"
+  },
+  {
+    "text": "apotheke besuchen wegen salbe gegen hautproblem",
+    "label": "Gesundheit"
+  },
+  {
+    "text": "projekt abgeben",
+    "label": "Uni"
+  },
+  {
+    "text": "putzen allgemein alles einmal durchgehen",
+    "label": "Haushalt"
+  },
+  {
+    "text": "anrtag stellen kein bock",
+    "label": "Organisatorisches"
+  },
+  {
+    "text": "arzt wechsel und neuen suchn",
+    "label": "Gesundheit"
+  },
+  {
+    "text": "call gleich nicht vergessn",
+    "label": "Arbeit"
+  },
+  {
+    "text": "referat vorbereiten und quellen sammeln",
+    "label": "Uni"
+  },
+  {
+    "text": "neuen laptop kaufen",
+    "label": "Organisatorisches"
+  },
+  {
+    "text": "arztbericht abholn irgendwann",
+    "label": "Gesundheit"
+  },
+  {
+    "text": "steuerkram sortieren und unterlagen ordnen",
+    "label": "Organisatorisches"
+  },
+  {
+    "text": "rechnung bezahlen und ablegen",
+    "label": "Organisatorisches"
+  },
+  {
+    "text": "abends in bar gehen",
+    "label": "Freizeit"
+  },
+  {
+    "text": "steuerkram sortieren",
+    "label": "Organisatorisches"
+  },
+  {
+    "text": "party",
+    "label": "Freizeit"
+  },
+  {
+    "text": "excel liste updaten",
+    "label": "Arbeit"
+  },
+  {
+    "text": "kino",
+    "label": "Freizeit"
+  },
+  {
+    "text": "bad putzen",
+    "label": "Haushalt"
+  },
+  {
+    "text": "eier",
+    "label": "Haushalt"
+  },
+  {
+    "text": "mail an chef schreibn wegen urlaub",
+    "label": "Arbeit"
+  },
+  {
+    "text": "sport machen wär eig schlau",
+    "label": "Freizeit"
+  },
+  {
+    "text": "bluttest termin vereinbaren beim hausarzt",
+    "label": "Gesundheit"
+  },
+  {
+    "text": "lren",
+    "label": "Uni"
+  },
+  {
+    "text": "bericht lesen und feedback an kollegen geben",
+    "label": "Arbeit"
+  },
+  {
+    "text": "sonnenbrille kaufen",
+    "label": "Freizeit"
+  },
+  {
+    "text": "antrag stellen und anhängen",
+    "label": "Organisatorisches"
+  },
+  {
+    "text": "abo",
+    "label": "Organisatorisches"
+  },
+  {
+    "text": "chef anrufen wegen schicht",
+    "label": "Arbeit"
+  },
+  {
+    "text": "medikamente regelmäßig nehmen und erinnern",
+    "label": "Gesundheit"
+  },
+  {
+    "text": "teammeeting organisieren und zeit für alle abstimmen",
+    "label": "Arbeit"
+  },
+  {
+    "text": "arzttermin verschiebn wegen zeit",
+    "label": "Gesundheit"
+  },
+  {
+    "text": "shopping",
+    "label": "Freizeit"
+  },
+  {
+    "text": "kühlscahrnk",
+    "label": "Haushalt"
+  },
+  {
+    "text": "lerngruppe organisiern und termin findn",
+    "label": "Uni"
+  },
+  {
+    "text": "arzt wechseln",
+    "label": "Gesundheit"
+  },
+  {
+    "text": "meteing vershcieben oder so",
+    "label": "Arbeit"
+  },
+  {
+    "text": "dokumente scannen und speichern",
+    "label": "Organisatorisches"
+  },
+  {
+    "text": "geschirr",
+    "label": "Haushalt"
+  },
+  {
+    "text": "übungsblatt lösen und lösungen vergleichen",
+    "label": "Uni"
+  },
+  {
+    "text": "müll runterbringen",
+    "label": "Haushalt"
+  },
+  {
+    "text": "excel dokument aktualisieren und neue daten eintragen",
+    "label": "Arbeit"
+  },
+  {
+    "text": "medikamente apotheke hollen",
+    "label": "Gesundheit"
+  },
+  {
+    "text": "wandern gehen am wochenende planen",
+    "label": "Freizeit"
+  },
+  {
+    "text": "arzttermin verschieben",
+    "label": "Gesundheit"
+  },
+  {
+    "text": "versicherung abschließen",
+    "label": "Organisatorisches"
+  },
+  {
+    "text": "geschenk für geburtstag kaufen",
+    "label": "Freizeit"
+  },
+  {
+    "text": "prüfung anmelden vor ablauf der frist",
+    "label": "Uni"
+  },
+  {
+    "text": "rechnung prüfen und zahlen",
+    "label": "Organisatorisches"
+  },
+  {
+    "text": "ofen",
+    "label": "Haushalt"
+  },
+  {
+    "text": "zahnarzt termin ausmachn zur kontrolle",
+    "label": "Gesundheit"
+  },
+  {
+    "text": "übungen wiederholen für die klausur",
+    "label": "Uni"
+  },
+  {
+    "text": "report",
+    "label": "Arbeit"
+  },
+  {
+    "text": "arzt kurz",
+    "label": "Gesundheit"
+  },
+  {
+    "text": "neue klamotten online bestellen für sommer",
+    "label": "Freizeit"
+  },
+  {
+    "text": "rezept einlösen und medis holen",
+    "label": "Gesundheit"
+  },
+  {
+    "text": "blutwerte beim arzt checken lassen",
+    "label": "Gesundheit"
+  },
+  {
+    "text": "apotheke gehen und salbe holen",
+    "label": "Gesundheit"
+  },
+  {
+    "text": "teammeeting organisieren und planen",
+    "label": "Arbeit"
+  },
+  {
+    "text": "referat vorberieten shcnell",
+    "label": "Uni"
+  },
+  {
+    "text": "outfit für party kaufen",
+    "label": "Freizeit"
+  },
+  {
+    "text": "neue sneakers bestellen",
+    "label": "Freizeit"
+  },
+  {
+    "text": "kunden treffen",
+    "label": "Arbeit"
+  },
+  {
+    "text": "prüfung lernen und notizen machen",
+    "label": "Uni"
+  },
+  {
+    "text": "konto checkn wo geld hin ist",
+    "label": "Organisatorisches"
+  },
+  {
+    "text": "shopping mall",
+    "label": "Freizeit"
+  },
+  {
+    "text": "museum besuchen und tickets vorher buchen",
+    "label": "Freizeit"
+  },
+  {
+    "text": "lebensmittel einkaufen gemüse und obst",
+    "label": "Haushalt"
+  },
+  {
+    "text": "geburtstagsgeschenk kaufn und einpackn",
+    "label": "Freizeit"
+  },
+  {
+    "text": "steuerunterlagen sortieren und alles abheften",
+    "label": "Organisatorisches"
+  },
+  {
+    "text": "krankschreibung beim arzt holen",
+    "label": "Gesundheit"
+  },
+  {
+    "text": "einkaufslist machen sonst vergesse",
+    "label": "Haushalt"
+  },
+  {
+    "text": "Arbeits projekt abgeben vor der deadline",
+    "label": "Arbeit"
+  },
+  {
+    "text": "boden wischen und danach nochmal saugen",
+    "label": "Haushalt"
+  },
+  {
+    "text": "übungen wiederholn für klausur",
+    "label": "Uni"
+  },
+  {
+    "text": "lernplan machen für nächste woche",
+    "label": "Uni"
+  },
+  {
+    "text": "kino tickets kaufen",
+    "label": "Freizeit"
+  },
+  {
+    "text": "referat",
+    "label": "Uni"
+  },
+  {
+    "text": "kühlscahrnk leer einkaufen",
+    "label": "Haushalt"
+  },
+  {
+    "text": "tee und kaffee nachkaufn",
+    "label": "Haushalt"
+  },
+  {
+    "text": "tabletten nachkaufen",
+    "label": "Gesundheit"
+  },
+  {
+    "text": "steuerunterlagen sortieren",
+    "label": "Organisatorisches"
+  },
+  {
+    "text": "arzt wechseln und neuen arzt suchen",
+    "label": "Gesundheit"
+  },
+  {
+    "text": "arzt kurz anrufn wegen termin",
+    "label": "Gesundheit"
+  },
+  {
+    "text": "prüfung lernen",
+    "label": "Uni"
+  },
+  {
+    "text": "chfe anschirebn wegen schciht",
+    "label": "Arbeit"
+  },
+  {
+    "text": "freizeitpark besuchen",
+    "label": "Freizeit"
+  },
+  {
+    "text": "abo kündigen und bestätigung prüfen",
+    "label": "Organisatorisches"
+  },
+  {
+    "text": "museum gehen",
+    "label": "Freizeit"
+  },
+  {
+    "text": "wäsche aufhängen",
+    "label": "Haushalt"
+  },
+  {
+    "text": "salbe holen",
+    "label": "Gesundheit"
+  },
+  {
+    "text": "arzt termin ausmachen wegen kopfschmerzen",
+    "label": "Gesundheit"
+  },
+  {
+    "text": "kino abnd",
+    "label": "Freizeit"
+  },
+  {
+    "text": "post zeug erledign voll viel liegen",
+    "label": "Organisatorisches"
+  },
+  {
+    "text": "vertrag unterschreibn und zurück schickn",
+    "label": "Organisatorisches"
+  },
+  {
+    "text": "lern",
+    "label": "Uni"
+  },
+  {
+    "text": "prüfung lernen und zusammenfassung schreiben",
+    "label": "Uni"
+  },
+  {
+    "text": "museum besuchn am sonntag",
+    "label": "Freizeit"
+  },
+  {
+    "text": "tabletten kaufen",
+    "label": "Gesundheit"
+  },
+  {
+    "text": "skript komplett lesen und wichtige dinge notieren",
+    "label": "Uni"
+  },
+  {
+    "text": "post sortieren und wichtige briefe beantworten",
+    "label": "Organisatorisches"
+  },
+  {
+    "text": "referat vorbereiten",
+    "label": "Uni"
+  },
+  {
+    "text": "apotheke vorbei",
+    "label": "Gesundheit"
+  },
+  {
+    "text": "wandern gehn wär ncie",
+    "label": "Freizeit"
+  },
+  {
+    "text": "versciherung zeug durhcgheen",
+    "label": "Organisatorisches"
+  },
+  {
+    "text": "putzen algemein alles bisscehn",
+    "label": "Haushalt"
+  },
+  {
+    "text": "kundenmail beantworten",
+    "label": "Arbeit"
+  },
+  {
+    "text": "café chllen mit freundin",
+    "label": "Freizeit"
+  },
+  {
+    "text": "projekt abgeben vor der deadline",
+    "label": "Uni"
+  },
+  {
+    "text": "alle offenen rechnungen durchgehen und schauen ob irgendwas vergessen wurde",
+    "label": "Organisatorisches"
+  },
+  {
+    "text": "hoodie online bestellen",
+    "label": "Freizeit"
+  },
+  {
+    "text": "tabletten",
+    "label": "Gesundheit"
+  },
+  {
+    "text": "unterlagen sortieren und an behörde schicken",
+    "label": "Organisatorisches"
+  },
+  {
+    "text": "meeting vorbereiten und alle notwendigen unterlagen zusammensuchen",
+    "label": "Arbeit"
+  },
+  {
+    "text": "neue jacke online bestellen und verschiedene shops vergleichen",
+    "label": "Freizeit"
+  },
+  {
+    "text": "großen wocheneinkauf erledigen und auch gleich snacks für die nächsten tage holen",
+    "label": "Haushalt"
+  },
+  {
+    "text": "vitamine kaufen",
+    "label": "Gesundheit"
+  },
+  {
+    "text": "bericht lesen und feedback geben",
+    "label": "Uni"
+  },
+  {
+    "text": "küche is chaos muss ich mal machen",
+    "label": "Haushalt"
+  },
+  {
+    "text": "bar",
+    "label": "Freizeit"
+  },
+  {
+    "text": "neue klamotten bestellen online",
+    "label": "Freizeit"
+  },
+  {
+    "text": "küche",
+    "label": "Haushalt"
+  },
+  {
+    "text": "medikamentenplan aktualisieren",
+    "label": "Gesundheit"
+  },
+  {
+    "text": "amt",
+    "label": "Organisatorisches"
+  },
+  {
+    "text": "rechnung zahln",
+    "label": "Organisatorisches"
+  },
+  {
+    "text": "bank",
+    "label": "Organisatorisches"
+  },
+  {
+    "text": "abo kündigen",
+    "label": "Organisatorisches"
+  },
+  {
+    "text": "boden saugenn wäre mal nötig",
+    "label": "Haushalt"
+  },
+  {
+    "text": "boden wischen",
+    "label": "Haushalt"
+  },
+  {
+    "text": "präsentation halten",
+    "label": "Arbeit"
+  },
+  {
+    "text": "gruppe treffen für projektarbeit",
+    "label": "Uni"
+  },
+  {
+    "text": "müll rausbringen und trennen",
+    "label": "Haushalt"
+  },
+  {
+    "text": "seminararbeit gliederung schreiben und quellen suchen",
+    "label": "Uni"
+  },
+  {
+    "text": "mit freunden cihllen heute abend",
+    "label": "Freizeit"
+  },
+  {
+    "text": "angebot checkne und antowrten",
+    "label": "Arbeit"
+  },
+  {
+    "text": "medikamente regelmäßig nehmn nicht vergessn",
+    "label": "Gesundheit"
+  },
+  {
+    "text": "übungen noch machen sonst verkack ich",
+    "label": "Uni"
+  },
+  {
+    "text": "kontoauszüge prüfen und ausgaben kontrollieren",
+    "label": "Organisatorisches"
+  },
+  {
+    "text": "brot backen und zutaten einkaufen",
+    "label": "Haushalt"
+  },
+  {
+    "text": "frist safe im kalender eintragen",
+    "label": "Organisatorisches"
+  },
+  {
+    "text": "mail chef",
+    "label": "Arbeit"
+  },
+  {
+    "text": "lern gruppe treffen wär eig gut",
+    "label": "Uni"
+  },
+  {
+    "text": "geburtstagsgeschenk besorgen und verpacken",
+    "label": "Freizeit"
+  },
+  {
+    "text": "konto chekcne wo geld hin",
+    "label": "Organisatorisches"
+  },
+  {
+    "text": "sport machen",
+    "label": "Freizeit"
+  },
+  {
+    "text": "bericht schreibn und formatiern",
+    "label": "Arbeit"
+  },
+  {
+    "text": "wohnzimmer saugen",
+    "label": "Haushalt"
+  },
+  {
+    "text": "report fertigstellen und abschicken",
+    "label": "Arbeit"
+  },
+  {
+    "text": "spülmaschine ausräumen",
+    "label": "Haushalt"
+  },
+  {
+    "text": "angebot prüfn und kunden antwortn",
+    "label": "Arbeit"
+  },
+  {
+    "text": "für klausur lernen und notizen zusammenstellen",
+    "label": "Uni"
+  },
+  {
+    "text": "bericht fix fertig amchen",
+    "label": "Arbeit"
+  },
+  {
+    "text": "mit freunden essen gehn heute abend",
+    "label": "Freizeit"
+  },
+  {
+    "text": "café treffen organisieren",
+    "label": "Freizeit"
+  },
+  {
+    "text": "skript lesen",
+    "label": "Uni"
+  },
+  {
+    "text": "wandern gehn am wochenend plan",
+    "label": "Freizeit"
+  },
+  {
+    "text": "kino tickets buchen für freitag abend",
+    "label": "Freizeit"
+  },
+  {
+    "text": "arztberciht abholne irgnedwann",
+    "label": "Gesundheit"
+  },
+  {
+    "text": "angebot checkn und antworten",
+    "label": "Arbeit"
+  },
+  {
+    "text": "präsentation für arbeit fertig machen und slides designen",
+    "label": "Arbeit"
+  },
+  {
+    "text": "sommerkleid kaufen",
+    "label": "Freizeit"
+  },
+  {
+    "text": "meeting",
+    "label": "Arbeit"
+  },
+  {
+    "text": "rechnugn zahlen vor mahnung",
+    "label": "Organisatorisches"
+  },
+  {
+    "text": "arztbericht abholen",
+    "label": "Gesundheit"
+  },
+  {
+    "text": "termin",
+    "label": "Organisatorisches"
+  },
+  {
+    "text": "chillen",
+    "label": "Freizeit"
+  },
+  {
+    "text": "museum besuchen am sonntag",
+    "label": "Freizeit"
+  },
+  {
+    "text": "wäsche aufh",
+    "label": "Haushalt"
+  },
+  {
+    "text": "abo abschliesen streaming",
+    "label": "Organisatorisches"
+  },
+  {
+    "text": "küche aufräumen und spülen",
+    "label": "Haushalt"
+  },
+  {
+    "text": "kühlschrank aufräumen alte sachen weg",
+    "label": "Haushalt"
+  },
+  {
+    "text": "taskliste aktualisieren und prioritäten setzen",
+    "label": "Arbeit"
+  },
+  {
+    "text": "telefonkonferenz",
+    "label": "Arbeit"
+  },
+  {
+    "text": "vorlesung nochmal anschauen und zusammenfassung schreiben",
+    "label": "Uni"
+  },
+  {
+    "text": "unterlagen einreichen",
+    "label": "Organisatorisches"
+  },
+  {
+    "text": "patry planen wird wild",
+    "label": "Freizeit"
+  },
+  {
+    "text": "wäsche waschn und aufhängn danach",
+    "label": "Haushalt"
+  },
+  {
+    "text": "arzt anrufen",
+    "label": "Gesundheit"
+  },
+  {
+    "text": "angebot",
+    "label": "Arbeit"
+  },
+  {
+    "text": "einkafuen gehen milch brot holen",
+    "label": "Haushalt"
+  },
+  {
+    "text": "arzttermin",
+    "label": "Gesundheit"
+  },
+  {
+    "text": "medikamente nehmen",
+    "label": "Gesundheit"
+  },
+  {
+    "text": "miete überweisen und konto checken ob alles passt",
+    "label": "Organisatorisches"
+  },
+  {
+    "text": "report fertig machn und abschickn",
+    "label": "Arbeit"
+  },
+  {
+    "text": "frist verlängern beantragen",
+    "label": "Organisatorisches"
+  },
+  {
+    "text": "prüfung anmelden bevor die frist abläuft",
+    "label": "Uni"
+  },
+  {
+    "text": "check up machen lassen irgendwann mal",
+    "label": "Gesundheit"
+  },
+  {
+    "text": "wäsche aus Trockner holen und wegräumen",
+    "label": "Haushalt"
+  },
+  {
+    "text": "kinoabend planen und tickets buchen",
+    "label": "Freizeit"
+  },
+  {
+    "text": "vorlesung von gestern nochmal komplett durcharbeiten und notizen sauber machen",
+    "label": "Uni"
+  },
+  {
+    "text": "projekt planen und nächste schritte definieren",
+    "label": "Arbeit"
+  },
+  {
+    "text": "vorlesung nochmal anschau und zusammenfassn",
+    "label": "Uni"
+  },
+  {
+    "text": "abends in eine bar gehen",
+    "label": "Freizeit"
+  },
+  {
+    "text": "miete überweisen und konto überprüfen",
+    "label": "Organisatorisches"
+  },
+  {
+    "text": "bericht",
+    "label": "Arbeit"
+  },
+  {
+    "text": "party plan",
+    "label": "Freizeit"
+  },
+  {
+    "text": "bericht fertig machen",
+    "label": "Arbeit"
+  },
+  {
+    "text": "salbe kaufen für haut",
+    "label": "Gesundheit"
+  },
+  {
+    "text": "zahnarzttermin machen für kontrolle und reinigung",
+    "label": "Gesundheit"
+  },
+  {
+    "text": "vertrag durchlesen und prüfen",
+    "label": "Organisatorisches"
+  },
+  {
+    "text": "jakce kaufen für winter",
+    "label": "Freizeit"
+  },
+  {
+    "text": "kühlschrank",
+    "label": "Haushalt"
+  },
+  {
+    "text": "handyvertrag abschliesn",
+    "label": "Organisatorisches"
+  },
+  {
+    "text": "neue jeans kaufen",
+    "label": "Freizeit"
+  },
+  {
+    "text": "uni stuff sortiern chaos grad",
+    "label": "Uni"
+  },
+  {
+    "text": "vroleusng nochmal anschaun",
+    "label": "Uni"
+  },
+  {
+    "text": "meeting protokollieren",
+    "label": "Arbeit"
+  },
+  {
+    "text": "nasenspray kaufn",
+    "label": "Gesundheit"
+  },
+  {
+    "text": "zocken abends",
+    "label": "Freizeit"
+  },
+  {
+    "text": "bad putzen und sauber machen",
+    "label": "Haushalt"
+  },
+  {
+    "text": "arzt termin ausmachen wegen rückenschmerzen seit letzter woche",
+    "label": "Gesundheit"
+  },
+  {
+    "text": "call mit team 14uhr",
+    "label": "Arbeit"
+  },
+  {
+    "text": "wäsche aufhängen und trocknen lassen",
+    "label": "Haushalt"
+  },
+  {
+    "text": "kleid kaufen für event",
+    "label": "Freizeit"
+  },
+  {
+    "text": "wochenendtrip planen und unterkunft buchen",
+    "label": "Freizeit"
+  },
+  {
+    "text": "lenern für klausru noch",
+    "label": "Uni"
+  },
+  {
+    "text": "technik kaufen für zuhause",
+    "label": "Organisatorisches"
+  },
+  {
+    "text": "mit lisa essen gehen",
+    "label": "Freizeit"
+  },
+  {
+    "text": "krankschreibung holen",
+    "label": "Gesundheit"
+  },
+  {
+    "text": "versicherung vergleichen und angebote prüfen",
+    "label": "Organisatorisches"
+  },
+  {
+    "text": "rechnung bezahlen und bestätigung speichern",
+    "label": "Organisatorisches"
+  },
+  {
+    "text": "ofen sauber mahcen dreckig",
+    "label": "Haushalt"
+  },
+  {
+    "text": "antrag stellen für förderung oder stipendium",
+    "label": "Organisatorisches"
+  },
+  {
+    "text": "kühlschrank putzen",
+    "label": "Haushalt"
+  },
+  {
+    "text": "präsentation fertig machen für arbeit",
+    "label": "Arbeit"
+  },
+  {
+    "text": "neues handy kaufn",
+    "label": "Organisatorisches"
+  },
+  {
+    "text": "accessoires kaufen",
+    "label": "Freizeit"
+  },
+  {
+    "text": "report finalisieren und fristgerecht abschicken",
+    "label": "Arbeit"
+  },
+  {
+    "text": "blutewrte",
+    "label": "Gesundheit"
+  },
+  {
+    "text": "lebensmittel einkaufen für frühstück und abendessen",
+    "label": "Haushalt"
+  },
+  {
+    "text": "date planen und restaurant aussuchen",
+    "label": "Freizeit"
+  },
+  {
+    "text": "antrag stellen und dokumente anhängen",
+    "label": "Organisatorisches"
+  },
+  {
+    "text": "klamoten kaufen",
+    "label": "Freizeit"
+  },
+  {
+    "text": "bad putzen und handtücher wechseln",
+    "label": "Haushalt"
+  },
+  {
+    "text": "uni zeug",
+    "label": "Uni"
+  },
+  {
+    "text": "abends in eine bar gehen mit freunden",
+    "label": "Freizeit"
+  },
+  {
+    "text": "freund treffen",
+    "label": "Freizeit"
+  },
+  {
+    "text": "lebensmittel einkaufen für zuhause",
+    "label": "Haushalt"
+  },
+  {
+    "text": "vitamine schlucken",
+    "label": "Gesundheit"
+  },
+  {
+    "text": "teammeeting organisieren und agenda vorbereiten",
+    "label": "Arbeit"
+  },
+  {
+    "text": "mailn",
+    "label": "Arbeit"
+  },
+  {
+    "text": "check up termin",
+    "label": "Gesundheit"
+  },
+  {
+    "text": "arzt anrufn",
+    "label": "Gesundheit"
+  },
+  {
+    "text": "uni lern",
+    "label": "Uni"
+  },
+  {
+    "text": "frist im kalender eintragen und erinnern setzen",
+    "label": "Organisatorisches"
+  },
+  {
+    "text": "dtae",
+    "label": "Freizeit"
+  },
+  {
+    "text": "rechnugn überweisen und kont chekcn",
+    "label": "Organisatorisches"
+  },
+  {
+    "text": "meeting vorbereiten morgen",
+    "label": "Arbeit"
+  },
+  {
+    "text": "wohnung komplett durchputzn",
+    "label": "Haushalt"
+  },
+  {
+    "text": "yoga kurs",
+    "label": "Freizeit"
+  },
+  {
+    "text": "antrag stelln und unterlagen anhängn",
+    "label": "Organisatorisches"
+  },
+  {
+    "text": "neuen monitor kaufen",
+    "label": "Organisatorisches"
+  },
+  {
+    "text": "wichtige präsentation für kunden fertig bauen und nochmal durchsprechen",
+    "label": "Arbeit"
+  },
+  {
+    "text": "wäsche",
+    "label": "Haushalt"
+  },
+  {
+    "text": "projektpräsentation bauen",
+    "label": "Uni"
+  },
+  {
+    "text": "arzt termin ausmachen",
+    "label": "Gesundheit"
+  },
+  {
+    "text": "telefonkonferenz vorbereiten und agenda festlegen",
+    "label": "Arbeit"
+  },
+  {
+    "text": "frist im kalender eintragn und remindr",
+    "label": "Organisatorisches"
+  },
+  {
+    "text": "kundentermin vorbereiten und fragen notieren",
+    "label": "Arbeit"
+  },
+  {
+    "text": "mit freunden chilln bisschen",
+    "label": "Freizeit"
+  },
+  {
+    "text": "wäsche aufhägnen sonst müffelt",
+    "label": "Haushalt"
+  },
+  {
+    "text": "kühlschrank aufräumen und alte sachen entsorgen",
+    "label": "Haushalt"
+  },
+  {
+    "text": "telefonat mit kunden führen und notizen festhalten",
+    "label": "Arbeit"
+  },
+  {
+    "text": "wohnung gründlich putzen inklusive bad und küche",
+    "label": "Haushalt"
+  },
+  {
+    "text": "fitness kurs buchen für nächsten monat",
+    "label": "Freizeit"
+  },
+  {
+    "text": "kundentermin vorbereitn und fragen notiern",
+    "label": "Arbeit"
+  },
+  {
+    "text": "spülmaschine ausräumen und einräumen",
+    "label": "Haushalt"
+  },
+  {
+    "text": "frist verlängern beantragn",
+    "label": "Organisatorisches"
+  },
+  {
+    "text": "date plan kp wohin",
+    "label": "Freizeit"
+  },
+  {
+    "text": "vitamine kaufen und nehmen",
+    "label": "Gesundheit"
+  },
+  {
+    "text": "arzt anrufen und fragen",
+    "label": "Gesundheit"
+  },
+  {
+    "text": "meteing vorberieten für morgen",
+    "label": "Arbeit"
+  },
+  {
+    "text": "stromrechnung prüfen und schauen warum sie diesen monat höher ist",
+    "label": "Organisatorisches"
+  },
+  {
+    "text": "kollegen",
+    "label": "Arbeit"
+  },
+  {
+    "text": "arzt anrufne wegen tremin",
+    "label": "Gesundheit"
+  },
+  {
+    "text": "kino abend vlllt heute",
+    "label": "Freizeit"
+  },
+  {
+    "text": "checkup",
+    "label": "Gesundheit"
+  },
+  {
+    "text": "seminararbeit strukturieren und gliederung schreiben",
+    "label": "Uni"
+  },
+  {
+    "text": "apotheke besuchen wegen erkältung und passende medis holen",
+    "label": "Gesundheit"
+  },
+  {
+    "text": "boden wischen und staubsaugen",
+    "label": "Haushalt"
+  },
+  {
+    "text": "apotheke aufsuchen und medis kaufen",
+    "label": "Gesundheit"
+  },
+  {
+    "text": "vitamine kaufen und regelmäßig nehmen",
+    "label": "Gesundheit"
+  },
+  {
+    "text": "küche aufräum und geschirr spüln",
+    "label": "Haushalt"
+  },
+  {
+    "text": "uni zeug sortieren",
+    "label": "Uni"
+  },
+  {
+    "text": "bericht fertig schreiben und an vorgesetzten schicken",
+    "label": "Arbeit"
+  },
+  {
+    "text": "meeting verschieben und neuen termin abstimmen",
+    "label": "Arbeit"
+  },
+  {
+    "text": "kinoabend mit freunden planen und tickets buchen",
+    "label": "Freizeit"
+  },
+  {
+    "text": "arzttermin wahrnehmen und fragen vorbereiten",
+    "label": "Gesundheit"
+  },
+  {
+    "text": "projekt planen und verteilen",
+    "label": "Arbeit"
+  },
+  {
+    "text": "arzt anrufne results frgaen",
+    "label": "Gesundheit"
+  },
+  {
+    "text": "rechnung bezahlen und im ordner ablegen",
+    "label": "Organisatorisches"
+  },
+  {
+    "text": "versicherug abschließen",
+    "label": "Organisatorisches"
+  },
+  {
+    "text": "kino abend planen mit freunden",
+    "label": "Freizeit"
+  },
+  {
+    "text": "party planen",
+    "label": "Freizeit"
+  },
+  {
+    "text": "vertrag abschließen handy",
+    "label": "Organisatorisches"
+  },
+  {
+    "text": "übungen wiederholen",
+    "label": "Uni"
+  },
+  {
+    "text": "bluttest termin vereinbarn beim arzt",
+    "label": "Gesundheit"
+  },
+  {
+    "text": "mail rauscshciken shcnell",
+    "label": "Arbeit"
+  },
+  {
+    "text": "kunden clal vorbereiten",
+    "label": "Arbeit"
+  },
+  {
+    "text": "nudeln kaufen hab nix mehr da",
+    "label": "Haushalt"
+  },
+  {
+    "text": "seminar vorbereiten",
+    "label": "Uni"
+  },
+  {
+    "text": "blutwerte beim arzt prüfen lassen",
+    "label": "Gesundheit"
+  },
+  {
+    "text": "rezept verlängern lassn beim arzt",
+    "label": "Gesundheit"
+  },
+  {
+    "text": "mit freunden essen gehen und tisch reservieren nicht vergessen",
+    "label": "Freizeit"
+  },
+  {
+    "text": "kino abends",
+    "label": "Freizeit"
+  },
+  {
+    "text": "software lizenz kaufen",
+    "label": "Organisatorisches"
+  },
+  {
+    "text": "ofen reinigen",
+    "label": "Haushalt"
+  },
+  {
+    "text": "internetvertrag abschließen",
+    "label": "Organisatorisches"
+  },
+  {
+    "text": "seminararbeit anfangen und erstmal grobe struktur überlegen",
+    "label": "Uni"
+  },
+  {
+    "text": "kino tickets buchn für freitag",
+    "label": "Freizeit"
+  },
+  {
+    "text": "rezept verlängern lassen beim arzt",
+    "label": "Gesundheit"
+  },
+  {
+    "text": "arzttermin verschieben und neuen termin finden",
+    "label": "Gesundheit"
+  },
+  {
+    "text": "lebensmittel einkaufen für die ganze woche inkl frühstück",
+    "label": "Haushalt"
+  },
+  {
+    "text": "brot backen",
+    "label": "Haushalt"
+  },
+  {
+    "text": "küche aufräumen und geschirr spülen",
+    "label": "Haushalt"
+  },
+  {
+    "text": "taskliste update",
+    "label": "Arbeit"
+  },
+  {
+    "text": "geschenk für freund kaufn",
+    "label": "Freizeit"
+  },
+  {
+    "text": "tasklsite",
+    "label": "Arbeit"
+  },
+  {
+    "text": "gruppe treffn und projekt besprechn",
+    "label": "Uni"
+  },
+  {
+    "text": "arzttermin wahrnehmen",
+    "label": "Gesundheit"
+  },
+  {
+    "text": "übungen ansehen für die klausur",
+    "label": "Uni"
+  },
+  {
+    "text": "vorlesung besuchen und wichtige dinge mitschreiben",
+    "label": "Uni"
+  },
+  {
+    "text": "bank anrufne wegen abbucuhng",
+    "label": "Organisatorisches"
+  },
+  {
+    "text": "hausarbeit weiterschreiben und prüfen",
+    "label": "Uni"
+  },
+  {
+    "text": "impftermin buchen",
+    "label": "Gesundheit"
+  },
+  {
+    "text": "bluttest termin vereinbaren beim arzt",
+    "label": "Gesundheit"
+  },
+  {
+    "text": "mit freunden essen gehen heute abend",
+    "label": "Freizeit"
+  },
+  {
+    "text": "blutwerte checkn lassn beim arzt",
+    "label": "Gesundheit"
+  },
+  {
+    "text": "bad komplett putzen inklusive spiegel und dusche entkalken",
+    "label": "Haushalt"
+  },
+  {
+    "text": "übungsblatt rechnen",
+    "label": "Uni"
+  },
+  {
+    "text": "angebot prüfen und feedback an kunden formulieren",
+    "label": "Arbeit"
+  },
+  {
+    "text": "spülmaschine ausräum und neu einräum",
+    "label": "Haushalt"
+  },
+  {
+    "text": "bissl shoppen gehn neue fits checken",
+    "label": "Freizeit"
+  },
+  {
+    "text": "referat vorbereitn noch schnell",
+    "label": "Uni"
+  },
+  {
+    "text": "ofen gründlich reinigen weil sehr schmutzig",
+    "label": "Haushalt"
+  },
+  {
+    "text": "meeting verschiebn und neuen termin",
+    "label": "Arbeit"
+  },
+  {
+    "text": "party organisieren für nächsten monat",
+    "label": "Freizeit"
+  },
+  {
+    "text": "sport machen im fitnessstudio",
+    "label": "Freizeit"
+  },
+  {
+    "text": "vorlesung nacharbeiten",
+    "label": "Uni"
+  },
+  {
+    "text": "arzttermin verschieben und neu machen",
+    "label": "Gesundheit"
+  },
+  {
+    "text": "café",
+    "label": "Freizeit"
+  },
+  {
+    "text": "mail an chef schreiben wegen projektstatus",
+    "label": "Arbeit"
+  },
+  {
+    "text": "task",
+    "label": "Arbeit"
+  },
+  {
+    "text": "saugen",
+    "label": "Haushalt"
+  },
+  {
+    "text": "drucker kaufen fürs büro",
+    "label": "Organisatorisches"
+  },
+  {
+    "text": "kinoabend planen und tickets holen",
+    "label": "Freizeit"
+  }
 ]
