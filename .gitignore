@@ -1,28 +1,100 @@
-# Python
-__pycache__/
+# -----------------
+
+# Python / Backend
+
+# -----------------
+
+**pycache**/
 *.py[cod]
 *.pyo
-
-# Conda / Python environments
 .venv/
 venv/
 env/
 .env
 
-# macOS
-.DS_Store
-
-# VS Code
-.vscode/
+# -----------------
 
 # Node / Frontend
+
+# -----------------
+
 node_modules/
 dist/
 build/
 
-# ML model files
-*.joblib
+# Expo
+
+.expo/
+.expo-shared/
+web-build/
+
+# Metro
+
+.metro-health-check*
+
+# -----------------
+
+# Native (React Native)
+
+# -----------------
+
+ios/
+android/
+
+# -----------------
+
+# ML Models
+
+# -----------------
+
 *.pkl
+*.joblib
+
+# -----------------
 
 # Logs
+
+# -----------------
+
 *.log
+npm-debug.*
+yarn-debug.*
+yarn-error.*
+
+# -----------------
+
+# OS / Editor
+
+# -----------------
+
+.DS_Store
+.vscode/
+
+# -----------------
+
+# TypeScript
+
+# -----------------
+
+*.tsbuildinfo
+
+# -----------------
+
+# Secrets / Keys
+
+# -----------------
+
+*.pem
+*.key
+*.p8
+*.p12
+*.jks
+*.mobileprovision
+
+# -----------------
+
+# Env Files
+
+# -----------------
+
+.env*
