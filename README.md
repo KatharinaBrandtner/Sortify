@@ -66,6 +66,28 @@ http://127.0.0.1:8000
 http://127.0.0.1:8000/docs
 ```
 
+## Frontend Setup
+1. Navigate to the frontend folder:
+```bash
+cd frontend-sortify
+```
+
+2. Install dependencies:
+```bash
+npm install
+```
+
+3. Start the development server:
+```bash
+npm start
+```
+
+4. Run the app:
+- Press 'i' for iOS Simulator (if Xcode is set up)
+- Press 'a' for Android Emulator
+- Or scan the QR code with your phone (Expo Go)
+
+
 ## 💛 Project Focus
 This project combines machine learning with user-centered interaction design. The aim is not fully automatic task management, but supportive automation that reduces effort while preserving user control.
 
