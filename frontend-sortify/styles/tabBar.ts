@@ -4,10 +4,10 @@ export const tabBar = {
   tabBar: {
     height: 86,
     paddingTop: 10,
-    paddingBottom:  110,
+    paddingBottom:  18,
     backgroundColor: "#FFFFFF",
-    borderTopLeftRadius: 28,
-    borderTopRightRadius: 28,
+    borderTopLeftRadius: 0,
+    borderTopRightRadius: 0,
     borderTopWidth: 0,
     position: "absolute" as const,
 
@@ -23,7 +23,7 @@ export const tabBar = {
   },
 
   label: {
-    fontSize: 11,
+    fontSize: 12,
     fontWeight: "600" as const,
     marginTop: 4,
   },
