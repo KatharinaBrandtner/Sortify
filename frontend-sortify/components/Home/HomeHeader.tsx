@@ -7,7 +7,7 @@ export default function HomeHeader() {
     <View style={styles.container}>
       <View>
         <Image
-          source={require("../../assets/sortify-logo.png")}
+          source={require("../../assets/logo_sortify_home.png")}
           style={styles.logo}
           resizeMode="contain"
         />
@@ -32,8 +32,8 @@ const styles = StyleSheet.create({
     alignItems: "flex-start",
   },
   logo: {
-    width: 120,
-    height: 36,
+    width: 150,
+    height: 45,
     marginBottom: 22,
   },
   greeting: {
@@ -42,7 +42,7 @@ const styles = StyleSheet.create({
     fontWeight: "800",
   },
   subtitle: {
-    color: colors.placeholder,
+    color: colors.text,
     fontSize: 15,
     marginTop: 4,
   },

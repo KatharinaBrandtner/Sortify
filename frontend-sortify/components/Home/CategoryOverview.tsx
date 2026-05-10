@@ -1,14 +1,28 @@
-import { View, Text, StyleSheet } from "react-native";
+import { useState } from "react";
+import { View, Text, Pressable, StyleSheet } from "react-native";
+
 import CategoryProgressCard from "../CategoryProgressCard";
 import { colors } from "../../styles/colors";
 import { categoryData } from "../../data/homeDummyData";
 
 export default function CategoryOverview() {
-  return (
-    <View>
-      <Text style={styles.sectionTitle}>Heute</Text>
+  const [showAll, setShowAll] = useState(false);
 
-      {categoryData.map((category) => (
+  const visibleCategories = showAll ? categoryData : categoryData.slice(0, 4);
+
+  return (
+    <View style={styles.container}>
+      <View style={styles.headerRow}>
+        <Text style={styles.sectionTitle}>Heute</Text>
+
+        <Pressable onPress={() => setShowAll((current) => !current)}>
+          <Text style={styles.showAll}>
+            {showAll ? "Weniger anzeigen" : "Alle anzeigen"}
+          </Text>
+        </Pressable>
+      </View>
+
+      {visibleCategories.map((category) => (
         <CategoryProgressCard
           key={category.id}
           title={category.title}
@@ -23,10 +37,23 @@ export default function CategoryOverview() {
 }
 
 const styles = StyleSheet.create({
+  container: {
+    marginTop: 8,
+  },
+  headerRow: {
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "space-between",
+    marginBottom: 10,
+  },
   sectionTitle: {
     color: colors.purple,
     fontSize: 15,
     fontWeight: "800",
-    marginBottom: 10,
+  },
+  showAll: {
+    color: colors.purple,
+    fontSize: 13,
+    fontWeight: "700",
   },
 });

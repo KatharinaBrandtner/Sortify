@@ -1,31 +1,63 @@
-import { View, Text, StyleSheet } from "react-native";
+import { useState } from "react";
+import { View, Text, StyleSheet, Pressable } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
+
 import { colors } from "../../styles/colors";
 import { nextTasks } from "../../data/homeDummyData";
 
 export default function NextTasks() {
+  const [checkedTaskIds, setCheckedTaskIds] = useState<string[]>([]);
+
+  const toggleTask = (taskId: string) => {
+    setCheckedTaskIds((currentIds) =>
+      currentIds.includes(taskId)
+        ? currentIds.filter((id) => id !== taskId)
+        : [...currentIds, taskId]
+    );
+  };
+
   return (
     <View style={styles.container}>
-      <View style={styles.headerRow}>
-        <Text style={styles.sectionTitle}>Nächste Aufgaben</Text>
-        <Text style={styles.showAll}>Alle anzeigen</Text>
-      </View>
+      <Text style={styles.sectionTitle}>Nächste Aufgaben</Text>
 
       <View style={styles.card}>
-        {nextTasks.map((task) => (
-          <View key={task.id} style={styles.taskRow}>
-            <View style={[styles.dot, { backgroundColor: task.color }]} />
+        {nextTasks.map((task) => {
+          const isChecked = checkedTaskIds.includes(task.id);
 
-            <View style={styles.taskContent}>
-              <Text style={styles.taskTitle}>{task.title}</Text>
-              <Text style={styles.taskMeta}>
-                {task.category} · {task.due}
-              </Text>
+          return (
+            <View key={task.id} style={styles.taskRow}>
+              <View style={[styles.dot, { backgroundColor: task.color }]} />
+
+              <View style={styles.taskContent}>
+                <Text
+                  style={[
+                    styles.taskTitle,
+                    isChecked && styles.taskTitleChecked,
+                  ]}
+                >
+                  {task.title}
+                </Text>
+
+                <Text
+                  style={[
+                    styles.taskMeta,
+                    isChecked && styles.taskMetaChecked,
+                  ]}
+                >
+                  {task.category} · {task.due}
+                </Text>
+              </View>
+
+              <Pressable onPress={() => toggleTask(task.id)}>
+                <Ionicons
+                  name={isChecked ? "checkmark-circle" : "ellipse-outline"}
+                  size={24}
+                  color={isChecked ? colors.purple : colors.placeholder}
+                />
+              </Pressable>
             </View>
-
-            <Ionicons name="ellipse-outline" size={22} color={colors.placeholder} />
-          </View>
-        ))}
+          );
+        })}
       </View>
     </View>
   );
@@ -35,21 +67,11 @@ const styles = StyleSheet.create({
   container: {
     marginTop: 12,
   },
-  headerRow: {
-    flexDirection: "row",
-    justifyContent: "space-between",
-    alignItems: "center",
-    marginBottom: 8,
-  },
   sectionTitle: {
     color: colors.purple,
     fontSize: 15,
     fontWeight: "800",
-  },
-  showAll: {
-    color: colors.purple,
-    fontSize: 13,
-    fontWeight: "600",
+    marginBottom: 8,
   },
   card: {
     backgroundColor: "#FFFFFF",
@@ -81,9 +103,16 @@ const styles = StyleSheet.create({
     fontSize: 14,
     fontWeight: "700",
   },
+  taskTitleChecked: {
+    color: colors.placeholder,
+    textDecorationLine: "line-through",
+  },
   taskMeta: {
     color: colors.placeholder,
     fontSize: 12,
     marginTop: 2,
+  },
+  taskMetaChecked: {
+    opacity: 0.6,
   },
 });
