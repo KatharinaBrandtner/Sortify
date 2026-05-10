@@ -9,4 +9,13 @@ export const colors = {
   lightGray: "#EDE9EF",
   lighterGray: "#f2eef4",
   placeholder: "#B5ADB7",
-};
+
+  categories: {
+      uni: "#5B021D",
+      arbeit: "#7EC7CF",
+      haushalt: "#36175A",
+      freizeit: "#D45C8C",
+      gesundheit: "#2BAE66",
+      organisatorisches: "#F5A623",
+    },
+  };
