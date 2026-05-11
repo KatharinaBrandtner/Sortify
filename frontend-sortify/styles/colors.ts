@@ -13,6 +13,14 @@ export const colors = {
   lightPink: "#FFF0F7",
   placeholder: "#B5ADB7",
   white: "#FFFFFF",
+  categories: {
+    uni: "#5B021D",
+    arbeit: "#7EC7CF",
+    haushalt: "#36175A",
+    freizeit: "#D45C8C",
+    gesundheit: "#2BAE66",
+    organisatorisches: "#F5A623",
+  },
 };
 
 export const categoryColors = {
