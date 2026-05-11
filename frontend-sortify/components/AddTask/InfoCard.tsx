@@ -9,7 +9,7 @@ export default function InfoCard() {
       </View>
 
       <Text style={styles.text}>
-        Unsere KI schlägt dir nach dem Absenden die beste Kategorie vor.
+        Wir schlagen dir nach dem Absenden die beste Kategorie vor.
       </Text>
     </View>
   );
