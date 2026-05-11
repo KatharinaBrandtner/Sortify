@@ -1,5 +1,6 @@
 import { TouchableOpacity, Text, StyleSheet } from "react-native";
-import { colors } from "../../styles/colors";
+import { colors } from "../styles/colors";
+import { layout } from "../styles/layout";
 
 export default function PrimaryButton({
   title,
@@ -10,7 +11,7 @@ export default function PrimaryButton({
 }) {
   return (
     <TouchableOpacity style={styles.button} onPress={onPress}>
-      <Text style={styles.text}>{title} ✈️</Text>
+      <Text style={styles.text}>{title}</Text>
     </TouchableOpacity>
   );
 }
@@ -19,12 +20,12 @@ const styles = StyleSheet.create({
   button: {
     backgroundColor: colors.purple,
     padding: 18,
-    borderRadius: 16,
+    borderRadius: layout.primaryButtonRadius,
     alignItems: "center",
   },
   text: {
-    color: "white",
+    color: colors.white,
     fontWeight: "600",
-    fontSize: 16,
+    fontSize: layout.bodyTextSize,
   },
 });
