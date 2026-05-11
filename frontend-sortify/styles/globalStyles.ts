@@ -1,13 +1,14 @@
 import { StyleSheet } from "react-native";
 import { colors } from "./colors";
+import { layout } from "./layout";
 
 export const globalStyles = StyleSheet.create({
-  container: {
+  screenContainer: {
     flex: 1,
     backgroundColor: colors.background,
-    paddingTop:65,
-    paddingLeft: 20,
-    paddingRight: 20,
-    paddingBottom: 20,
+    paddingTop: layout.tabScreenPaddingTop,
+    paddingLeft: layout.screenPaddingX,
+    paddingRight: layout.screenPaddingX,
+    paddingBottom: layout.screenPaddingBottom,
   },
 });

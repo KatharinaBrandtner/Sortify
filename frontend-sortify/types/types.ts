@@ -10,3 +10,8 @@ export type RootStackParamList = {
     suggestedCategory: string;
   };
 };
+
+export interface SuggestionScreenParams {
+  task: string;
+  suggestedCategory: string;
+}

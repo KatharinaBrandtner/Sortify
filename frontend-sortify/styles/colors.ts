@@ -8,5 +8,9 @@ export const colors = {
   text: "#1A0F11",
   lightGray: "#EDE9EF",
   lighterGray: "#f2eef4",
+  lightPurple: "#EFE7FF",
+  lightBlue: "#E6F8FB",
+  lightPink: "#FFF0F7",
   placeholder: "#B5ADB7",
+  white: "#FFFFFF",
 };

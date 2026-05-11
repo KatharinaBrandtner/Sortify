@@ -1,0 +1,18 @@
+export const layout = {
+  screenPaddingX: 20,
+  screenPaddingBottom: 20,
+  tabScreenPaddingTop: 65,
+  headerIconSize: 30,
+  headerTitleSize: 20,
+  headerMarginBottom: 30,
+  sectionLabelTop: 18,
+  sectionLabelBottom: 12,
+  smallTextSize: 12,
+  bodyTextSize: 16,
+  chipWidth: 132,
+  chipRadius: 18,
+  cardRadius: 18,
+  notesRadius: 22,
+  primaryButtonRadius: 16,
+  pageGap: 28,
+} as const;

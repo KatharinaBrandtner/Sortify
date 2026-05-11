@@ -7,8 +7,8 @@ export default function RootLayout() {
       <Stack.Screen
         name="suggestion"
         options={{
-          presentation: "modal",
           headerShown: false,
+          gestureEnabled: false,
         }}
       />
     </Stack>
