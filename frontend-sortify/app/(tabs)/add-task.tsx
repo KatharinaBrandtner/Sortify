@@ -1,18 +1,83 @@
 import { View, Text, Image } from "react-native";
 import { useState } from "react";
+import { useNavigation } from "@react-navigation/native";
+import { NativeStackNavigationProp } from "@react-navigation/native-stack";
 import { globalStyles } from "../../styles/globalStyles";
-import Header from "../../components/AddTask/Header";
+import { RootStackParamList } from "../../types/types";
+import Header from "../../components/Header";
 import TaskInput from "../../components/AddTask/TaskInput";
-import PrimaryButton from "../../components/AddTask/PrimaryButton";
+import PrimaryButton from "../../components/PrimaryButton";
 import InfoCard from "../../components/AddTask/InfoCard";
+
+// Navigationstyp definieren
+type AddTaskNavigationProp = NativeStackNavigationProp<RootStackParamList, "(tabs)">;
+
+// Dummy-Klassifizierung: einfache Keyword-basierte Kategorisierung
+function classifyTaskDummy(task: string): string {
+  const taskLower = task.toLowerCase();
+
+  // Dummy Zuordnungen basierend auf Keywords
+  const classifiers: { [key: string]: string[] } = {
+    Arbeit: [
+      "projekt",
+      "meeting",
+      "email",
+      "bericht",
+      "präsentation",
+      "deadline",
+      "büro",
+    ],
+    Einkaufen: [
+      "einkaufen",
+      "kaufen",
+      "shop",
+      "lebensmittel",
+      "supermarkt",
+      "groceries",
+    ],
+    Fitness: ["sport", "training", "gym", "laufen", "yoga", "fitnessstudio"],
+    Zuhause: [
+      "putzen",
+      "waschen",
+      "kochen",
+      "haushalt",
+      "reparieren",
+      "renovieren",
+    ],
+    Gesundheit: ["arzt", "zahnarzt", "apotheke", "medikament", "termin"],
+    Bildung: ["lernen", "buch", "kurs", "studieren", "wissen"],
+    Unterhaltung: ["film", "spiel", "kino", "serie", "game", "hobby"],
+  };
+
+  // Durchsuche Keywords und gib erste Übereinstimmung zurück
+  for (const [category, keywords] of Object.entries(classifiers)) {
+    if (keywords.some((keyword) => taskLower.includes(keyword))) {
+      return category;
+    }
+  }
+
+  // Fallback zur Standard-Kategorie
+  return "Allgemeines";
+}
 
 export default function AddTaskScreen() {
   const [task, setTask] = useState("");
+  const navigation = useNavigation<AddTaskNavigationProp>();
 
   const handleSubmit = () => {
-    // TODO: hier Backend call
-    // → classifyTask(task)
-    console.log(task);
+    if (!task.trim()) return;
+
+    // Dummy-Klassifizierung durchführen
+    const suggestedCategory = classifyTaskDummy(task);
+
+    // Zur Suggestion-Seite navigieren
+    navigation.navigate("suggestion", {
+      task: task,
+      suggestedCategory: suggestedCategory,
+    });
+
+    // Input leeren
+    setTask("");
   };
 
   return (
