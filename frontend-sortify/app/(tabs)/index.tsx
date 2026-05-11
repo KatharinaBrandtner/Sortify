@@ -8,7 +8,7 @@ import FloatingAddButton from "../../components/Home/FloatingAddButton";
 
 export default function HomeScreen() {
   return (
-    <View style={[globalStyles.container, styles.container]}>
+    <View style={[globalStyles.screenContainer, styles.container]}>
       <ScrollView
         showsVerticalScrollIndicator={false}
         contentContainerStyle={styles.scrollContent}

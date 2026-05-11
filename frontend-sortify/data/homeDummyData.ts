@@ -1,4 +1,4 @@
-import { colors } from "../styles/colors";
+import { categoryColors } from "../styles/colors";
 
 export const categoryData = [
   {
@@ -6,7 +6,7 @@ export const categoryData = [
     title: "Uni",
     completed: 5,
     total: 7,
-    color: colors.categories.uni,
+    color: categoryColors.uni.border,
     icon: "school-outline",
   },
   {
@@ -14,7 +14,7 @@ export const categoryData = [
     title: "Arbeit",
     completed: 4,
     total: 4,
-    color: colors.categories.arbeit,
+    color: categoryColors.arbeit.border,
     icon: "briefcase-outline",
   },
   {
@@ -22,7 +22,7 @@ export const categoryData = [
     title: "Haushalt",
     completed: 2,
     total: 5,
-    color: colors.categories.haushalt,
+    color: categoryColors.haushalt.border,
     icon: "home-outline",
   },
   {
@@ -30,7 +30,7 @@ export const categoryData = [
     title: "Freizeit",
     completed: 2,
     total: 3,
-    color: colors.categories.freizeit,
+    color: categoryColors.freizeit.border,
     icon: "heart-outline",
   },
   {
@@ -38,7 +38,7 @@ export const categoryData = [
     title: "Gesundheit",
     completed: 2,
     total: 3,
-    color: colors.categories.gesundheit,
+    color: categoryColors.gesundheit.border,
     icon: "fitness-outline",
   },
   {
@@ -46,7 +46,7 @@ export const categoryData = [
     title: "Organisatorisches",
     completed: 1,
     total: 6,
-    color: colors.categories.organisatorisches,
+    color: categoryColors.organisatorisches.border,
     icon: "folder-outline",
   },
 ];
@@ -57,27 +57,27 @@ export const nextTasks = [
     title: "Vorlesung nachbereiten",
     category: "Uni",
     due: "Heute",
-    color: colors.categories.uni,
+    color: categoryColors.uni.border,
   },
   {
     id: "2",
     title: "Meeting vorbereiten",
     category: "Arbeit",
     due: "Morgen",
-    color: colors.categories.arbeit,
+    color: categoryColors.arbeit.border,
   },
   {
     id: "3",
     title: "Wäsche machen",
     category: "Haushalt",
     due: "Heute",
-    color: colors.categories.haushalt,
+    color: categoryColors.haushalt.border,
   },
   {
     id: "4",
     title: "Arzttermin vereinbaren",
     category: "Gesundheit",
     due: "Diese Woche",
-    color: colors.categories.gesundheit,
+    color: categoryColors.gesundheit.border,
   },
 ];
