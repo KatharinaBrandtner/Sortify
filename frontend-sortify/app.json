@@ -1,7 +1,4 @@
 {
-  "plugins": [
-    "expo-router"
-  ],
     "expo": {
       "name": "frontend-sortify",
       "slug": "frontend-sortify",
