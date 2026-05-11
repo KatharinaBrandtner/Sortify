@@ -90,9 +90,9 @@ const styles = StyleSheet.create({
     paddingVertical: 9,
   },
   dot: {
-    width: 11,
-    height: 11,
-    borderRadius: 6,
+    width: 4,
+    height: 34,
+    borderRadius: 4,
     marginRight: 12,
   },
   taskContent: {
