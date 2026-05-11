@@ -1,5 +1,6 @@
 import { View, Text, StyleSheet } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
+import { layout } from "../styles/layout";
 
 type Props = {
   title: string;
@@ -44,7 +45,7 @@ export default function CategoryProgressCard({
 const styles = StyleSheet.create({
   card: {
     height: 76,
-    borderRadius: 18,
+    borderRadius: layout.cardRadius,
     paddingHorizontal: 18,
     marginBottom: 12,
     flexDirection: "row",

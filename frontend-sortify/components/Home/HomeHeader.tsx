@@ -1,6 +1,7 @@
 import { View, Text, Image, StyleSheet } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 import { colors } from "../../styles/colors";
+import { layout } from "../../styles/layout";
 
 export default function HomeHeader() {
   return (
@@ -26,7 +27,7 @@ export default function HomeHeader() {
 
 const styles = StyleSheet.create({
   container: {
-    marginBottom: 24,
+    marginBottom: layout.headerMarginBottom,
     flexDirection: "row",
     justifyContent: "space-between",
     alignItems: "flex-start",
@@ -38,12 +39,12 @@ const styles = StyleSheet.create({
   },
   greeting: {
     color: colors.text,
-    fontSize: 24,
+    fontSize: layout.headerTitleSize,
     fontWeight: "800",
   },
   subtitle: {
     color: colors.text,
-    fontSize: 15,
+    fontSize: layout.smallTextSize,
     marginTop: 4,
   },
   iconWrapper: {

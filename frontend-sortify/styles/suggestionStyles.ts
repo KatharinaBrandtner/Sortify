@@ -33,10 +33,10 @@ export const suggestionStyles = StyleSheet.create({
   },
   sectionLabel: {
     marginTop: layout.sectionLabelTop,
-    marginBottom: layout.sectionLabelBottom,
+    marginBottom: 0,
     color: colors.purple,
     fontWeight: "700",
-    fontSize: layout.smallTextSize - 1,
+    fontSize: layout.smallTextSize + 1,
     letterSpacing: 0.7,
   },
   chipsScrollContent: {
@@ -76,7 +76,7 @@ export const suggestionStyles = StyleSheet.create({
     paddingHorizontal: 16,
     flexDirection: "row",
     justifyContent: "space-between",
-    marginTop: 14,
+    marginTop: 0,
   },
   matchLabel: {
     color: colors.primary,

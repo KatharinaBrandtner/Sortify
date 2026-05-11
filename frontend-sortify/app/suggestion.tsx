@@ -1,4 +1,4 @@
-import { View, Text, Image, ScrollView, FlatList } from "react-native";
+import { View, Text, Image, ScrollView, FlatList, Alert } from "react-native";
 import { useRoute, useNavigation } from "@react-navigation/native";
 import { useState } from "react";
 
@@ -49,6 +49,32 @@ export default function SuggestionScreen() {
     ),
   ];
 
+  const handleShowSaveModal = () => {
+    const categoryTitle = (baseCategoryOptions.find((c) => c.key === selectedCategory)?.title) ?? selectedCategory;
+    Alert.alert(
+      "Aufgabe hinzugefügt",
+      `Wir haben den Task «${params.task}» zur Kategorie «${categoryTitle}» hinzugefügt.`,
+      [
+        {
+          text: "Neuen Task hinzufügen",
+          onPress: () => {
+            console.log(JSON.stringify({ task: params.task, category: selectedCategory }));
+            (navigation as any).navigate("(tabs)", { screen: "add-task" });
+          },
+        },
+        {
+          text: "Zurück zu Home",
+          onPress: () => {
+            console.log(JSON.stringify({ task: params.task, category: selectedCategory }));
+            (navigation as any).navigate("(tabs)", { screen: "index" });
+          },
+          style: "default",
+        },
+      ],
+      { cancelable: true },
+    );
+  };
+
   return (
     <View style={globalStyles.screenContainer}>
       <Header
@@ -56,10 +82,7 @@ export default function SuggestionScreen() {
         showClose={true}
         showSave={true}
         onClose={() => navigation.goBack()}
-        onSave={() => {
-          console.log(JSON.stringify({ task: params.task, category: selectedCategory }));
-          (navigation as any).navigate("(tabs)", { screen: "index" });
-        }}
+        onSave={handleShowSaveModal}
       />
 
       <ScrollView
@@ -127,13 +150,12 @@ export default function SuggestionScreen() {
         <View style={{ marginTop: 28, marginBottom: 40 }}>
           <PrimaryButton
             title="Aufgabe speichern"
-            onPress={() => {
-              console.log(JSON.stringify({ task: params.task, category: selectedCategory }));
-              (navigation as any).navigate("(tabs)", { screen: "index" });
-            }}
+            onPress={handleShowSaveModal}
           />
         </View>
       </ScrollView>
+
+      {/* using native Alert on save instead of custom modal */}
     </View>
   );
 }

@@ -1,5 +1,6 @@
 import { View, TextInput, Text, StyleSheet } from "react-native";
 import { colors } from "../../styles/colors";
+import { layout } from "../../styles/layout";
 
 export default function TaskInput({
   value,
@@ -26,12 +27,12 @@ export default function TaskInput({
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: colors.lighterGray,
-    borderRadius: 16,
+    backgroundColor: colors.white,
+    borderRadius: layout.notesRadius,
     borderColor: colors.lightGray,
-    borderWidth: 2,
+    borderWidth: 1,
     padding: 16,
-    height: 160,
+    minHeight: 168,
     justifyContent: "space-between",
   },
   input: {
