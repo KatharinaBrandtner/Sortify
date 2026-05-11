@@ -10,9 +10,9 @@ export const layout = {
   smallTextSize: 12,
   bodyTextSize: 16,
   chipWidth: 132,
-  chipRadius: 18,
-  cardRadius: 18,
-  notesRadius: 22,
+  chipRadius: 12,
+  cardRadius: 12,
+  notesRadius: 12,
   primaryButtonRadius: 16,
   pageGap: 28,
 } as const;

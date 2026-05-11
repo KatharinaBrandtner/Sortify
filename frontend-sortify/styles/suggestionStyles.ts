@@ -34,7 +34,7 @@ export const suggestionStyles = StyleSheet.create({
   sectionLabel: {
     marginTop: layout.sectionLabelTop,
     marginBottom: layout.sectionLabelBottom,
-    color: colors.placeholder,
+    color: colors.purple,
     fontWeight: "700",
     fontSize: layout.smallTextSize - 1,
     letterSpacing: 0.7,
@@ -44,31 +44,30 @@ export const suggestionStyles = StyleSheet.create({
     alignItems: "center",
   },
   chipsList: {
-    height: 62,
+    height: 68,
   },
   chip: {
-    width: layout.chipWidth,
     backgroundColor: colors.white,
     borderRadius: layout.chipRadius,
-    paddingVertical: 12,
-    paddingHorizontal: 14,
+    paddingVertical: 9,
+    paddingHorizontal: 12,
     borderWidth: 1,
     borderColor: colors.lightGray,
     marginRight: 12,
-  },
-  chipActive: {
-    backgroundColor: colors.primary,
-    borderColor: colors.primary,
+    flexShrink: 0,
+    alignSelf: "flex-start",
   },
   chipInner: {
     flexDirection: "row",
     justifyContent: "space-between",
     alignItems: "center",
+    gap: 10,
   },
   chipLabelRow: {
     flexDirection: "row",
     alignItems: "center",
-    gap: 8,
+    gap: 6,
+    flexShrink: 1,
   },
   matchCard: {
     backgroundColor: "#FFF8FB",

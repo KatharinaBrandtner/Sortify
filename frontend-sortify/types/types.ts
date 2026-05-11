@@ -1,17 +1,10 @@
-export type Task = {
-  text: string;
-};
+import type { CategoryKey } from "../styles/colors";
 
 // Navigation Parameter Types
 export type RootStackParamList = {
   "(tabs)": undefined;
   suggestion: {
     task: string;
-    suggestedCategory: string;
+    suggestedCategory: CategoryKey;
   };
 };
-
-export interface SuggestionScreenParams {
-  task: string;
-  suggestedCategory: string;
-}
