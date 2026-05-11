@@ -1,15 +1,50 @@
 import { View, Text, TouchableOpacity, StyleSheet } from "react-native";
+import { Ionicons } from "@expo/vector-icons";
+import { colors } from "../styles/colors";
+import { layout } from "../styles/layout";
 
-export default function Header({ onClose }: { onClose?: () => void }) {
+interface HeaderProps {
+  title: string;
+  onClose?: () => void;
+  onSave?: () => void;
+  showClose?: boolean;
+  showSave?: boolean;
+}
+
+export default function Header({
+  title,
+  onClose,
+  onSave,
+  showClose = false,
+  showSave = false,
+}: HeaderProps) {
   return (
     <View style={styles.container}>
-      <TouchableOpacity onPress={onClose}>
-        <Text style={styles.close}>✕</Text>
-      </TouchableOpacity>
+      {showClose ? (
+        <TouchableOpacity onPress={onClose}>
+          <Ionicons name="close" size={layout.headerIconSize} color={colors.text} />
+        </TouchableOpacity>
+      ) : (
+        <View style={{ width: layout.headerIconSize }} />
+      )}
 
-      <Text style={styles.title}>Neue Aufgabe</Text>
+      <Text style={styles.title}>{title}</Text>
 
-      <View style={{ width: 24 }} />
+      {showSave ? (
+        <TouchableOpacity onPress={onSave}>
+          <Text
+            style={{
+              color: colors.purple,
+              fontWeight: "600",
+              fontSize: layout.bodyTextSize,
+            }}
+          >
+            Speichern
+          </Text>
+        </TouchableOpacity>
+      ) : (
+        <View style={{ width: layout.headerIconSize }} />
+      )}
     </View>
   );
 }
@@ -19,12 +54,10 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     justifyContent: "space-between",
     alignItems: "center",
+    marginBottom: layout.headerMarginBottom,
   },
   title: {
-    fontSize: 18,
-    fontWeight: "600",
-  },
-  close: {
-    fontSize: 18,
+    fontSize: layout.headerTitleSize,
+    fontWeight: "700",
   },
 });
