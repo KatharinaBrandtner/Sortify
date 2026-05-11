@@ -1,11 +1,12 @@
-import { TouchableOpacity, Text, View } from "react-native";
+import { Pressable, Text, View } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
-import { colors } from "../../styles/colors";
+import { categoryColors, colors, CategoryKey } from "../../styles/colors";
 import { suggestionStyles } from "../../styles/suggestionStyles";
 
 interface Props {
   title: string;
   icon: keyof typeof Ionicons.glyphMap;
+  categoryKey: CategoryKey;
   active?: boolean;
   onPress: () => void;
 }
@@ -13,15 +14,23 @@ interface Props {
 export default function CategoryChip({
   title,
   icon,
+  categoryKey,
   active,
   onPress,
 }: Props) {
+  const palette = categoryColors[categoryKey];
+
   return (
-    <TouchableOpacity
+    <Pressable
       onPress={onPress}
+      android_ripple={{ color: "transparent" }}
       style={[
         suggestionStyles.chip,
-        active && suggestionStyles.chipActive,
+        {
+          borderColor: palette.border,
+          backgroundColor: active ? palette.border : palette.light,
+          borderWidth: 1,
+        },
       ]}
     >
       <View style={suggestionStyles.chipInner}>
@@ -29,7 +38,7 @@ export default function CategoryChip({
           <Ionicons
             name={icon}
             size={18}
-            color={active ? colors.white : colors.purple}
+            color={active ? colors.white : palette.border}
           />
 
           <Text
@@ -52,6 +61,6 @@ export default function CategoryChip({
           />
         )}
       </View>
-    </TouchableOpacity>
+    </Pressable>
   );
 }

@@ -11,7 +11,7 @@ export default function PrimaryButton({
 }) {
   return (
     <TouchableOpacity style={styles.button} onPress={onPress}>
-      <Text style={styles.text}>{title} ✈️</Text>
+      <Text style={styles.text}>{title}</Text>
     </TouchableOpacity>
   );
 }

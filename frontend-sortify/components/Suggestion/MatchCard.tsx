@@ -1,18 +1,21 @@
 import { View, Text } from "react-native";
 import { suggestionStyles } from "../../styles/suggestionStyles";
+import { categoryColors, CategoryKey } from "../../styles/colors";
 
 export default function MatchCard({
   category,
+  title,
 }: {
-  category: string;
+  category: CategoryKey;
+  title?: string;
 }) {
-  return (
-    <View style={suggestionStyles.matchCard}>
-      <Text style={suggestionStyles.matchLabel}>
-        🏷 Vorgeschlagen: {category}
-      </Text>
+  const palette = categoryColors[category] ?? { border: "#000000", light: "#ffffff" };
 
-      <Text style={suggestionStyles.matchValue}>✨ 84% Match</Text>
+  return (
+    <View style={[suggestionStyles.matchCard, { backgroundColor: palette.light }]}>
+      <Text style={[suggestionStyles.matchLabel, { color: palette.border }]}>🏷 Vorgeschlagen: {title ?? category}</Text>
+
+      <Text style={[suggestionStyles.matchValue, { color: palette.border }]}>✨ 84% Match</Text>
     </View>
   );
 }
