@@ -2,6 +2,7 @@ import { Pressable, StyleSheet } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 import { router } from "expo-router";
 import { colors } from "../../styles/colors";
+import { layout } from "../../styles/layout";
 
 export default function FloatingAddButton() {
   return (
@@ -16,9 +17,9 @@ const styles = StyleSheet.create({
     position: "absolute",
     right: 22,
     bottom: 105,
-    width: 58,
-    height: 58,
-    borderRadius: 29,
+    width: 56,
+    height: 56,
+    borderRadius: 28,
     backgroundColor: colors.purple,
     alignItems: "center",
     justifyContent: "center",

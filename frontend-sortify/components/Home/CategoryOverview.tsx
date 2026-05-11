@@ -4,6 +4,8 @@ import { View, Text, Pressable, StyleSheet } from "react-native";
 import CategoryProgressCard from "../CategoryProgressCard";
 import { colors } from "../../styles/colors";
 import { categoryData } from "../../data/homeDummyData";
+import { suggestionStyles } from "../../styles/suggestionStyles";
+import { layout } from "../../styles/layout";
 
 export default function CategoryOverview() {
   const [showAll, setShowAll] = useState(false);
@@ -13,7 +15,7 @@ export default function CategoryOverview() {
   return (
     <View style={styles.container}>
       <View style={styles.headerRow}>
-        <Text style={styles.sectionTitle}>Heute</Text>
+        <Text style={suggestionStyles.sectionLabel}>HEUTE</Text>
 
         <Pressable onPress={() => setShowAll((current) => !current)}>
           <Text style={styles.showAll}>
@@ -38,22 +40,22 @@ export default function CategoryOverview() {
 
 const styles = StyleSheet.create({
   container: {
-    marginTop: 8,
+    marginTop: layout.sectionLabelTop - 10,
   },
   headerRow: {
     flexDirection: "row",
     alignItems: "center",
     justifyContent: "space-between",
-    marginBottom: 10,
+    marginBottom: layout.sectionLabelBottom - 2,
   },
   sectionTitle: {
     color: colors.purple,
-    fontSize: 15,
+    fontSize: layout.bodyTextSize,
     fontWeight: "800",
   },
   showAll: {
     color: colors.purple,
-    fontSize: 13,
+    fontSize: layout.smallTextSize,
     fontWeight: "700",
   },
 });

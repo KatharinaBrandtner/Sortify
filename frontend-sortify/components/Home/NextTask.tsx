@@ -3,7 +3,9 @@ import { View, Text, StyleSheet, Pressable } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 
 import { colors } from "../../styles/colors";
+import { layout } from "../../styles/layout";
 import { nextTasks } from "../../data/homeDummyData";
+import { suggestionStyles } from "../../styles/suggestionStyles";
 
 export default function NextTasks() {
   const [checkedTaskIds, setCheckedTaskIds] = useState<string[]>([]);
@@ -18,7 +20,7 @@ export default function NextTasks() {
 
   return (
     <View style={styles.container}>
-      <Text style={styles.sectionTitle}>Nächste Aufgaben</Text>
+      <Text style={suggestionStyles.sectionLabel}>NÄCHSTE AUFGABEN</Text>
 
       <View style={styles.card}>
         {nextTasks.map((task) => {
@@ -75,9 +77,11 @@ const styles = StyleSheet.create({
   },
   card: {
     backgroundColor: "#FFFFFF",
-    borderRadius: 18,
+    borderRadius: layout.cardRadius,
     paddingVertical: 8,
     paddingHorizontal: 14,
+    borderWidth: 1,
+    borderColor: colors.lightGray,
     shadowColor: colors.dark,
     shadowOpacity: 0.05,
     shadowRadius: 10,

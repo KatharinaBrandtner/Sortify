@@ -1,5 +1,6 @@
 import { View, Text } from "react-native";
 import { colors } from "../../styles/colors";
+import { layout } from "../../styles/layout";
 
 export default function TaskCard({
   task,
@@ -10,19 +11,21 @@ export default function TaskCard({
     <View
       style={{
         backgroundColor: colors.white,
-        borderRadius: 24,
+        borderRadius: layout.cardRadius,
+        borderWidth: 1,
+        borderColor: colors.lightGray,
         padding: 20,
         marginTop: 20,
       }}
     >
-      <Text
-        style={{
-          color: colors.purple,
-          fontSize: 12,
-          fontWeight: "700",
-          marginBottom: 14,
-        }}
-      >
+        <Text
+          style={{
+            color: colors.purple,
+            fontSize: layout.smallTextSize,
+            fontWeight: "700",
+            marginBottom: 14,
+          }}
+        >
         DEINE AUFGABE
       </Text>
 
@@ -33,12 +36,12 @@ export default function TaskCard({
         }}
       >
         <Text
-          style={{
-            fontSize: 16,
-            color: colors.text,
-            fontWeight: "500",
-            flex: 1,
-          }}
+            style={{
+              fontSize: layout.bodyTextSize,
+              color: colors.text,
+              fontWeight: "500",
+              flex: 1,
+            }}
         >
           {task}
         </Text>
