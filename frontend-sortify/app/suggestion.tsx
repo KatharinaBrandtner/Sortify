@@ -1,154 +1,137 @@
-import { View, Text, TouchableOpacity, ScrollView } from "react-native";
+import { View, Text, Image, ScrollView, FlatList } from "react-native";
 import { useRoute, useNavigation } from "@react-navigation/native";
-import { globalStyles } from "../styles/globalStyles";
-import { colors } from "../styles/colors";
-import { Ionicons } from "@expo/vector-icons";
+import { useState } from "react";
 
-interface SuggestionScreenParams {
-  task: string;
-  suggestedCategory: string;
-}
+import { globalStyles } from "../styles/globalStyles";
+import { suggestionStyles } from "../styles/suggestionStyles";
+
+import Header from "../components/Header";
+import TaskCard from "../components/Suggestion/TaskCard";
+import CategoryChip from "../components/Suggestion/CategoryChip";
+import MatchCard from "../components/Suggestion/MatchCard";
+import NotesInput from "../components/Suggestion/NotesInput";
+import PrimaryButton from "../components/PrimaryButton";
+
+import { SuggestionScreenParams } from "../types/types";
 
 export default function SuggestionScreen() {
   const navigation = useNavigation();
   const route = useRoute();
+
   const params = route.params as SuggestionScreenParams;
 
-  const handleAccept = () => {
-    // TODO: Backend call mit akzeptierter Kategorie
-    console.log("Aufgabe akzeptiert:", params.task, "→", params.suggestedCategory);
-    navigation.goBack();
-  };
+  const [selectedCategory, setSelectedCategory] =
+    useState(params.suggestedCategory);
+  const [notes, setNotes] = useState("");
 
-  const handleReject = () => {
-    navigation.goBack();
-  };
+  const baseCategoryOptions = [
+    { title: "Uni", icon: "school" as const },
+    { title: "Personal", icon: "person" as const },
+    { title: "Work", icon: "briefcase" as const },
+    { title: "Other", icon: "ellipsis-horizontal-circle" as const },
+    { title: "Einkaufen", icon: "cart" as const },
+    { title: "Fitness", icon: "fitness" as const },
+    { title: "Zuhause", icon: "home" as const },
+    { title: "Gesundheit", icon: "heart" as const },
+    { title: "Freizeit", icon: "sparkles" as const },
+    { title: "Lernen", icon: "school" as const },
+  ];
+
+  const suggestedCategoryOption =
+    baseCategoryOptions.find((category) => category.title === params.suggestedCategory) ??
+    {
+      title: params.suggestedCategory,
+      icon: "sparkles" as const,
+    };
+
+  const categoryOptions = [
+    suggestedCategoryOption,
+    ...baseCategoryOptions.filter(
+      (category) => category.title !== params.suggestedCategory,
+    ),
+  ];
 
   return (
-    <View style={[globalStyles.container, { paddingTop: 20 }]}>
-      {/* Header mit Close Button */}
-      <View
-        style={{
-          flexDirection: "row",
-          justifyContent: "space-between",
-          alignItems: "center",
-          marginBottom: 30,
+    <View style={globalStyles.screenContainer}>
+      <Header
+        title="Neue Aufgabe"
+        showClose={true}
+        showSave={true}
+        onClose={() => navigation.goBack()}
+        onSave={() => {
+          console.log(selectedCategory, notes);
         }}
+      />
+
+      <ScrollView
+        showsVerticalScrollIndicator={false}
+        style={{ flex: 1 }}
+        contentContainerStyle={suggestionStyles.scrollContent}
       >
-        <Text style={{ fontSize: 24, fontWeight: "bold" }}>Kategorie-Vorschlag</Text>
-        <TouchableOpacity onPress={handleReject}>
-          <Ionicons name="close" size={28} color={colors.text} />
-        </TouchableOpacity>
-      </View>
+        <View style={suggestionStyles.introRow}>
+          <Image
+            source={require("../assets/puzzle-suggestion-screen.png")}
+            style={suggestionStyles.introImage}
+          />
 
-      <ScrollView showsVerticalScrollIndicator={false}>
-        {/* Task Anzeige */}
-        <View
-          style={{
-            backgroundColor: colors.background,
-            borderRadius: 12,
-            padding: 16,
-            marginBottom: 24,
-            borderWidth: 1,
-            borderColor: colors.placeholder,
-          }}
-        >
-          <Text style={{ fontSize: 12, color: colors.placeholder, marginBottom: 8 }}>
-            Deine Aufgabe
-          </Text>
-          <Text style={{ fontSize: 18, fontWeight: "500", color: colors.text }}>
-            {params.task}
-          </Text>
-        </View>
+          <View style={suggestionStyles.introCopy}>
+            <Text style={suggestionStyles.introTitle}>
+              Wir haben eine Kategorie{"\n"}
+              für dich vorgeschlagen!
+            </Text>
 
-        {/* Suggestion Card */}
-        <View style={{ marginBottom: 30 }}>
-          <Text style={{ fontSize: 12, color: colors.placeholder, marginBottom: 12 }}>
-            Wir schlagen vor:
-          </Text>
-          <View
-            style={{
-              backgroundColor: colors.purple,
-              borderRadius: 16,
-              padding: 24,
-              alignItems: "center",
-            }}
-          >
-            <View
-              style={{
-                backgroundColor: "rgba(255, 255, 255, 0.2)",
-                borderRadius: 50,
-                width: 80,
-                height: 80,
-                justifyContent: "center",
-                alignItems: "center",
-                marginBottom: 16,
-              }}
-            >
-              <Text style={{ fontSize: 40 }}>
-                {getCategoryEmoji(params.suggestedCategory)}
-              </Text>
-            </View>
-            <Text
-              style={{
-                fontSize: 28,
-                fontWeight: "bold",
-                color: "white",
-                textAlign: "center",
-              }}
-            >
-              {params.suggestedCategory}
+            <Text style={suggestionStyles.introSubtitle}>
+              Du kannst sie übernehmen{"\n"}
+              oder einfach ändern.
             </Text>
           </View>
         </View>
 
-        {/* Action Buttons */}
-        <View style={{ gap: 12, marginBottom: 20 }}>
-          <TouchableOpacity
-            onPress={handleAccept}
-            style={{
-              backgroundColor: colors.purple,
-              borderRadius: 12,
-              paddingVertical: 16,
-              alignItems: "center",
-            }}
-          >
-            <Text style={{ color: "white", fontSize: 16, fontWeight: "600" }}>
-              ✓ Passt perfekt
-            </Text>
-          </TouchableOpacity>
+        <TaskCard task={params.task} />
 
-          <TouchableOpacity
-            onPress={handleReject}
-            style={{
-              borderWidth: 2,
-              borderColor: colors.purple,
-              borderRadius: 12,
-              paddingVertical: 16,
-              alignItems: "center",
+        <Text style={suggestionStyles.sectionLabel}>
+          KATEGORIE WÄHLEN
+        </Text>
+
+        <FlatList
+          horizontal
+          data={categoryOptions}
+          keyExtractor={(item) => item.title}
+          showsHorizontalScrollIndicator={false}
+          style={suggestionStyles.chipsList}
+          contentContainerStyle={suggestionStyles.chipsScrollContent}
+          renderItem={({ item }) => (
+            <CategoryChip
+              title={item.title}
+              icon={item.icon}
+              active={selectedCategory === item.title}
+              onPress={() => setSelectedCategory(item.title)}
+            />
+          )}
+        />
+
+        <MatchCard category={params.suggestedCategory} />
+
+        <Text style={suggestionStyles.hintText}>
+          Tippe auf eine andere Kategorie,
+          um sie auszuwählen.
+        </Text>
+
+        <Text style={suggestionStyles.sectionLabel}>
+          NOTIZEN (OPTIONAL)
+        </Text>
+
+        <NotesInput notes={notes} setNotes={setNotes} />
+
+        <View style={{ marginTop: 28, marginBottom: 40 }}>
+          <PrimaryButton
+            title="Aufgabe speichern"
+            onPress={() => {
+              console.log(selectedCategory, notes);
             }}
-          >
-            <Text style={{ color: colors.purple, fontSize: 16, fontWeight: "600" }}>
-              Nein, ändere das
-            </Text>
-          </TouchableOpacity>
+          />
         </View>
       </ScrollView>
     </View>
   );
-}
-
-// Hilfsfunktion für Kategorie-Emojis
-function getCategoryEmoji(category: string): string {
-  const emojiMap: { [key: string]: string } = {
-    Arbeit: "💼",
-    Einkaufen: "🛒",
-    Fitness: "💪",
-    Zuhause: "🏠",
-    Gesundheit: "⚕️",
-    Bildung: "📚",
-    Unterhaltung: "🎬",
-    default: "📋",
-  };
-  return emojiMap[category] || emojiMap["default"];
 }
