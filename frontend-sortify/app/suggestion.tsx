@@ -3,6 +3,7 @@ import { useRoute, useNavigation } from "@react-navigation/native";
 import { useState } from "react";
 
 import { globalStyles } from "../styles/globalStyles";
+import { CategoryKey } from "../styles/colors";
 import { suggestionStyles } from "../styles/suggestionStyles";
 
 import Header from "../components/Header";
@@ -12,34 +13,31 @@ import MatchCard from "../components/Suggestion/MatchCard";
 import NotesInput from "../components/Suggestion/NotesInput";
 import PrimaryButton from "../components/PrimaryButton";
 
-import { SuggestionScreenParams } from "../types/types";
+import { RootStackParamList } from "../types/types";
 
 export default function SuggestionScreen() {
   const navigation = useNavigation();
   const route = useRoute();
 
-  const params = route.params as SuggestionScreenParams;
+  const params = route.params as RootStackParamList["suggestion"];
 
   const [selectedCategory, setSelectedCategory] =
-    useState(params.suggestedCategory);
+    useState<CategoryKey>(params.suggestedCategory);
   const [notes, setNotes] = useState("");
 
   const baseCategoryOptions = [
-    { title: "Uni", icon: "school" as const },
-    { title: "Personal", icon: "person" as const },
-    { title: "Work", icon: "briefcase" as const },
-    { title: "Other", icon: "ellipsis-horizontal-circle" as const },
-    { title: "Einkaufen", icon: "cart" as const },
-    { title: "Fitness", icon: "fitness" as const },
-    { title: "Zuhause", icon: "home" as const },
-    { title: "Gesundheit", icon: "heart" as const },
-    { title: "Freizeit", icon: "sparkles" as const },
-    { title: "Lernen", icon: "school" as const },
+    { key: "uni" as const, title: "Uni", icon: "school" as const },
+    { key: "arbeit" as const, title: "Arbeit", icon: "briefcase" as const },
+    { key: "haushalt" as const, title: "Haushalt", icon: "home" as const },
+    { key: "freizeit" as const, title: "Freizeit", icon: "sparkles" as const },
+    { key: "gesundheit" as const, title: "Gesundheit", icon: "heart" as const },
+    { key: "organisatorisches" as const, title: "Organisatorisches", icon: "cart" as const },
   ];
 
   const suggestedCategoryOption =
-    baseCategoryOptions.find((category) => category.title === params.suggestedCategory) ??
+    baseCategoryOptions.find((category) => category.key === params.suggestedCategory) ??
     {
+      key: params.suggestedCategory,
       title: params.suggestedCategory,
       icon: "sparkles" as const,
     };
@@ -47,7 +45,7 @@ export default function SuggestionScreen() {
   const categoryOptions = [
     suggestedCategoryOption,
     ...baseCategoryOptions.filter(
-      (category) => category.title !== params.suggestedCategory,
+      (category) => category.key !== params.suggestedCategory,
     ),
   ];
 
@@ -59,7 +57,8 @@ export default function SuggestionScreen() {
         showSave={true}
         onClose={() => navigation.goBack()}
         onSave={() => {
-          console.log(selectedCategory, notes);
+          console.log(JSON.stringify({ task: params.task, category: selectedCategory }));
+          (navigation as any).navigate("(tabs)", { screen: "index" });
         }}
       />
 
@@ -67,6 +66,7 @@ export default function SuggestionScreen() {
         showsVerticalScrollIndicator={false}
         style={{ flex: 1 }}
         contentContainerStyle={suggestionStyles.scrollContent}
+        keyboardShouldPersistTaps="handled"
       >
         <View style={suggestionStyles.introRow}>
           <Image
@@ -104,13 +104,14 @@ export default function SuggestionScreen() {
             <CategoryChip
               title={item.title}
               icon={item.icon}
-              active={selectedCategory === item.title}
-              onPress={() => setSelectedCategory(item.title)}
+              categoryKey={item.key}
+              active={selectedCategory === item.key}
+              onPress={() => setSelectedCategory(item.key)}
             />
           )}
         />
 
-        <MatchCard category={params.suggestedCategory} />
+        <MatchCard category={suggestedCategoryOption.key} title={suggestedCategoryOption.title} />
 
         <Text style={suggestionStyles.hintText}>
           Tippe auf eine andere Kategorie,
@@ -127,7 +128,8 @@ export default function SuggestionScreen() {
           <PrimaryButton
             title="Aufgabe speichern"
             onPress={() => {
-              console.log(selectedCategory, notes);
+              console.log(JSON.stringify({ task: params.task, category: selectedCategory }));
+              (navigation as any).navigate("(tabs)", { screen: "index" });
             }}
           />
         </View>
