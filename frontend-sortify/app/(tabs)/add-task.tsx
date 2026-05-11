@@ -81,8 +81,8 @@ export default function AddTaskScreen() {
   };
 
   return (
-    <View style={globalStyles.container}>
-      <Header />
+    <View style={globalStyles.screenContainer}>
+      <Header title="Neue Aufgabe" />
 
       <Image
         source={require("../../assets/puzzle-add-screen.png")}
