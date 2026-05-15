@@ -2,6 +2,7 @@ import { Pressable, StyleSheet, Text, View } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 
 import { colors } from "../../styles/colors";
+import { layout } from "../../styles/layout";
 
 type Props = {
   title: string;
@@ -47,7 +48,7 @@ const styles = StyleSheet.create({
   title: {
     flex: 1,
     color: colors.text,
-    fontSize: 15,
+    fontSize: layout.bodyTextSize - 1,
     fontWeight: "600",
   },
   titleCompleted: {

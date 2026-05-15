@@ -43,7 +43,7 @@ export const categoryOverviewData = [
   },
   {
     id: "freizeit",
-    title: "Freizeit/Privat",
+    title: "Freizeit",
     completed: 1,
     total: 4,
     color: colors.categories.freizeit,
