@@ -1,4 +1,4 @@
-import { View, Text, StyleSheet } from "react-native";
+import { View, Text, StyleSheet, Pressable } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 import { layout } from "../styles/layout";
 
@@ -8,6 +8,8 @@ type Props = {
   total: number;
   color: string;
   icon: keyof typeof Ionicons.glyphMap;
+  onPress?: () => void;
+  rightIcon?: keyof typeof Ionicons.glyphMap;
 };
 
 export default function CategoryProgressCard({
@@ -16,17 +18,24 @@ export default function CategoryProgressCard({
   total,
   color,
   icon,
+  onPress,
+  rightIcon,
 }: Props) {
   const progress = total === 0 ? 0 : completed / total;
+  const CardWrapper = onPress ? Pressable : View;
 
   return (
-    <View style={[styles.card, { backgroundColor: color }]}>
+    <CardWrapper
+      style={[styles.card, { backgroundColor: color }]}
+      onPress={onPress}
+    >
       <View style={styles.iconBox}>
         <Ionicons name={icon} size={28} color="#FFFFFF" />
       </View>
 
       <View style={styles.content}>
         <Text style={styles.title}>{title}</Text>
+
         <Text style={styles.count}>
           {completed} / {total} Tasks
         </Text>
@@ -36,9 +45,15 @@ export default function CategoryProgressCard({
         </View>
       </View>
 
+      {rightIcon && (
+        <View style={styles.rightIcon}>
+          <Ionicons name={rightIcon} size={24} color="#FFFFFF" />
+        </View>
+      )}
+
       <View style={styles.circleOne} />
       <View style={styles.circleTwo} />
-    </View>
+    </CardWrapper>
   );
 }
 
@@ -57,6 +72,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
     marginRight: 12,
+    zIndex: 2,
   },
   content: {
     flex: 1,
@@ -84,6 +100,10 @@ const styles = StyleSheet.create({
     height: "100%",
     borderRadius: 8,
     backgroundColor: "#FFFFFF",
+  },
+  rightIcon: {
+    marginLeft: 12,
+    zIndex: 2,
   },
   circleOne: {
     position: "absolute",
