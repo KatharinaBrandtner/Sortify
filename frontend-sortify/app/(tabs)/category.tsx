@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { ScrollView, StyleSheet, View, Pressable, Text } from "react-native";
 import { router } from "expo-router";
 import { Ionicons } from "@expo/vector-icons";
@@ -7,12 +8,15 @@ import { colors } from "../../styles/colors";
 import { categoryOverviewData } from "../../data/categoryDummyData";
 import CategoryAccordion from "../../components/Category/CategoryAccordion";
 import CategoryActionButton from "../../components/Category/CategoryActionButton";
+import AddCategoryModal from "../../components/Category/AddCategoryModal";
 import { layout } from "../../styles/layout";
 import Header from "../../components/Header";
 
 export default function CategoryScreen() {
+  const [isAddCategoryVisible, setIsAddCategoryVisible] = useState(false);
+
   const handleAddCategory = () => {
-    console.log("Neue Kategorie hinzufügen kommt später");
+    setIsAddCategoryVisible(true);
   };
 
   return (
@@ -48,6 +52,11 @@ export default function CategoryScreen() {
           />
         </View>
       </ScrollView>
+
+      <AddCategoryModal
+        visible={isAddCategoryVisible}
+        onClose={() => setIsAddCategoryVisible(false)}
+      />
     </View>
   );
 }
