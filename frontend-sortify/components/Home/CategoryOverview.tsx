@@ -1,10 +1,10 @@
 import { useState } from "react";
 import { View, Text, Pressable, StyleSheet } from "react-native";
+import { router } from "expo-router";
 
 import CategoryProgressCard from "../CategoryProgressCard";
 import { colors } from "../../styles/colors";
 import { categoryData } from "../../data/homeDummyData";
-import { suggestionStyles } from "../../styles/suggestionStyles";
 import { layout } from "../../styles/layout";
 
 export default function CategoryOverview() {
@@ -15,7 +15,7 @@ export default function CategoryOverview() {
   return (
     <View style={styles.container}>
       <View style={styles.headerRow}>
-        <Text style={suggestionStyles.sectionLabel}>HEUTE</Text>
+        <Text style={styles.sectionTitle}>Kategorien</Text>
 
         <Pressable onPress={() => setShowAll((current) => !current)}>
           <Text style={styles.showAll}>
@@ -32,6 +32,12 @@ export default function CategoryOverview() {
           total={category.total}
           color={category.color}
           icon={category.icon as never}
+          onPress={() =>
+            router.push({
+              pathname: "/category",
+              params: { openCategory: category.id },
+            })
+          }
         />
       ))}
     </View>
@@ -40,13 +46,13 @@ export default function CategoryOverview() {
 
 const styles = StyleSheet.create({
   container: {
-    marginTop: layout.sectionLabelTop - 10,
+    marginTop: 8,
   },
   headerRow: {
     flexDirection: "row",
     alignItems: "center",
     justifyContent: "space-between",
-    marginBottom: layout.sectionLabelBottom - 2,
+    marginBottom: layout.sectionLabelBottom,
   },
   sectionTitle: {
     color: colors.purple,
@@ -55,7 +61,7 @@ const styles = StyleSheet.create({
   },
   showAll: {
     color: colors.purple,
-    fontSize: layout.smallTextSize,
+    fontSize: layout.smallTextSize + 1,
     fontWeight: "700",
   },
 });
