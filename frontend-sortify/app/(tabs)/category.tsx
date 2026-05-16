@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { ScrollView, StyleSheet, View, Pressable, Text } from "react-native";
-import { router } from "expo-router";
+import { router, useLocalSearchParams } from "expo-router";
 import { Ionicons } from "@expo/vector-icons";
 
 import { globalStyles } from "../../styles/globalStyles";
@@ -14,17 +14,21 @@ import Header from "../../components/Header";
 
 export default function CategoryScreen() {
   const [isAddCategoryVisible, setIsAddCategoryVisible] = useState(false);
+  const { openCategory } = useLocalSearchParams();
 
-  const handleAddCategory = () => {
-    setIsAddCategoryVisible(true);
-  };
+  const openCategoryId = Array.isArray(openCategory)
+    ? openCategory[0]
+    : openCategory;
 
   return (
     <View style={[globalStyles.screenContainer, styles.container]}>
       <Header title="Kategorien" />
 
       <View style={styles.addCategoryRow}>
-        <Pressable style={styles.addCategoryPill} onPress={handleAddCategory}>
+        <Pressable
+          style={styles.addCategoryPill}
+          onPress={() => setIsAddCategoryVisible(true)}
+        >
           <Ionicons name="add" size={18} color={colors.purple} />
           <Text style={styles.addCategoryText}>Kategorie</Text>
         </Pressable>
@@ -41,6 +45,7 @@ export default function CategoryScreen() {
             color={category.color}
             icon={category.icon as never}
             tasks={category.tasks}
+            initialExpanded={openCategoryId === category.id}
           />
         ))}
 
@@ -77,7 +82,7 @@ const styles = StyleSheet.create({
     paddingVertical: 8,
     paddingHorizontal: 14,
     borderRadius: 999,
-    backgroundColor: "#FFFFFF",
+    backgroundColor: colors.white,
     borderWidth: 1,
     borderColor: colors.purple,
   },

@@ -1,9 +1,11 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { View, StyleSheet } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 
 import CategoryProgressCard from "../CategoryProgressCard";
 import CategoryTaskItem from "./CategoryTaskItem";
+import { colors } from "../../styles/colors";
+import { layout } from "../../styles/layout";
 
 type Task = {
   id: string;
@@ -16,6 +18,7 @@ type Props = {
   color: string;
   icon: keyof typeof Ionicons.glyphMap;
   tasks: Task[];
+  initialExpanded?: boolean;
 };
 
 export default function CategoryAccordion({
@@ -23,9 +26,16 @@ export default function CategoryAccordion({
   color,
   icon,
   tasks,
+  initialExpanded = false,
 }: Props) {
-  const [expanded, setExpanded] = useState(false);
+  const [expanded, setExpanded] = useState(initialExpanded);
   const [localTasks, setLocalTasks] = useState(tasks);
+
+  useEffect(() => {
+    if (initialExpanded) {
+      setExpanded(true);
+    }
+  }, [initialExpanded]);
 
   const completed = localTasks.filter((task) => task.completed).length;
   const total = localTasks.length;
@@ -78,11 +88,11 @@ const styles = StyleSheet.create({
     marginBottom: 4,
   },
   taskList: {
-    backgroundColor: "#FFFFFF",
+    backgroundColor: colors.white,
     paddingHorizontal: 18,
     paddingVertical: 8,
-    borderBottomLeftRadius: 18,
-    borderBottomRightRadius: 18,
+    borderBottomLeftRadius: layout.cardRadius,
+    borderBottomRightRadius: layout.cardRadius,
     marginTop: -12,
     marginBottom: 12,
   },
