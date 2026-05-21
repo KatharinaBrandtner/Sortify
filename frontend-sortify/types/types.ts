@@ -8,3 +8,6 @@ export type RootStackParamList = {
     suggestedCategory: CategoryKey;
   };
 };
+
+// Helper type for the Suggestion screen's route params
+export type SuggestionScreenParams = RootStackParamList["suggestion"];
