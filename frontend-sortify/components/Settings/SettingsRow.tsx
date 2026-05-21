@@ -1,11 +1,12 @@
-import { Pressable, StyleSheet, Switch, Text, View } from "react-native";
+import { Pressable, StyleSheet, Switch, Text, View, Image } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 
 import { colors } from "../../styles/colors";
 import { layout } from "../../styles/layout";
 
 type Props = {
-  icon: keyof typeof Ionicons.glyphMap;
+  icon?: keyof typeof Ionicons.glyphMap;
+  imageSource?: number;
   title: string;
   subtitle?: string;
   type?: "link" | "switch";
@@ -16,6 +17,7 @@ type Props = {
 
 export default function SettingsRow({
   icon,
+  imageSource,
   title,
   subtitle,
   type = "link",
@@ -28,7 +30,17 @@ export default function SettingsRow({
       style={styles.row}
       onPress={type === "link" ? onPress : undefined}
     >
-      <Ionicons name={icon} size={layout.headerIconSize - 4} color={colors.text} />
+      {imageSource ? (
+        <Image source={imageSource} style={styles.imageIcon} resizeMode="contain" />
+      ) : (
+        icon && (
+          <Ionicons
+            name={icon}
+            size={layout.headerIconSize - 4}
+            color={colors.text}
+          />
+        )
+      )}
 
       <View style={styles.content}>
         <Text style={styles.title}>{title}</Text>
@@ -61,6 +73,10 @@ const styles = StyleSheet.create({
     borderBottomWidth: 1,
     borderBottomColor: colors.lightGray,
   },
+  imageIcon: {
+    width: layout.headerIconSize ,
+    height: layout.headerIconSize,
+  },
   content: {
     flex: 1,
     marginLeft: layout.bodyTextSize,
@@ -71,8 +87,8 @@ const styles = StyleSheet.create({
     fontWeight: "700",
   },
   subtitle: {
-    color: colors.placeholder,
-    fontSize: layout.smallTextSize + 1,
+    color: colors.text,
+    fontSize: layout.smallTextSize,
     marginTop: 3,
   },
 });

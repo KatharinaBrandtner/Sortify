@@ -23,9 +23,9 @@ export default function ProfileCard() {
 
 const styles = StyleSheet.create({
   card: {
-    backgroundColor: colors.white,
+    backgroundColor: colors.lightPurple,
     borderRadius: layout.primaryButtonRadius,
-    padding: layout.bodyTextSize + 2,
+    padding: layout.bodyTextSize,
     flexDirection: "row",
     alignItems: "center",
     marginBottom: layout.pageGap,
@@ -43,7 +43,7 @@ const styles = StyleSheet.create({
   },
   avatarText: {
     color: colors.white,
-    fontSize: layout.headerTitleSize + 2,
+    fontSize: layout.headerTitleSize,
     fontWeight: "800",
   },
   profileInfo: {
@@ -55,8 +55,8 @@ const styles = StyleSheet.create({
     fontWeight: "800",
   },
   email: {
-    color: colors.placeholder,
-    fontSize: layout.smallTextSize + 1,
+    color: colors.text,
+    fontSize: layout.smallTextSize,
     marginTop: 4,
   },
 });

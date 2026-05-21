@@ -23,7 +23,7 @@ const styles = StyleSheet.create({
   },
   sectionTitle: {
     color: colors.purple,
-    fontSize: layout.smallTextSize,
+    fontSize: layout.smallTextSize +2,
     fontWeight: "800",
     textTransform: "uppercase",
     marginBottom: layout.sectionLabelBottom,
