@@ -26,8 +26,12 @@ def classify(task: TaskRequest):
     task_text = task.task.lower()
 
     predicted_category = model.predict([task_text])[0]
+
+    probabilities = model.predict_proba([task_text])[0]
+    confidence = max(probabilities)
     
     return {
         "task": task_text,
-        "category": predicted_category
+        "category": predicted_category,
+        "confidence": round(confidence * 100),
     }
