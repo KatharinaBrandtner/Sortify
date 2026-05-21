@@ -77,12 +77,25 @@ cd frontend-sortify
 npm install
 ```
 
-3. Start the development server:
+3. Create a `.env` file for connecting to the backend
+
+Create a file named `.env` in the `frontend-sortify` folder with the public API URL used by the app. Example for local development:
+
+```env
+EXPO_PUBLIC_API_URL=http://127.0.0.1:8000
+```
+
+Notes and troubleshooting:
+- iOS Simulator: `127.0.0.1` (or `localhost`) works because the simulator runs on your Mac.
+- Android emulator: use `10.0.2.2` for the default Android emulator.
+- Physical device: replace `127.0.0.1` with your Mac's LAN IP (find it with `ipconfig getifaddr en0` or `ifconfig`)
+
+4. Start the development server:
 ```bash
 npm start
 ```
 
-4. Run the app:
+5. Run the app:
 - Press 'i' for iOS Simulator (if Xcode is set up)
 - Press 'a' for Android Emulator
 - Or scan the QR code with your phone (Expo Go)
