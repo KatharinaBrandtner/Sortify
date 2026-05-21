@@ -6,6 +6,7 @@ export type RootStackParamList = {
   suggestion: {
     task: string;
     suggestedCategory: CategoryKey;
+    confidence: number;
   };
 };
 

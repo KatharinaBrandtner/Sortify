@@ -38,9 +38,9 @@ export default function SuggestionScreen() {
     { key: "uni" as const, title: "Uni", icon: "school" as const },
     { key: "arbeit" as const, title: "Arbeit", icon: "briefcase" as const },
     { key: "haushalt" as const, title: "Haushalt", icon: "home" as const },
-    { key: "freizeit" as const, title: "Freizeit", icon: "sparkles" as const },
-    { key: "gesundheit" as const, title: "Gesundheit", icon: "heart" as const },
-    { key: "organisatorisches" as const, title: "Organisation", icon: "cart" as const },
+    { key: "freizeit" as const, title: "Freizeit", icon: "heart" as const },
+    { key: "gesundheit" as const, title: "Gesundheit", icon: "fitness" as const },
+    { key: "organisatorisches" as const, title: "Organisation", icon: "folder" as const },
   ];
 
   // Map backend-provided category (might be human-readable like "Gesundheit")
@@ -157,7 +157,7 @@ export default function SuggestionScreen() {
           ))}
         </ScrollView>
 
-        <MatchCard category={suggestedKey} matchPercentage={84} />
+        <MatchCard category={suggestedKey} matchPercentage={params.confidence} />
 
         <Text style={suggestionStyles.hintText}>Tippe auf eine andere Kategorie, um sie auszuwählen.</Text>
 

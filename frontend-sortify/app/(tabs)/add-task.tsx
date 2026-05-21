@@ -63,6 +63,7 @@ export default function AddTaskScreen() {
       navigation.navigate("suggestion", {
         task: task,
         suggestedCategory: result.category,
+        confidence: result.confidence,
       });
 
       // Input zurücksetzen
