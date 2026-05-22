@@ -49,6 +49,7 @@ export default function SettingsRow({
 
       {type === "switch" ? (
         <Switch
+        style={styles.toggle}
           value={value}
           onValueChange={onValueChange}
           trackColor={{ false: colors.lightGray, true: colors.purple }}
@@ -80,6 +81,7 @@ const styles = StyleSheet.create({
   content: {
     flex: 1,
     marginLeft: layout.bodyTextSize,
+    justifyContent: "center",
   },
   title: {
     color: colors.text,
@@ -91,4 +93,7 @@ const styles = StyleSheet.create({
     fontSize: layout.smallTextSize,
     marginTop: 3,
   },
+  toggle: {
+  marginTop: 17, 
+},
 });
