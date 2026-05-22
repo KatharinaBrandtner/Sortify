@@ -56,12 +56,12 @@ const styles = StyleSheet.create({
   },
   sectionTitle: {
     color: colors.purple,
-    fontSize: layout.bodyTextSize,
+    fontSize: layout.smallTextSize +2,
     fontWeight: "800",
-  },
+    textTransform: "uppercase"},
   showAll: {
     color: colors.purple,
-    fontSize: layout.smallTextSize + 1,
+    fontSize: layout.smallTextSize,
     fontWeight: "700",
   },
 });

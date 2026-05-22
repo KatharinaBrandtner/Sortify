@@ -20,7 +20,7 @@ export default function NextTasks() {
 
   return (
     <View style={styles.container}>
-      <Text style={suggestionStyles.sectionLabel}>NÄCHSTE AUFGABEN</Text>
+     <Text style={styles.sectionTitle}>Nächste Aufgaben</Text>
 
       <View style={styles.card}>
         {nextTasks.map((task) => {
@@ -67,16 +67,16 @@ export default function NextTasks() {
 
 const styles = StyleSheet.create({
   container: {
-    marginTop: 12,
+    marginTop: 20,
   },
   sectionTitle: {
     color: colors.purple,
-    fontSize: 15,
+    fontSize: layout.smallTextSize +2,
     fontWeight: "800",
-    marginBottom: 8,
-  },
+    textTransform: "uppercase"},
   card: {
-    backgroundColor: "#FFFFFF",
+    marginTop:8,
+    backgroundColor: colors.white,
     borderRadius: layout.cardRadius,
     paddingVertical: 8,
     paddingHorizontal: 14,
@@ -104,8 +104,8 @@ const styles = StyleSheet.create({
   },
   taskTitle: {
     color: colors.text,
-    fontSize: 14,
-    fontWeight: "700",
+    fontSize: layout.bodyTextSize - 1,
+    fontWeight: "600",
   },
   taskTitleChecked: {
     color: colors.placeholder,
