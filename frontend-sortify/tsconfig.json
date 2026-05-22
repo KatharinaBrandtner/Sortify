@@ -22,6 +22,6 @@
     "**/*.tsx",
     "**/*.js",
     "**/*.jsx"
-  ],
+, "../backend/sugg_old.tsx"  ],
   "extends": "expo/tsconfig.base"
 }

@@ -40,6 +40,7 @@ export const suggestionStyles = StyleSheet.create({
     letterSpacing: 0.7,
   },
   chipsScrollContent: {
+    marginTop: 12,
     paddingRight: 6,
     alignItems: "center",
   },

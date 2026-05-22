@@ -11,8 +11,8 @@ MODEL_PATH = BASE_DIR / "model.joblib"
 
 # Modell wird aus der Datei geladen 
 model = joblib.load(MODEL_PATH)
-class Task(BaseModel):
-    text: str
+class TaskRequest(BaseModel):
+    task: str
 
 # Root Endpoint
 @app.get("/")
@@ -21,13 +21,17 @@ def read_root():
 
 # Endpoint
 @app.post("/classify")
-def classify(task: Task):
-    text = task.text.lower()
+def classify(task: TaskRequest):
 
-    # Modell erwartet eine Liste von Texten
-    predicted_category = model.predict([task.text])[0]
+    task_text = task.task.lower()
+
+    predicted_category = model.predict([task_text])[0]
+
+    probabilities = model.predict_proba([task_text])[0]
+    confidence = max(probabilities)
     
     return {
-        "text": task.text, 
-        "category": predicted_category
+        "task": task_text,
+        "category": predicted_category,
+        "confidence": round(confidence * 100),
     }

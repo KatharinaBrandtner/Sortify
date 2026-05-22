@@ -38,7 +38,8 @@ model = Pipeline([
         ngram_range=(3, 5)
     )),
     ("classifier", LogisticRegression(
-        max_iter=1000
+        max_iter=1000,
+        multi_class="multinomial"
     ))
 ])
 

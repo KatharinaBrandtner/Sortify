@@ -1,104 +1,117 @@
-import { View, Text, Image, TouchableWithoutFeedback, Keyboard } from "react-native";
+import {
+  View,
+  Text,
+  Image,
+  TouchableWithoutFeedback,
+  Keyboard,
+  Alert,
+} from "react-native";
+
 import { useState } from "react";
 import { useNavigation } from "@react-navigation/native";
 import { NativeStackNavigationProp } from "@react-navigation/native-stack";
+
 import { globalStyles } from "../../styles/globalStyles";
-import { CategoryKey } from "../../styles/colors";
 import { RootStackParamList } from "../../types/types";
+
 import Header from "../../components/Header";
 import TaskInput from "../../components/AddTask/TaskInput";
 import PrimaryButton from "../../components/PrimaryButton";
 import InfoCard from "../../components/AddTask/InfoCard";
 
-// Navigationstyp definieren
-type AddTaskNavigationProp = NativeStackNavigationProp<RootStackParamList, "(tabs)">;
+import { classifyTask } from "../../services/api";
 
-// Dummy-Klassifizierung: einfache Keyword-basierte Kategorisierung
-function classifyTaskDummy(task: string): CategoryKey {
-  const taskLower = task.toLowerCase();
-
-  // Dummy Zuordnungen basierend auf Keywords
-  const classifiers: Record<CategoryKey, string[]> = {
-    uni: ["uni", "schule", "vorlesung", "studium", "lernen", "kurs", "hausaufgabe"],
-    arbeit: [
-      "projekt",
-      "meeting",
-      "email",
-      "bericht",
-      "präsentation",
-      "deadline",
-      "büro",
-      "arbeit",
-    ],
-    haushalt: [
-      "putzen",
-      "waschen",
-      "kochen",
-      "haushalt",
-      "reparieren",
-      "renovieren",
-      "aufräumen",
-    ],
-    freizeit: ["film", "spiel", "kino", "serie", "game", "hobby", "ausflug"],
-    gesundheit: ["arzt", "zahnarzt", "apotheke", "medikament", "termin", "impfung"],
-    organisatorisches: [
-      "einkaufen",
-      "kaufen",
-      "shop",
-      "lebensmittel",
-      "supermarkt",
-      "groceries",
-      "rechnung",
-      "versicherung",
-      "notiz",
-      "planen",
-    ],
-  };
-
-  // Durchsuche Keywords und gib erste Übereinstimmung zurück
-  for (const [category, keywords] of Object.entries(
-    classifiers,
-  ) as Array<[CategoryKey, string[]]>) {
-    if (keywords.some((keyword) => taskLower.includes(keyword))) {
-      return category;
-    }
-  }
-
-  // Fallback zur Standard-Kategorie
-  return "organisatorisches";
-}
+type AddTaskNavigationProp =
+  NativeStackNavigationProp<
+    RootStackParamList,
+    "(tabs)"
+  >;
 
 export default function AddTaskScreen() {
   const [task, setTask] = useState("");
-  const navigation = useNavigation<AddTaskNavigationProp>();
+  const [loading, setLoading] = useState(false);
 
-  const handleSubmit = () => {
-    if (!task.trim()) return;
+  const navigation =
+    useNavigation<AddTaskNavigationProp>();
 
-    // Dummy-Klassifizierung durchführen
-    const suggestedCategory = classifyTaskDummy(task);
+  const handleSubmit = async () => {
 
-    // Zur Suggestion-Seite navigieren
-    navigation.navigate("suggestion", {
-      task: task,
-      suggestedCategory: suggestedCategory,
-    });
+    if (!task.trim()) {
+      Alert.alert(
+        "Fehler",
+        "Bitte gib eine Aufgabe ein."
+      );
+      return;
+    }
 
-    // Input leeren
-    setTask("");
+    try {
+
+      setLoading(true);
+
+      // API CALL
+      const result = await classifyTask(task);
+
+      if (!result) {
+        Alert.alert(
+          "API Fehler",
+          "Die Kategorie konnte nicht geladen werden."
+        );
+        return;
+      }
+
+      // Navigation zum Suggestion Screen
+      navigation.navigate("suggestion", {
+        task: task,
+        suggestedCategory: result.category,
+        confidence: result.confidence,
+      });
+
+      // Input zurücksetzen
+      setTask("");
+
+    } catch (error) {
+
+      console.log(error);
+
+      Alert.alert(
+        "Fehler",
+        "Etwas ist schiefgelaufen."
+      );
+
+    } finally {
+
+      setLoading(false);
+
+    }
   };
 
   return (
-    <TouchableWithoutFeedback onPress={() => Keyboard.dismiss()} accessible={false}>
+    <TouchableWithoutFeedback
+      onPress={() => Keyboard.dismiss()}
+      accessible={false}
+    >
       <View style={globalStyles.screenContainer}>
+
         <Header title="Neue Aufgabe" />
 
         <Image
           source={require("../../assets/puzzle-add-screen.png")}
-          style={{ width: 140, height: 120, alignSelf: "center", marginTop: 40 }}
+          style={{
+            width: 140,
+            height: 120,
+            alignSelf: "center",
+            marginTop: 40,
+          }}
         />
 
-        <Text style={{ textAlign: "center", fontSize: 20, marginTop: 20, fontWeight: "bold" }}>
+        <Text
+          style={{
+            textAlign: "center",
+            fontSize: 20,
+            marginTop: 20,
+            fontWeight: "bold",
+          }}
+        >
           Was möchtest du erledigen?
         </Text>
 
@@ -110,19 +123,29 @@ export default function AddTaskScreen() {
             marginTop: 8,
           }}
         >
-          Schreibe deine Aufgabe und wir finden {"\n"} die passende Kategorie.
+          Schreibe deine Aufgabe und wir finden
+          {"\n"}
+          die passende Kategorie.
         </Text>
 
-        <TaskInput value={task} onChange={setTask} />
+        <TaskInput
+          value={task}
+          onChange={setTask}
+        />
 
         <View style={{ marginTop: 20 }}>
           <PrimaryButton
-            title="Aufgabe abschicken"
+            title={
+              loading
+                ? "Kategorie wird erkannt..."
+                : "Aufgabe abschicken"
+            }
             onPress={handleSubmit}
           />
         </View>
 
         <InfoCard />
+
       </View>
     </TouchableWithoutFeedback>
   );

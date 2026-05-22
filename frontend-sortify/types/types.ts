@@ -6,5 +6,9 @@ export type RootStackParamList = {
   suggestion: {
     task: string;
     suggestedCategory: CategoryKey;
+    confidence: number;
   };
 };
+
+// Helper type for the Suggestion screen's route params
+export type SuggestionScreenParams = RootStackParamList["suggestion"];
