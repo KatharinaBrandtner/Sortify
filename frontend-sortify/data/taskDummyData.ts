@@ -75,14 +75,14 @@ export const initialTasks = [
   {
     id: "freizeit-1",
     title: "Freundin anrufen",
-    category: "Freizeit/Privat",
+    category: "Freizeit",
     completed: false,
     createdAt: "dummy",
   },
   {
     id: "freizeit-2",
     title: "Geburtstagsgeschenk kaufen",
-    category: "Freizeit/Privat",
+    category: "Freizeit",
     completed: false,
     createdAt: "dummy",
   },
