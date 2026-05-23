@@ -3,31 +3,13 @@ import { Ionicons } from "@expo/vector-icons";
 
 import { colors } from "../../styles/colors";
 import { layout } from "../../styles/layout";
-import { nextTasks } from "../../data/homeDummyData";
 import { useTasks } from "../../context/TaskContext";
+import { getCategoryColor } from "../../data/taskDummyData";
 
-function getCategoryColor(category: string) {
-  switch (category) {
-    case "Uni":
-      return colors.categories.uni;
-    case "Arbeit":
-      return colors.categories.arbeit;
-    case "Haushalt":
-      return colors.categories.haushalt;
-    case "Freizeit/Privat":
-      return colors.categories.freizeit;
-    case "Gesundheit":
-      return colors.categories.gesundheit;
-    case "Organisatorisches":
-      return colors.categories.organisatorisches;
-    default:
-      return colors.purple;
-  }
-}
 export default function NextTasks() {
   const { tasks, toggleTask } = useTasks();
 
-  const visibleTasks = [...tasks, ...nextTasks].slice(0, 4);
+  const visibleTasks = tasks.slice(0, 4);
 
   return (
     <View style={styles.container}>
@@ -35,20 +17,17 @@ export default function NextTasks() {
 
       <View style={styles.card}>
         {visibleTasks.map((task) => {
-          const isContextTask = "createdAt" in task;
-          const isChecked = "completed" in task ? task.completed : false;
+          const isChecked = task.completed;
 
           return (
             <View key={task.id} style={styles.taskRow}>
-            <View
-              style={[
-                styles.categoryLine,
-                {
-                  backgroundColor:
-                    "color" in task ? task.color : getCategoryColor(task.category),
-                },
-              ]}
-            />
+              <View
+                style={[
+                  styles.categoryLine,
+                  { backgroundColor: getCategoryColor(task.category) },
+                ]}
+              />
+
               <View style={styles.taskContent}>
                 <Text
                   style={[
@@ -69,13 +48,7 @@ export default function NextTasks() {
                 </Text>
               </View>
 
-              <Pressable
-                onPress={() => {
-                  if (isContextTask) {
-                    toggleTask(task.id);
-                  }
-                }}
-              >
+              <Pressable onPress={() => toggleTask(task.id)}>
                 <Ionicons
                   name={isChecked ? "checkmark-circle" : "ellipse-outline"}
                   size={24}
@@ -90,10 +63,9 @@ export default function NextTasks() {
   );
 }
 
-
 const styles = StyleSheet.create({
   container: {
-    marginTop: 20,
+    marginTop: 12,
   },
   sectionTitle: {
     color: colors.purple,
@@ -103,11 +75,9 @@ const styles = StyleSheet.create({
   card: {
     marginTop:8,
     backgroundColor: colors.white,
-    borderRadius: layout.cardRadius,
+    borderRadius: layout.primaryButtonRadius,
     paddingVertical: 8,
     paddingHorizontal: 14,
-    borderWidth: 1,
-    borderColor: colors.lightGray,
     shadowColor: colors.dark,
     shadowOpacity: 0.05,
     shadowRadius: 10,
@@ -119,7 +89,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
     paddingVertical: 9,
   },
-  dot: {
+  categoryLine: {
     width: 4,
     height: 34,
     borderRadius: 4,
@@ -127,12 +97,6 @@ const styles = StyleSheet.create({
   },
   taskContent: {
     flex: 1,
-  },
-  categoryLine: {
-    width: 4,
-    height: 34,
-    borderRadius: 4,
-    marginRight: 12,
   },
   taskTitle: {
     color: colors.text,
@@ -145,7 +109,7 @@ const styles = StyleSheet.create({
   },
   taskMeta: {
     color: colors.placeholder,
-    fontSize: 12,
+    fontSize: layout.smallTextSize,
     marginTop: 2,
   },
   taskMetaChecked: {

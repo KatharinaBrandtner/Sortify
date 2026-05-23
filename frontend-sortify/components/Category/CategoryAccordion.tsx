@@ -12,7 +12,6 @@ type Task = {
   id: string;
   title: string;
   completed: boolean;
-  isContextTask?: boolean;
 };
 
 type Props = {
@@ -31,16 +30,8 @@ export default function CategoryAccordion({
   initialExpanded = false,
 }: Props) {
   const [expanded, setExpanded] = useState(initialExpanded);
-  const [localTasks, setLocalTasks] = useState<Task[]>(tasks);
 
-  const {
-    toggleTask: toggleContextTask,
-    deleteTask: deleteContextTask,
-  } = useTasks();
-
-  useEffect(() => {
-    setLocalTasks(tasks);
-  }, [tasks]);
+  const { toggleTask, deleteTask } = useTasks();
 
   useEffect(() => {
     if (initialExpanded) {
@@ -48,34 +39,8 @@ export default function CategoryAccordion({
     }
   }, [initialExpanded]);
 
-  const completed = localTasks.filter((task) => task.completed).length;
-  const total = localTasks.length;
-
-  const handleToggleTask = (task: Task) => {
-    if (task.isContextTask) {
-      toggleContextTask(task.id);
-      return;
-    }
-
-    setLocalTasks((currentTasks) =>
-      currentTasks.map((currentTask) =>
-        currentTask.id === task.id
-          ? { ...currentTask, completed: !currentTask.completed }
-          : currentTask
-      )
-    );
-  };
-
-  const handleDeleteTask = (task: Task) => {
-    if (task.isContextTask) {
-      deleteContextTask(task.id);
-      return;
-    }
-
-    setLocalTasks((currentTasks) =>
-      currentTasks.filter((currentTask) => currentTask.id !== task.id)
-    );
-  };
+  const completed = tasks.filter((task) => task.completed).length;
+  const total = tasks.length;
 
   return (
     <View style={styles.wrapper}>
@@ -91,13 +56,13 @@ export default function CategoryAccordion({
 
       {expanded && (
         <View style={styles.taskList}>
-          {localTasks.map((task) => (
+          {tasks.map((task) => (
             <CategoryTaskItem
               key={task.id}
               title={task.title}
               completed={task.completed}
-              onToggle={() => handleToggleTask(task)}
-              onDelete={() => handleDeleteTask(task)}
+              onToggle={() => toggleTask(task.id)}
+              onDelete={() => deleteTask(task.id)}
             />
           ))}
         </View>

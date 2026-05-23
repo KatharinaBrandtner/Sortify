@@ -27,23 +27,19 @@ export default function CategoryOverview() {
       </View>
 
       {visibleCategories.map((category) => {
-        const addedTasksForCategory = tasks.filter(
+        const categoryTasks = tasks.filter(
           (task) => task.category === category.title
         );
 
-        const addedCompletedTasks = addedTasksForCategory.filter(
-          (task) => task.completed
-        ).length;
-
-        const updatedCompleted = category.completed + addedCompletedTasks;
-        const updatedTotal = category.total + addedTasksForCategory.length;
+        const completed = categoryTasks.filter((task) => task.completed).length;
+        const total = categoryTasks.length;
 
         return (
           <CategoryProgressCard
             key={category.id}
             title={category.title}
-            completed={updatedCompleted}
-            total={updatedTotal}
+            completed={completed}
+            total={total}
             color={category.color}
             icon={category.icon as never}
             onPress={() =>

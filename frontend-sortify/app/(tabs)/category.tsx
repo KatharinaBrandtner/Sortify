@@ -2,7 +2,6 @@ import { useState } from "react";
 import { ScrollView, StyleSheet, View, Pressable, Text } from "react-native";
 import { router, useLocalSearchParams } from "expo-router";
 import { Ionicons } from "@expo/vector-icons";
-import { useTasks } from "../../context/TaskContext";
 
 import { globalStyles } from "../../styles/globalStyles";
 import { colors } from "../../styles/colors";
@@ -12,6 +11,7 @@ import CategoryActionButton from "../../components/Category/CategoryActionButton
 import AddCategoryModal from "../../components/Category/AddCategoryModal";
 import { layout } from "../../styles/layout";
 import Header from "../../components/Header";
+import { useTasks } from "../../context/TaskContext";
 
 export default function CategoryScreen() {
   const [isAddCategoryVisible, setIsAddCategoryVisible] = useState(false);
@@ -40,32 +40,27 @@ export default function CategoryScreen() {
         showsVerticalScrollIndicator={false}
         contentContainerStyle={styles.scrollContent}
       >
-      {categoryOverviewData.map((category) => {
-        const contextTasksForCategory = tasks
-          .filter((task) => task.category === category.title)
-          .map((task) => ({
-            id: task.id,
-            title: task.title,
-            completed: task.completed,
-            isContextTask: true,
-          }));
+        {categoryOverviewData.map((category) => {
+          const tasksForCategory = tasks
+            .filter((task) => task.category === category.title)
+            .map((task) => ({
+              id: task.id,
+              title: task.title,
+              completed: task.completed,
+            }));
 
-        const dummyTasksForCategory = category.tasks.map((task) => ({
-          ...task,
-          isContextTask: false,
-        }));
+          return (
+            <CategoryAccordion
+              key={category.id}
+              title={category.title}
+              color={category.color}
+              icon={category.icon as never}
+              tasks={tasksForCategory}
+              initialExpanded={openCategoryId === category.id}
+            />
+          );
+        })}
 
-  return (
-    <CategoryAccordion
-      key={category.id}
-      title={category.title}
-      color={category.color}
-      icon={category.icon as never}
-      tasks={[...contextTasksForCategory, ...dummyTasksForCategory]}
-      initialExpanded={openCategoryId === category.id}
-    />
-  );
-})}
         <View style={styles.buttonGroup}>
           <CategoryActionButton
             title="Neue Aufgabe hinzufügen"

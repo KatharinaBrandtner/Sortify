@@ -1,4 +1,5 @@
 import { createContext, ReactNode, useContext, useState } from "react";
+import { initialTasks } from "../data/taskDummyData";
 
 export type Task = {
   id: string;
@@ -18,7 +19,7 @@ type TaskContextType = {
 const TaskContext = createContext<TaskContextType | undefined>(undefined);
 
 export function TaskProvider({ children }: { children: ReactNode }) {
-  const [tasks, setTasks] = useState<Task[]>([]);
+  const [tasks, setTasks] = useState<Task[]>(initialTasks);
 
   const addTask = (title: string, category: string) => {
     const newTask: Task = {
