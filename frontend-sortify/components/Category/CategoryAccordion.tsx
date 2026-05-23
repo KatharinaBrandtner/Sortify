@@ -6,11 +6,13 @@ import CategoryProgressCard from "../CategoryProgressCard";
 import CategoryTaskItem from "./CategoryTaskItem";
 import { colors } from "../../styles/colors";
 import { layout } from "../../styles/layout";
+import { useTasks } from "../../context/TaskContext";
 
 type Task = {
   id: string;
   title: string;
   completed: boolean;
+  isContextTask?: boolean;
 };
 
 type Props = {
@@ -29,7 +31,16 @@ export default function CategoryAccordion({
   initialExpanded = false,
 }: Props) {
   const [expanded, setExpanded] = useState(initialExpanded);
-  const [localTasks, setLocalTasks] = useState(tasks);
+  const [localTasks, setLocalTasks] = useState<Task[]>(tasks);
+
+  const {
+    toggleTask: toggleContextTask,
+    deleteTask: deleteContextTask,
+  } = useTasks();
+
+  useEffect(() => {
+    setLocalTasks(tasks);
+  }, [tasks]);
 
   useEffect(() => {
     if (initialExpanded) {
@@ -40,17 +51,29 @@ export default function CategoryAccordion({
   const completed = localTasks.filter((task) => task.completed).length;
   const total = localTasks.length;
 
-  const toggleTask = (taskId: string) => {
+  const handleToggleTask = (task: Task) => {
+    if (task.isContextTask) {
+      toggleContextTask(task.id);
+      return;
+    }
+
     setLocalTasks((currentTasks) =>
-      currentTasks.map((task) =>
-        task.id === taskId ? { ...task, completed: !task.completed } : task
+      currentTasks.map((currentTask) =>
+        currentTask.id === task.id
+          ? { ...currentTask, completed: !currentTask.completed }
+          : currentTask
       )
     );
   };
 
-  const deleteTask = (taskId: string) => {
+  const handleDeleteTask = (task: Task) => {
+    if (task.isContextTask) {
+      deleteContextTask(task.id);
+      return;
+    }
+
     setLocalTasks((currentTasks) =>
-      currentTasks.filter((task) => task.id !== taskId)
+      currentTasks.filter((currentTask) => currentTask.id !== task.id)
     );
   };
 
@@ -73,8 +96,8 @@ export default function CategoryAccordion({
               key={task.id}
               title={task.title}
               completed={task.completed}
-              onToggle={() => toggleTask(task.id)}
-              onDelete={() => deleteTask(task.id)}
+              onToggle={() => handleToggleTask(task)}
+              onDelete={() => handleDeleteTask(task)}
             />
           ))}
         </View>

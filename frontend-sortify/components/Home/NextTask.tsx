@@ -1,35 +1,54 @@
-import { useState } from "react";
 import { View, Text, StyleSheet, Pressable } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 
 import { colors } from "../../styles/colors";
 import { layout } from "../../styles/layout";
 import { nextTasks } from "../../data/homeDummyData";
-import { suggestionStyles } from "../../styles/suggestionStyles";
+import { useTasks } from "../../context/TaskContext";
 
+function getCategoryColor(category: string) {
+  switch (category) {
+    case "Uni":
+      return colors.categories.uni;
+    case "Arbeit":
+      return colors.categories.arbeit;
+    case "Haushalt":
+      return colors.categories.haushalt;
+    case "Freizeit/Privat":
+      return colors.categories.freizeit;
+    case "Gesundheit":
+      return colors.categories.gesundheit;
+    case "Organisatorisches":
+      return colors.categories.organisatorisches;
+    default:
+      return colors.purple;
+  }
+}
 export default function NextTasks() {
-  const [checkedTaskIds, setCheckedTaskIds] = useState<string[]>([]);
+  const { tasks, toggleTask } = useTasks();
 
-  const toggleTask = (taskId: string) => {
-    setCheckedTaskIds((currentIds) =>
-      currentIds.includes(taskId)
-        ? currentIds.filter((id) => id !== taskId)
-        : [...currentIds, taskId]
-    );
-  };
+  const visibleTasks = [...tasks, ...nextTasks].slice(0, 4);
 
   return (
     <View style={styles.container}>
-     <Text style={styles.sectionTitle}>Nächste Aufgaben</Text>
+      <Text style={styles.sectionTitle}>Nächste Aufgaben</Text>
 
       <View style={styles.card}>
-        {nextTasks.map((task) => {
-          const isChecked = checkedTaskIds.includes(task.id);
+        {visibleTasks.map((task) => {
+          const isContextTask = "createdAt" in task;
+          const isChecked = "completed" in task ? task.completed : false;
 
           return (
             <View key={task.id} style={styles.taskRow}>
-              <View style={[styles.dot, { backgroundColor: task.color }]} />
-
+            <View
+              style={[
+                styles.categoryLine,
+                {
+                  backgroundColor:
+                    "color" in task ? task.color : getCategoryColor(task.category),
+                },
+              ]}
+            />
               <View style={styles.taskContent}>
                 <Text
                   style={[
@@ -46,11 +65,17 @@ export default function NextTasks() {
                     isChecked && styles.taskMetaChecked,
                   ]}
                 >
-                  {task.category} · {task.due}
+                  {task.category}
                 </Text>
               </View>
 
-              <Pressable onPress={() => toggleTask(task.id)}>
+              <Pressable
+                onPress={() => {
+                  if (isContextTask) {
+                    toggleTask(task.id);
+                  }
+                }}
+              >
                 <Ionicons
                   name={isChecked ? "checkmark-circle" : "ellipse-outline"}
                   size={24}
@@ -64,6 +89,7 @@ export default function NextTasks() {
     </View>
   );
 }
+
 
 const styles = StyleSheet.create({
   container: {
@@ -101,6 +127,12 @@ const styles = StyleSheet.create({
   },
   taskContent: {
     flex: 1,
+  },
+  categoryLine: {
+    width: 4,
+    height: 34,
+    borderRadius: 4,
+    marginRight: 12,
   },
   taskTitle: {
     color: colors.text,

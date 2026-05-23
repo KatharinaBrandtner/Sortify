@@ -6,9 +6,11 @@ import CategoryProgressCard from "../CategoryProgressCard";
 import { colors } from "../../styles/colors";
 import { categoryData } from "../../data/homeDummyData";
 import { layout } from "../../styles/layout";
+import { useTasks } from "../../context/TaskContext";
 
 export default function CategoryOverview() {
   const [showAll, setShowAll] = useState(false);
+  const { tasks } = useTasks();
 
   const visibleCategories = showAll ? categoryData : categoryData.slice(0, 4);
 
@@ -24,22 +26,35 @@ export default function CategoryOverview() {
         </Pressable>
       </View>
 
-      {visibleCategories.map((category) => (
-        <CategoryProgressCard
-          key={category.id}
-          title={category.title}
-          completed={category.completed}
-          total={category.total}
-          color={category.color}
-          icon={category.icon as never}
-          onPress={() =>
-            router.push({
-              pathname: "/category",
-              params: { openCategory: category.id },
-            })
-          }
-        />
-      ))}
+      {visibleCategories.map((category) => {
+        const addedTasksForCategory = tasks.filter(
+          (task) => task.category === category.title
+        );
+
+        const addedCompletedTasks = addedTasksForCategory.filter(
+          (task) => task.completed
+        ).length;
+
+        const updatedCompleted = category.completed + addedCompletedTasks;
+        const updatedTotal = category.total + addedTasksForCategory.length;
+
+        return (
+          <CategoryProgressCard
+            key={category.id}
+            title={category.title}
+            completed={updatedCompleted}
+            total={updatedTotal}
+            color={category.color}
+            icon={category.icon as never}
+            onPress={() =>
+              router.push({
+                pathname: "/category",
+                params: { openCategory: category.id },
+              })
+            }
+          />
+        );
+      })}
     </View>
   );
 }

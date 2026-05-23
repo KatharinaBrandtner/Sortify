@@ -2,6 +2,7 @@ import { useState } from "react";
 import { ScrollView, StyleSheet, View, Pressable, Text } from "react-native";
 import { router, useLocalSearchParams } from "expo-router";
 import { Ionicons } from "@expo/vector-icons";
+import { useTasks } from "../../context/TaskContext";
 
 import { globalStyles } from "../../styles/globalStyles";
 import { colors } from "../../styles/colors";
@@ -15,6 +16,7 @@ import Header from "../../components/Header";
 export default function CategoryScreen() {
   const [isAddCategoryVisible, setIsAddCategoryVisible] = useState(false);
   const { openCategory } = useLocalSearchParams();
+  const { tasks } = useTasks();
 
   const openCategoryId = Array.isArray(openCategory)
     ? openCategory[0]
@@ -38,17 +40,32 @@ export default function CategoryScreen() {
         showsVerticalScrollIndicator={false}
         contentContainerStyle={styles.scrollContent}
       >
-        {categoryOverviewData.map((category) => (
-          <CategoryAccordion
-            key={category.id}
-            title={category.title}
-            color={category.color}
-            icon={category.icon as never}
-            tasks={category.tasks}
-            initialExpanded={openCategoryId === category.id}
-          />
-        ))}
+      {categoryOverviewData.map((category) => {
+        const contextTasksForCategory = tasks
+          .filter((task) => task.category === category.title)
+          .map((task) => ({
+            id: task.id,
+            title: task.title,
+            completed: task.completed,
+            isContextTask: true,
+          }));
 
+        const dummyTasksForCategory = category.tasks.map((task) => ({
+          ...task,
+          isContextTask: false,
+        }));
+
+  return (
+    <CategoryAccordion
+      key={category.id}
+      title={category.title}
+      color={category.color}
+      icon={category.icon as never}
+      tasks={[...contextTasksForCategory, ...dummyTasksForCategory]}
+      initialExpanded={openCategoryId === category.id}
+    />
+  );
+})}
         <View style={styles.buttonGroup}>
           <CategoryActionButton
             title="Neue Aufgabe hinzufügen"
