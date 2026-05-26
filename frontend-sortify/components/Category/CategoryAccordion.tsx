@@ -6,6 +6,7 @@ import CategoryProgressCard from "../CategoryProgressCard";
 import CategoryTaskItem from "./CategoryTaskItem";
 import { colors } from "../../styles/colors";
 import { layout } from "../../styles/layout";
+import { useTasks } from "../../context/TaskContext";
 
 type Task = {
   id: string;
@@ -29,7 +30,8 @@ export default function CategoryAccordion({
   initialExpanded = false,
 }: Props) {
   const [expanded, setExpanded] = useState(initialExpanded);
-  const [localTasks, setLocalTasks] = useState(tasks);
+
+  const { toggleTask, deleteTask } = useTasks();
 
   useEffect(() => {
     if (initialExpanded) {
@@ -37,22 +39,8 @@ export default function CategoryAccordion({
     }
   }, [initialExpanded]);
 
-  const completed = localTasks.filter((task) => task.completed).length;
-  const total = localTasks.length;
-
-  const toggleTask = (taskId: string) => {
-    setLocalTasks((currentTasks) =>
-      currentTasks.map((task) =>
-        task.id === taskId ? { ...task, completed: !task.completed } : task
-      )
-    );
-  };
-
-  const deleteTask = (taskId: string) => {
-    setLocalTasks((currentTasks) =>
-      currentTasks.filter((task) => task.id !== taskId)
-    );
-  };
+  const completed = tasks.filter((task) => task.completed).length;
+  const total = tasks.length;
 
   return (
     <View style={styles.wrapper}>
@@ -68,7 +56,7 @@ export default function CategoryAccordion({
 
       {expanded && (
         <View style={styles.taskList}>
-          {localTasks.map((task) => (
+          {tasks.map((task) => (
             <CategoryTaskItem
               key={task.id}
               title={task.title}

@@ -11,10 +11,12 @@ import CategoryActionButton from "../../components/Category/CategoryActionButton
 import AddCategoryModal from "../../components/Category/AddCategoryModal";
 import { layout } from "../../styles/layout";
 import Header from "../../components/Header";
+import { useTasks } from "../../context/TaskContext";
 
 export default function CategoryScreen() {
   const [isAddCategoryVisible, setIsAddCategoryVisible] = useState(false);
   const { openCategory } = useLocalSearchParams();
+  const { tasks } = useTasks();
 
   const openCategoryId = Array.isArray(openCategory)
     ? openCategory[0]
@@ -38,16 +40,26 @@ export default function CategoryScreen() {
         showsVerticalScrollIndicator={false}
         contentContainerStyle={styles.scrollContent}
       >
-        {categoryOverviewData.map((category) => (
-          <CategoryAccordion
-            key={category.id}
-            title={category.title}
-            color={category.color}
-            icon={category.icon as never}
-            tasks={category.tasks}
-            initialExpanded={openCategoryId === category.id}
-          />
-        ))}
+        {categoryOverviewData.map((category) => {
+          const tasksForCategory = tasks
+            .filter((task) => task.category === category.title)
+            .map((task) => ({
+              id: task.id,
+              title: task.title,
+              completed: task.completed,
+            }));
+
+          return (
+            <CategoryAccordion
+              key={category.id}
+              title={category.title}
+              color={category.color}
+              icon={category.icon as never}
+              tasks={tasksForCategory}
+              initialExpanded={openCategoryId === category.id}
+            />
+          );
+        })}
 
         <View style={styles.buttonGroup}>
           <CategoryActionButton

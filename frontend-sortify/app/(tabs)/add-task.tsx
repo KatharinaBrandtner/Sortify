@@ -4,8 +4,8 @@ import {
   Image,
   TouchableWithoutFeedback,
   Keyboard,
-  Alert,
-} from "react-native";
+  Alert} from "react-native";
+import { useTasks } from "../../context/TaskContext";
 
 import { useState } from "react";
 import { useNavigation } from "@react-navigation/native";
@@ -30,6 +30,7 @@ type AddTaskNavigationProp =
 export default function AddTaskScreen() {
   const [task, setTask] = useState("");
   const [loading, setLoading] = useState(false);
+  const { addTask } = useTasks();
 
   const navigation =
     useNavigation<AddTaskNavigationProp>();
@@ -58,7 +59,7 @@ export default function AddTaskScreen() {
         );
         return;
       }
-
+      addTask(task, result.category);
       // Navigation zum Suggestion Screen
       navigation.navigate("suggestion", {
         task: task,

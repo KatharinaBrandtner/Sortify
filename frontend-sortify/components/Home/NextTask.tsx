@@ -1,34 +1,32 @@
-import { useState } from "react";
 import { View, Text, StyleSheet, Pressable } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 
 import { colors } from "../../styles/colors";
 import { layout } from "../../styles/layout";
-import { nextTasks } from "../../data/homeDummyData";
-import { suggestionStyles } from "../../styles/suggestionStyles";
+import { useTasks } from "../../context/TaskContext";
+import { getCategoryColor } from "../../data/taskDummyData";
 
 export default function NextTasks() {
-  const [checkedTaskIds, setCheckedTaskIds] = useState<string[]>([]);
+  const { tasks, toggleTask } = useTasks();
 
-  const toggleTask = (taskId: string) => {
-    setCheckedTaskIds((currentIds) =>
-      currentIds.includes(taskId)
-        ? currentIds.filter((id) => id !== taskId)
-        : [...currentIds, taskId]
-    );
-  };
+  const visibleTasks = tasks.slice(0, 4);
 
   return (
     <View style={styles.container}>
-     <Text style={styles.sectionTitle}>Nächste Aufgaben</Text>
+      <Text style={styles.sectionTitle}>Nächste Aufgaben</Text>
 
       <View style={styles.card}>
-        {nextTasks.map((task) => {
-          const isChecked = checkedTaskIds.includes(task.id);
+        {visibleTasks.map((task) => {
+          const isChecked = task.completed;
 
           return (
             <View key={task.id} style={styles.taskRow}>
-              <View style={[styles.dot, { backgroundColor: task.color }]} />
+              <View
+                style={[
+                  styles.categoryLine,
+                  { backgroundColor: getCategoryColor(task.category) },
+                ]}
+              />
 
               <View style={styles.taskContent}>
                 <Text
@@ -46,7 +44,7 @@ export default function NextTasks() {
                     isChecked && styles.taskMetaChecked,
                   ]}
                 >
-                  {task.category} · {task.due}
+                  {task.category}
                 </Text>
               </View>
 
@@ -67,7 +65,7 @@ export default function NextTasks() {
 
 const styles = StyleSheet.create({
   container: {
-    marginTop: 20,
+    marginTop: 12,
   },
   sectionTitle: {
     color: colors.purple,
@@ -77,11 +75,9 @@ const styles = StyleSheet.create({
   card: {
     marginTop:8,
     backgroundColor: colors.white,
-    borderRadius: layout.cardRadius,
+    borderRadius: layout.primaryButtonRadius,
     paddingVertical: 8,
     paddingHorizontal: 14,
-    borderWidth: 1,
-    borderColor: colors.lightGray,
     shadowColor: colors.dark,
     shadowOpacity: 0.05,
     shadowRadius: 10,
@@ -93,7 +89,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
     paddingVertical: 9,
   },
-  dot: {
+  categoryLine: {
     width: 4,
     height: 34,
     borderRadius: 4,
@@ -113,7 +109,7 @@ const styles = StyleSheet.create({
   },
   taskMeta: {
     color: colors.placeholder,
-    fontSize: 12,
+    fontSize: layout.smallTextSize,
     marginTop: 2,
   },
   taskMetaChecked: {
