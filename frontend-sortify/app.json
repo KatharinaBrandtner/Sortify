@@ -1,7 +1,12 @@
 {
-    "expo": {
-      "name": "frontend-sortify",
-      "slug": "frontend-sortify",
-      "scheme": "frontend-sortify"
+  "expo": {
+    "name": "frontend-sortify",
+    "slug": "frontend-sortify",
+    "scheme": "frontend-sortify",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#FBFBFD"
     }
+  }
 }
